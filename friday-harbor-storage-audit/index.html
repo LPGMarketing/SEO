@@ -351,6 +351,7 @@
     <a href="#top" class="mark">friday harbor storage · seo audit</a>
     <nav>
       <a href="#tldr">Summary</a>
+      <a href="#status">Status</a>
       <a href="#snapshot">Snapshot</a>
       <a href="#critical">Critical</a>
       <a href="#quickwins">Quick Wins</a>
@@ -429,6 +430,57 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="status" style="background:linear-gradient(180deg,#f1f7f2,#fdfffd);">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Implementation Status · Updated June 10, 2026</span></div>
+    <h2>What's been <em class="display-italic">done</em> since this audit.</h2>
+    <p class="lede" style="margin-top:18px; max-width:720px;">Execution log against this report's recommendations, verified live on fridayharborstorage.com. One major correction first: <strong>the audit profiled the wrong facility.</strong> "Sound Storage" (840 Mullis Rd) is an unrelated business. Our facility is <strong>845 Argyle Ave</strong>, formerly branded <strong>"The Storage Place" (thestoragepl.com)</strong>, that is the real legacy domain, and its GBP (4.9★) has been renamed to Friday Harbor Storage with the same listing ID, so the review equity transferred. All recommendations below were re-grounded in the real inventory: drive-up, outdoor, 24-hour access, open-air boat/car/motorcycle parking, <em>no RV, no covered, no climate control</em>.</p>
+
+    <style>
+      .chk{list-style:none;margin:22px 0 0;padding:0;max-width:860px;}
+      .chk li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px solid rgba(0,0,0,.07);font-size:15px;line-height:1.5;}
+      .chk .ic{flex:0 0 22px;font-weight:700;}
+      .chk .done .ic{color:#1a7f37;}
+      .chk .skip .ic{color:#6b7280;}
+      .chk .open .ic{color:#b45309;}
+      .chk b{font-weight:600;}
+      .chk .d{color:#6b7280;font-size:12.5px;white-space:nowrap;margin-left:auto;padding-left:14px;}
+      .chk-h{margin-top:34px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;font-weight:700;}
+    </style>
+
+    <div class="chk-h">Shipped &amp; verified live</div>
+    <ul class="chk">
+      <li class="done"><span class="ic">✓</span><span><b>SelfStorage + LocalBusiness schema</b> on the homepage: full @graph with geo, 10 amenities, 7 offers, areaServed, and <code>sameAs</code> → the renamed GBP. Was WebSite-only.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Titles, metas, og:image</b>: homepage title "Self Storage in Friday Harbor, WA | Friday Harbor Storage" (was generic "Self Storage Units"), meta description and social image set sitewide.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Click-to-call fixed</b>: every <code>tel:</code> link pointed at a template placeholder (123) 123-1234. Now dials the real line, header button shows the number.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Homepage content depth</b>: ~200 → 530+ words of localized copy, plus full brand-blue UI/UX redesign, trust bar, Google-reviews section with AggregateRating schema.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Boat &amp; vehicle page</b> <code>/boat-storage-san-juan-island</code>: closes the report's 1-of-4 AI-citation gap. Corrected scope: open-air boat/trailer/car/motorcycle, no RV.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>4 keyword landing pages</b> under Resources: <code>/san-juan-island-storage</code> (110/mo gap term), <code>/drive-up-storage-friday-harbor</code>, <code>/24-hour-storage-friday-harbor</code>, <code>/business-storage-friday-harbor</code>. Each with Service + FAQPage + BreadcrumbList schema.</span><span class="d">Jun 9</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Legacy-domain 301 verified</b>: thestoragepl.com → fridayharborstorage.com is live. 177 backlinks across ~96 referring domains all hit the redirect (inner pages carry ~0 equity). The report's sound-storage.com consolidation is N/A, wrong business.</span><span class="d">Jun 10</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Sitemap submitted to Google</b> (had never been submitted, pages were invisible) + daily automated index monitoring across all LPG properties.</span><span class="d">Jun 9</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>GSC + GA4 connected</b>, baseline captured: #1.9 brand position, ClickToCall and begin_checkout conversion events firing.</span><span class="d">Jun 8</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Photo gallery</b>: default <code>/new-page</code> URL renamed to <code>/photo-gallery</code> with SEO meta + 301; best 3 facility photos curated sitewide.</span><span class="d">Jun 10</span></li>
+      <li class="done"><span class="ic">✓</span><span><b>Content-library accuracy</b>: removed leftover "Gunter, Texas" template description; fixed nav to single-row header with Resources dropdown.</span><span class="d">Jun 8</span></li>
+    </ul>
+
+    <div class="chk-h">Intentionally skipped</div>
+    <ul class="chk">
+      <li class="skip"><span class="ic">–</span><span><b>sound-storage.com 301 / consolidation</b>: wrong facility, unrelated business. Replaced by the thestoragepl.com redirect above.</span></li>
+      <li class="skip"><span class="ic">–</span><span><b>Heated / climate-controlled / RV / free-moving-truck pages</b>: Sound Storage attributes we don't offer. Building them would be false advertising.</span></li>
+      <li class="skip"><span class="ic">–</span><span><b>Dedicated prices page</b>: live unit prices already render on the homepage via the Cubby widget (owner decision, Jun 10).</span></li>
+    </ul>
+
+    <div class="chk-h">Open</div>
+    <ul class="chk">
+      <li class="open"><span class="ic">○</span><span><b>Size Guide accuracy fix</b>: template copy still advertises covered parking / RV / electrical hookups we don't offer.</span></li>
+      <li class="open"><span class="ic">○</span><span><b>FAQPage schema on /faq</b>: the FAQ content is strong; marking it up makes it eligible for AI answers.</span></li>
+      <li class="open"><span class="ic">○</span><span><b>Phone consistency</b>: site uses (360) 865-5817, GBP/schema use (360) 378-2311. Pick one, align everywhere.</span></li>
+      <li class="open"><span class="ic">○</span><span><b>"Moving to San Juan Island" blog post</b> (top-of-funnel; Seattle is the top visitor city).</span></li>
+      <li class="open"><span class="ic">○</span><span><b>Review velocity</b>: grow past 9 Google reviews, then surface real quotes on-site.</span></li>
+    </ul>
   </div>
 </section>
 
