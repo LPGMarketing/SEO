@@ -4,10 +4,11 @@ Private client audit deliverables hosted on GitHub Pages.
 
 Each subfolder of this repo is one engagement. Pages are blocked from search engines via `<meta name="robots" content="noindex">` + a top-level `robots.txt`.
 
-## Audits — Ludlow Property Group self-storage portfolio (13 facilities)
+## Audits — Ludlow Property Group self-storage portfolio (13 facilities + parent portal)
 
 | Client | Folder | URL |
 |---|---|---|
+| Looking For Storage (parent portal) | [`/lookingforstorage-audit/`](./lookingforstorage-audit/) | https://lpgmarketing.github.io/SEO/lookingforstorage-audit/ |
 | Delta Self Storage | [`/delta-self-storage-audit/`](./delta-self-storage-audit/) | https://lpgmarketing.github.io/SEO/delta-self-storage-audit/ |
 | Elk Mountain Storage | [`/elk-mountain-storage-audit/`](./elk-mountain-storage-audit/) | https://lpgmarketing.github.io/SEO/elk-mountain-storage-audit/ |
 | Slate River Storage | [`/slate-river-storage-audit/`](./slate-river-storage-audit/) | https://lpgmarketing.github.io/SEO/slate-river-storage-audit/ |

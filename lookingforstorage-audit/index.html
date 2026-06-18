@@ -1,0 +1,1322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<title>LookingForStorage.com SEO Audit &amp; Portal Strategy · June 2026</title>
+<meta name="description" content="A 360-degree SEO, content and AI-visibility audit of lookingforstorage.com, the Ludlow Property Group leisure-market storage portal, prepared by ThinkFlowLabs: parent-vs-facility analysis, technical fixes, backlink cleanup, schema plan, and a 90-day roadmap." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,30..100,0..1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ DESIGN TOKENS ============ */
+  :root {
+    --ink:        #0E1014;
+    --ink-2:      #1F2630;
+    --muted:      #5E6675;
+    --line:       #E6DFD2;
+    --line-2:     #EFE7D8;
+    --cream:      #FBF6EB;
+    --cream-2:    #F4ECD9;
+    --paper:      #FFFBF1;
+    --coral:      #157A8C;
+    --coral-dk:   #0E5A68;
+    --coral-sft:  #DCEEF2;
+    --gold:       #C89A4A;
+    --gold-sft:   #F6E7C7;
+    --green:      #1F7A6A;
+    --green-sft:  #DAEEE7;
+    --amber:      #B45309;
+    --amber-sft:  #FFE9BD;
+    --red-bg:     #FFEBE9;
+
+    --r-sm: 4px; --r-md: 10px; --r-lg: 18px; --r-xl: 26px;
+    --shadow-sm: 0 1px 0 rgba(20,18,12,.06);
+    --shadow-md: 0 14px 38px -22px rgba(60,40,18,.32), 0 2px 0 rgba(20,18,12,.04);
+    --shadow-lg: 0 30px 80px -30px rgba(60,40,18,.36);
+
+    --serif:      "Fraunces", "Times New Roman", serif;
+    --sans:       "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono:       "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    font-size: 16.5px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--coral-dk); text-decoration: none; border-bottom: 1px solid rgba(14,90,104,.25); }
+  a:hover { border-bottom-color: var(--coral-dk); }
+
+  /* ============ LAYOUT ============ */
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 84px 0; border-top: 1px solid var(--line); position: relative; }
+  section.alt { background: var(--paper); }
+  section.dark { background: var(--ink); color: #F2EAD7; border-top-color: #2A2520; }
+  section.dark a { color: #8FD3E0; border-bottom-color: rgba(143,211,224,.3); }
+
+  /* ============ TYPOGRAPHY ============ */
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -.012em; line-height: 1.08; margin: 0; }
+  h1 { font-size: clamp(48px, 8vw, 96px); font-weight: 380; letter-spacing: -.03em; }
+  h2 { font-size: clamp(34px, 4.6vw, 58px); font-weight: 400; letter-spacing: -.022em; }
+  h3 { font-size: clamp(22px, 2.6vw, 30px); font-weight: 500; line-height: 1.18; }
+  h4 { font-size: 19px; font-weight: 600; line-height: 1.3; font-family: var(--sans); letter-spacing: -.005em; }
+  .display-italic { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .eyebrow {
+    font-family: var(--sans); font-weight: 500; font-size: 12px;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--coral-dk);
+  }
+  p { margin: 0 0 1em; }
+  p.lede { font-size: 21px; line-height: 1.55; color: var(--ink-2); }
+  ul, ol { margin: 0 0 1em; padding-left: 1.2em; }
+  ul li, ol li { margin-bottom: .35em; }
+  strong { font-weight: 600; }
+  .mono { font-family: var(--mono); font-size: .9em; }
+  .small { font-size: 13px; color: var(--muted); }
+
+  /* ============ HERO ============ */
+  .hero {
+    background:
+      radial-gradient(60% 80% at 80% 0%, #DCEEF2 0%, transparent 60%),
+      radial-gradient(50% 70% at 0% 70%, #F6E7C7 0%, transparent 55%),
+      var(--cream);
+    border-top: 0;
+    padding: 56px 0 96px;
+    overflow: hidden; position: relative;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='1' cy='1' r='.6' fill='%23157A8C' opacity='.06'/></svg>");
+    pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: end; position: relative; }
+  .hero h1 { margin-bottom: .18em; }
+  .hero h1 em { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .hero .meta { font-family: var(--sans); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+  .hero .by-line { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--line-2); margin-top: 36px; font-size: 14px; }
+  .hero .by-line span b { color: var(--ink); font-weight: 600; }
+  .hero-side {
+    background: white; border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 30px; box-shadow: var(--shadow-md);
+    font-size: 14px;
+  }
+  .hero-side h4 { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .15em; font-family: var(--sans); margin-bottom: 16px; font-weight: 600; }
+  .hero-side dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; }
+  .hero-side dt { color: var(--muted); }
+  .hero-side dd { margin: 0; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+  .hero-side .severity-strip { margin: 22px -30px -30px; padding: 18px 30px; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); color: white; border-radius: 0 0 var(--r-lg) var(--r-lg); display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
+  @media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+  /* ============ TLDR (Executive Summary) ============ */
+  .tldr { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; }
+  .tldr h2 em { font-style: italic; color: var(--coral); font-variation-settings: "SOFT" 100, "WONK" 1; }
+  .tldr-bullets { font-size: 17px; line-height: 1.6; }
+  .tldr-bullets li { margin-bottom: 16px; padding-left: 4px; }
+  .tldr-bullets li::marker { color: var(--coral); }
+  .verdict-card {
+    background: var(--ink); color: #F2EAD7;
+    border-radius: var(--r-lg); padding: 36px;
+    position: sticky; top: 24px;
+  }
+  .verdict-card h4 { color: #F6E7C7; font-family: var(--serif); font-size: 24px; margin-bottom: 14px; font-weight: 500; }
+  .verdict-card p { font-size: 15px; line-height: 1.65; color: #D8CDB5; }
+  .verdict-card .score-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 22px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); font-family: var(--mono); font-size: 12px; }
+  .verdict-card .score-row b { color: white; font-size: 18px; }
+  @media (max-width: 820px) { .tldr { grid-template-columns: 1fr; } .verdict-card { position: static; } }
+
+  /* ============ KPI GRID ============ */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .kpi {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 22px 22px 18px; position: relative; overflow: hidden;
+  }
+  .kpi-label { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .kpi-value { font-family: var(--serif); font-size: 46px; font-weight: 400; line-height: 1; letter-spacing: -.02em; color: var(--ink); }
+  .kpi-value small { font-size: 17px; color: var(--muted); margin-left: 4px; font-family: var(--sans); font-weight: 500; }
+  .kpi-trend { font-size: 12px; margin-top: 8px; font-family: var(--mono); }
+  .kpi-trend.up { color: var(--green); }
+  .kpi-trend.dn { color: var(--coral-dk); }
+  .kpi.cta::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--coral); }
+  @media (max-width: 820px) { .kpi-grid { grid-template-columns: 1fr 1fr; } .kpi-value { font-size: 36px; } }
+
+  /* ============ FINDINGS CARDS ============ */
+  .findings { display: grid; gap: 24px; }
+  .finding {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-lg);
+    padding: 36px; display: grid; grid-template-columns: 88px 1fr; gap: 28px;
+    box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+  }
+  .finding .num {
+    font-family: var(--serif); font-size: 78px; font-weight: 400; line-height: 1; color: var(--coral); letter-spacing: -.04em; opacity: .9;
+  }
+  .finding h3 { margin-bottom: 8px; }
+  .finding .impact-line { font-size: 13.5px; color: var(--muted); margin-bottom: 18px; font-family: var(--mono); letter-spacing: .02em; }
+  .finding p { font-size: 16px; }
+  .finding .fix {
+    background: var(--cream-2); padding: 18px 22px; border-radius: var(--r-md);
+    margin-top: 18px; border-left: 3px solid var(--coral); font-size: 15.5px;
+  }
+  .finding .fix b { color: var(--ink); }
+  .badge {
+    display: inline-block; padding: 4px 11px; border-radius: 999px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700;
+  }
+  .badge.crit { background: var(--coral); color: white; }
+  .badge.high { background: var(--amber-sft); color: var(--amber); }
+  .badge.med { background: var(--gold-sft); color: var(--gold); }
+  .badge.opp { background: var(--green-sft); color: var(--green); }
+  .badge.brand { background: var(--ink); color: var(--cream); }
+  @media (max-width: 820px) {
+    .finding { grid-template-columns: 1fr; padding: 26px; }
+    .finding .num { font-size: 56px; }
+  }
+
+  /* ============ DATA TABLES ============ */
+  table {
+    width: 100%; border-collapse: collapse; font-size: 14.5px;
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;
+  }
+  th { text-align: left; font-weight: 600; padding: 14px 16px; background: var(--cream-2); border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+  td { padding: 14px 16px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  th.num { text-align: right; }
+  td.kw { font-weight: 500; }
+  td .badge { font-size: 10px; padding: 3px 8px; }
+
+  .table-scroll { overflow-x: auto; }
+
+  /* ============ URL AUDIT CARDS ============ */
+  .url-audit { background: white; border: 1px solid var(--line); border-radius: var(--r-md); margin-bottom: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+  .url-audit.crit { border-color: #BFD9E0; }
+  .url-audit-head { background: var(--cream-2); padding: 16px 22px; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .url-audit.crit .url-audit-head { background: var(--coral-sft); }
+  .url-audit-url { font-family: var(--mono); font-size: 13.5px; font-weight: 600; color: var(--ink); word-break: break-all; line-height: 1.4; }
+  .url-audit-meta { font-size: 12px; color: var(--muted); font-family: var(--mono); margin-top: 4px; letter-spacing: .01em; }
+  .url-audit-body { padding: 0; }
+  .url-issue { display: grid; grid-template-columns: 200px 1fr 1.5fr; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--line-2); font-size: 13.5px; }
+  .url-issue:first-child { border-top: 0; }
+  .url-issue .issue-name { font-weight: 600; color: var(--coral-dk); display: flex; align-items: flex-start; gap: 8px; padding-top: 1px; }
+  .url-issue .issue-name::before { content: "✗"; font-weight: 700; flex-shrink: 0; }
+  .url-issue.ok .issue-name { color: var(--green); }
+  .url-issue.ok .issue-name::before { content: "✓"; }
+  .url-issue.warn .issue-name { color: var(--amber); }
+  .url-issue.warn .issue-name::before { content: "!"; }
+  .url-issue .issue-current { color: var(--ink-2); line-height: 1.5; }
+  .url-issue .issue-fix { color: var(--ink); background: var(--cream); padding: 9px 13px; border-radius: 4px; font-size: 13px; border-left: 3px solid var(--coral); line-height: 1.5; }
+  .url-issue .issue-fix b { color: var(--ink); }
+  .url-issue code { font-size: 11.5px; background: rgba(0,0,0,.04); padding: 1px 5px; border-radius: 3px; }
+  .url-issue .issue-fix code { background: rgba(20,18,12,.07); }
+
+  .url-group { background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: var(--r-md); padding: 26px 28px; margin-bottom: 22px; }
+  .url-group.opp { border-left-color: var(--green); }
+  .url-group.warn { border-left-color: var(--amber); }
+  .url-group h4 { font-family: var(--sans); font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+  .url-group p { font-size: 14.5px; margin-bottom: 0; }
+  .url-group .url-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); margin-top: 16px; background: white; padding: 16px 18px; border-radius: 4px; border: 1px solid var(--line); }
+  .url-group .url-list span.cnt { color: var(--muted); margin-left: 6px; font-size: 11px; }
+  .url-group .group-fix { margin-top: 16px; padding: 14px 18px; background: var(--cream-2); border-radius: 4px; font-size: 14px; line-height: 1.55; }
+  .url-group .group-fix b { color: var(--coral-dk); }
+  .url-group .group-fix code { font-size: 11.5px; background: rgba(20,18,12,.07); padding: 1px 5px; border-radius: 3px; }
+
+  .sub-eyebrow { display: inline-block; font-family: var(--sans); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--coral-dk); margin-top: 48px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--coral); }
+
+  @media (max-width: 820px) {
+    .url-issue { grid-template-columns: 1fr; gap: 8px; }
+    .url-group .url-list { grid-template-columns: 1fr; }
+  }
+
+  /* ============ PILLS / CALLOUTS ============ */
+  .callout {
+    background: var(--coral-sft); border: 1px solid #BFD9E0;
+    border-radius: var(--r-md); padding: 22px 26px;
+    font-size: 15.5px; color: var(--coral-dk); margin: 24px 0;
+  }
+  .callout.opp { background: var(--green-sft); border-color: #BFE0D6; color: #135548; }
+  .callout.warn { background: var(--amber-sft); border-color: #F2D5A0; color: var(--amber); }
+  .callout strong { color: inherit; }
+
+  /* ============ TWO-COL ============ */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 820px) { .two-col, .three-col { grid-template-columns: 1fr; } }
+
+  /* ============ ROADMAP ============ */
+  .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .road-col {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 28px;
+  }
+  .road-col .label { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 12.5px; letter-spacing: .15em; text-transform: uppercase; color: var(--coral-dk); margin-bottom: 6px; }
+  .road-col .dot { width: 9px; height: 9px; border-radius: 999px; background: var(--coral); }
+  .road-col h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 18px; }
+  .road-col ul { list-style: none; padding: 0; }
+  .road-col li { padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: start; }
+  .road-col li:last-child { border-bottom: 0; }
+  .road-col li .check { width: 18px; height: 18px; border: 1.5px solid var(--line); border-radius: 4px; margin-top: 2px; }
+  .road-col li .pri { font-family: var(--mono); font-size: 10.5px; color: var(--muted); padding: 3px 7px; border: 1px solid var(--line); border-radius: 4px; align-self: start; }
+  @media (max-width: 1000px) { .roadmap { grid-template-columns: 1fr; } }
+
+  /* ============ SCHEMA SNIPPETS ============ */
+  pre.code {
+    background: #1A1F26; color: #DCD0AE; padding: 22px 26px;
+    border-radius: var(--r-md); font-family: var(--mono); font-size: 13px;
+    overflow-x: auto; line-height: 1.55; margin: 18px 0;
+  }
+  .code .k { color: #FFD89B; }
+  .code .s { color: #B5DCC7; }
+  .code .c { color: #6E6452; font-style: italic; }
+
+  /* ============ FOOTER ============ */
+  footer { padding: 56px 0 36px; background: var(--ink); color: #BAB099; text-align: center; }
+  footer .mark { font-family: var(--serif); font-style: italic; color: var(--coral); font-size: 28px; font-variation-settings: "SOFT" 100, "WONK" 1; }
+  footer .small { color: #76705F; }
+
+  /* ============ STICKY NAV ============ */
+  .topnav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251, 246, 235, 0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line); padding: 14px 0;
+  }
+  .topnav .inner { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+  .topnav a { color: var(--ink); border-bottom: 0; font-size: 13px; font-weight: 500; }
+  .topnav .mark { font-family: var(--serif); font-style: italic; color: var(--coral); font-size: 20px; font-variation-settings: "SOFT" 100, "WONK" 1; border: 0; }
+  .topnav nav { display: flex; gap: 22px; flex-wrap: wrap; }
+  @media (max-width: 820px) { .topnav nav { display: none; } }
+
+  /* ============ HORIZONTAL BAR CHART ============ */
+  .bar-row { display: grid; grid-template-columns: 220px 1fr 92px; gap: 14px; align-items: center; padding: 8px 0; font-size: 14px; }
+  .bar-bg { height: 22px; background: var(--cream-2); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); }
+  .bar-fill.alt { background: linear-gradient(90deg, var(--gold) 0%, #A77F35 100%); }
+  .bar-fill.green { background: linear-gradient(90deg, #2C9D8B 0%, var(--green) 100%); }
+  .bar-val { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; color: var(--ink-2); }
+  @media (max-width: 600px) { .bar-row { grid-template-columns: 130px 1fr 64px; font-size: 13px; } }
+
+  /* ============ DIVIDERS ============ */
+  .ornament { text-align: center; margin: 48px 0; color: var(--coral); font-family: var(--serif); font-size: 22px; letter-spacing: .4em; opacity: .7; }
+  .section-eyebrow { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+  .section-eyebrow .bar { width: 36px; height: 1px; background: var(--coral); }
+
+  /* ============ MISC ============ */
+  .quote {
+    border-left: 3px solid var(--coral); padding: 12px 0 12px 26px;
+    font-family: var(--serif); font-size: 22px; line-height: 1.4; color: var(--ink-2);
+    font-style: italic; margin: 28px 0;
+  }
+  .quote cite { display: block; margin-top: 10px; font-family: var(--sans); font-size: 13px; color: var(--muted); font-style: normal; letter-spacing: .04em; }
+
+  details.acc { background: white; border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; margin-bottom: 10px; }
+  details.acc summary { cursor: pointer; font-weight: 600; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  details.acc summary::after { content: "+"; font-family: var(--serif); font-size: 22px; color: var(--coral); }
+  details.acc[open] summary::after { content: "−"; }
+  details.acc[open] { box-shadow: var(--shadow-md); }
+  details.acc .body { margin-top: 14px; font-size: 15px; color: var(--ink-2); }
+
+  /* ============ MATRIX TABLE ============ */
+  .matrix td.hit { color: var(--green); font-weight: 700; text-align: center; }
+  .matrix td.miss { color: #B9402F; text-align: center; }
+  .matrix td.soft { color: var(--gold); text-align: center; font-weight: 600; }
+  .matrix th { text-align: center; }
+  .matrix th:first-child, .matrix td:first-child { text-align: left; }
+
+  /* ============ PRINT ============ */
+  @media print {
+    body { background: white; }
+    section { padding: 28px 0; page-break-inside: avoid; }
+    .topnav, .hero::before { display: none; }
+    .finding, .road-col, table { box-shadow: none; }
+    a { color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+
+<!-- =================== STICKY NAV =================== -->
+<div class="topnav">
+  <div class="wrap inner">
+    <a href="#top" class="mark">lookingforstorage · seo audit</a>
+    <nav>
+      <a href="#tldr">Summary</a>
+      <a href="#snapshot">Snapshot</a>
+      <a href="#critical">Critical</a>
+      <a href="#quickwins">Quick Wins</a>
+      <a href="#hierarchy">URL Catalog</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#schema">Schema</a>
+      <a href="#content">Content</a>
+      <a href="#backlinks">Backlinks</a>
+      <a href="#llm">AI/LLM</a>
+      <a href="#roadmap">90-Day Plan</a>
+    </nav>
+  </div>
+</div>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="meta">SEO AUDIT &amp; PORTAL STRATEGY &nbsp;·&nbsp; CONFIDENTIAL</div>
+      <h1>What is <em>lookingforstorage</em><br>actually <em>for</em>?</h1>
+      <p class="lede" style="margin-top:32px; max-width:620px;">
+        A 360-degree technical, content, competitive and AI-visibility audit of <strong>lookingforstorage.com</strong>, the Ludlow Property Group umbrella portal for leisure-market self storage. Built from a live Playwright crawl, four enrichment passes (Semrush, DataForSEO, Brave, Perplexity), and a 5x4 flagship-LLM citation test. The central question is not "how do we rank this site," it is "what job should this site do."
+      </p>
+      <div class="by-line">
+        <span>Prepared by <b>ThinkFlowLabs</b></span>
+        <span>·</span>
+        <span>Issued <b>June 18, 2026</b></span>
+        <span>·</span>
+        <span>For <b>Ludlow Property Group</b></span>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h4>AT-A-GLANCE</h4>
+      <dl>
+        <dt>Authority Score</dt><dd>2 / 100</dd>
+        <dt>Ranked keywords (US)</dt><dd>100&ndash;149</dd>
+        <dt>Est. monthly organic visits</dt><dd>0&ndash;34</dd>
+        <dt>Keywords in top 10</dt><dd>1</dd>
+        <dt>Verified in Search Console</dt><dd>No</dd>
+        <dt>Backlinks / ref domains</dt><dd>746 / 131</dd>
+        <dt>Lighthouse Perf (mobile)</dt><dd>71</dd>
+        <dt>Pages (5 linked, 5 orphaned)</dt><dd>11</dd>
+        <dt>Brand LLM citations (5x4)</dt><dd>0 of 20</dd>
+      </dl>
+      <div class="severity-strip">
+        <span>Verdict</span>
+        <span>🔵 Reposition, don't compete</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- =================== EXEC SUMMARY =================== -->
+<section id="tldr" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow">
+      <span class="bar"></span>
+      <span class="eyebrow">Executive Summary</span>
+    </div>
+    <div class="tldr">
+      <div>
+        <h2>The situation in <em class="display-italic">60 seconds</em>.</h2>
+        <p class="lede" style="margin-top:24px;">
+          LookingForStorage.com is a thin, five-page umbrella site that ranks for almost nothing, is invisible to AI assistants, and carries a toxic backlink profile, while the individual facility websites it represents win the rankings and the AI citations outright. The right move is not to pour SEO into the portal so it competes with its own facilities. It is to <strong>reposition it as a clean brand and lead-routing hub</strong>, fix the trust-damaging errors on it, and disavow the spam.
+        </p>
+        <ol class="tldr-bullets" style="margin-top:24px;">
+          <li><strong>The portal is invisible and unmeasured.</strong> Semrush puts Authority Score at <strong>2/100</strong> with <strong>0 estimated organic visits</strong>; DataForSEO sees ~34 visits/month, 97 of 100 keywords on page 3 or worse. It is <strong>not even verified in Google Search Console</strong>, while all 14 of LPG's other properties are. We cannot manage what we are not measuring.</li>
+          <li><strong>The facilities win; the umbrella does not.</strong> For "self storage gunnison," discountselfstorage.biz owns organic #4 with sitelinks plus local pack #2/#3; the portal is absent. discountselfstorage.biz alone pulls <strong>~8,956 visits/month, roughly 60x the portal</strong>. The brand equity lives at the facility level.</li>
+          <li><strong>Zero AI citations for the brand, constant citations for the facilities.</strong> Across 20 flagship-LLM answers (Claude Sonnet 4.6, Gemini 3.1 Pro, GPT-5.5, Sonar-Reasoning-Pro), "LookingForStorage" was <strong>never recommended</strong>. The LPG facility sites were cited in <strong>13 of 16 applicable cells</strong>, Moab Self Storage by all four models.</li>
+          <li><strong>The backlink profile is a liability, not an asset.</strong> ~20 of the top 30 referring domains sit on a single Moldova IP across throwaway .top/.icu/.xyz/.md domains with overt spam anchors. This is a PBN footprint that should be disavowed regardless of the strategic decision.</li>
+          <li><strong>The page-level errors are actively damaging trust.</strong> /contact ships a placeholder phone <code class="mono">(123) 123-1234</code>, the Colorado page has a "Smowmass" typo and a wrong Delta address, and the header phone (316-4664) disagrees with the About page (316-4644). These are credibility leaks on a brand asset.</li>
+        </ol>
+      </div>
+      <div class="verdict-card">
+        <h4>Our verdict</h4>
+        <p>This is a positioning problem disguised as an SEO problem. Chasing city head terms here would only cannibalize LPG's own facility sites, the assets that already rank and convert. Per Jim's standing "do not optimize" note on this domain, we agree the portal should not be a primary acquisition channel.</p>
+        <p>Instead: make it a <strong>credible, accurate brand hub</strong> that routes visitors to the right facility, captures only brand and operator-level category terms ("looking for storage," "leisure market storage operator"), passes link equity down to the facilities, and stops embarrassing the brand. Clean the spam, fix the errors, add it to GSC, ship basic schema. Low effort, real downside removed.</p>
+        <div class="score-row">
+          <span>HEALTH&nbsp; <b>19/100</b></span>
+          <span>PLAY&nbsp; <b>Reposition</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== STATE OF THE SITE =================== -->
+<section id="snapshot">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">01 · State of the Portal</span></div>
+    <h2>The umbrella is empty,<br>the <em class="display-italic">facilities</em> are full.</h2>
+    <p class="lede" style="margin-top:18px; max-width: 760px;">Two numbers tell the whole story. The portal earns roughly 0 to 34 organic visits a month. One facility it links to, discountselfstorage.biz, earns about 8,956. The portal is not a destination; it is a doorway nobody finds.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-label">Authority Score</div>
+        <div class="kpi-value">2<small>/100</small></div>
+        <div class="kpi-trend dn">Semrush · rank 14.0M</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Organic keywords</div>
+        <div class="kpi-value">149</div>
+        <div class="kpi-trend dn">all pos 11-92</div>
+      </div>
+      <div class="kpi cta">
+        <div class="kpi-label">Est. organic visits/mo</div>
+        <div class="kpi-value">~0</div>
+        <div class="kpi-trend dn">0 (Semrush) / 34 (DFS)</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Keywords in top 10</div>
+        <div class="kpi-value">1</div>
+        <div class="kpi-trend dn">5 in top 20</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Sister site (Discount)</div>
+        <div class="kpi-value">8.9k</div>
+        <div class="kpi-trend up">~60x the portal</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Ref domains</div>
+        <div class="kpi-value">131</div>
+        <div class="kpi-trend dn">~20/30 top = 1 PBN IP</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Search Console</div>
+        <div class="kpi-value">Off</div>
+        <div class="kpi-trend dn">not verified</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Brand AI citations</div>
+        <div class="kpi-value">0<small>/20</small></div>
+        <div class="kpi-trend dn">facilities: 13/16</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:64px;">The portal does not rank for the markets it represents</h3>
+    <p style="max-width:820px; margin-top: 12px;">For every core market query, the umbrella is absent from page 1 while the LPG facility site that lives in that market ranks. The portal's own 149 keywords nearly all resolve to one catch-all <code class="mono">/locations</code> page parked at positions 51-100.</p>
+
+    <div class="table-scroll" style="margin-top: 22px;">
+      <table>
+        <thead><tr>
+          <th>Market query</th>
+          <th>Portal position</th>
+          <th>LPG facility that ranks</th>
+          <th>Facility result</th>
+          <th>Status</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="kw">self storage gunnison</td><td>Absent (top 20)</td><td class="mono">discountselfstorage.biz</td><td>Organic #4 + sitelinks, local pack #2/#3</td><td><span class="badge crit">PORTAL OUT</span></td></tr>
+          <tr><td class="kw">storage units moab utah</td><td>Absent (top 20)</td><td class="mono">storagemoab.com</td><td>Organic #7 with sitelinks</td><td><span class="badge crit">PORTAL OUT</span></td></tr>
+          <tr><td class="kw">self storage friday harbor</td><td>Absent</td><td class="mono">fridayharborstorage.com</td><td>Cited by 3 of 4 LLMs by name</td><td><span class="badge crit">PORTAL OUT</span></td></tr>
+          <tr><td class="kw">boat / rv storage moriches</td><td>Absent</td><td class="mono">storagemoriches.com</td><td>"Most clearly RV-friendly option" (Sonar)</td><td><span class="badge crit">PORTAL OUT</span></td></tr>
+          <tr><td class="kw">parachute storage</td><td class="num">15</td><td class="mono">parachutestorage.com</td><td>Local pack #1 all terms</td><td><span class="badge high">BURIED</span></td></tr>
+          <tr><td class="kw">vail airport storage</td><td class="num">11</td><td class="mono">vailairportstorage.com</td><td>Portal's single best position</td><td><span class="badge high">BURIED</span></td></tr>
+          <tr><td class="kw">"looking for storage" (brand)</td><td class="num">11</td><td>n/a</td><td>70/mo, HIGH comp, KD 60 (a trap term)</td><td><span class="badge med">WEAK</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:64px;">Demand validates the leisure-market angle</h3>
+    <p style="max-width:820px; margin-top: 12px;">Google Trends (12 months, US). The recreational/vehicle storage terms that define LPG's leisure markets are trending up into the warm season. This demand is real, but it is captured at the facility level, not by the umbrella.</p>
+
+    <div style="margin-top: 22px; background: white; border: 1px solid var(--line); border-radius: var(--r-md); padding: 28px;">
+      <div class="bar-row"><span>rv storage (49.5k/mo, KD 23)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        <span class="bar-val">trending ↑</span>
+      </div>
+      <div class="bar-row"><span>climate controlled storage (40.5k)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="bar-val">steady</span>
+      </div>
+      <div class="bar-row"><span>boat storage (18.1k/mo)</span>
+        <div class="bar-bg"><div class="bar-fill alt" style="width:55%"></div></div>
+        <span class="bar-val">trending ↑</span>
+      </div>
+      <div class="bar-row"><span>drive up storage (2.4k/mo)</span>
+        <div class="bar-bg"><div class="bar-fill green" style="width:22%"></div></div>
+        <span class="bar-val">steady</span>
+      </div>
+      <p class="small" style="margin-top:12px;">"self storage" peaked the week of 2026-03-29 (index 100) with strong spring/summer seasonality. RV and boat storage are the leisure-market core and both trend up YoY.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== THE 5 CRITICAL FINDINGS =================== -->
+<section id="critical" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">02 · The Five Critical Findings</span></div>
+    <h2>What's <em class="display-italic">actually</em><br>wrong with the portal.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 740px;">Each was found by inspecting the live site or the search data, not by theory. Read together, they explain why a brand umbrella over a strong facility network is producing nothing, and in two cases is actively doing harm.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="findings">
+      <article class="finding">
+        <div class="num">1</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · STRATEGY</span></div>
+          <h3>The portal competes with its own facilities, and loses.</h3>
+          <p class="impact-line">Impact: 149 keywords, 0 organic visits. The facilities win every market the portal lists.</p>
+          <p>Every "See Units" CTA on the Colorado page and every market nav item leaves the domain for an individual facility site (storagemoab.com, fridayharborstorage.com, discountselfstorage.biz, slateriverstorage.com, and 6 more). That is the correct routing. The problem is the portal still tries to rank for the same city terms its children own, from one thin <code class="mono">/locations</code> page, and loses to them every time. It adds no organic value and risks splitting brand signals.</p>
+          <div class="fix"><b>Fix:</b> Stop competing. Reposition the portal to target only <em>brand</em> and <em>operator-level</em> terms ("looking for storage," "leisure market self storage," "Ludlow Property Group storage") and route all city-intent traffic to the facility sites with clean internal links. Let the facility domains keep the city head terms. <strong>This is a content/IA decision, ~1 week.</strong></p></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">2</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · BACKLINKS</span></div>
+          <h3>The link profile is a Moldovan PBN, not earned authority.</h3>
+          <p class="impact-line">Impact: 746 links / 131 ref domains, but ~20 of the top 30 share one spam IP.</p>
+          <p>Semrush shows roughly 20 of the top 30 referring domains sitting on a single Moldova IP (<code class="mono">195.20.19.178</code>) across throwaway <code class="mono">.top / .icu / .xyz / .md</code> domains. Three unrelated domains (skitownstorage.com, storage4life.com, selfstorage4life.com) share the same anchor cloud, and overt spam anchors appear in the profile ("curious why lookingforstorage.com soared ... see on seoflox.com"). This is a private blog network footprint, the kind of profile that earns manual actions, not rankings.</p>
+          <div class="fix"><b>Fix:</b> Build a disavow file for the entire PBN cluster and submit it in Google Search Console (which first requires verifying the domain, see Finding 3). Stop any active link-buying on this domain. <strong>1 day to assemble, do it regardless of the strategic decision.</strong></p></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">3</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · MEASUREMENT</span></div>
+          <h3>The portal is not verified in Google Search Console.</h3>
+          <p class="impact-line">Impact: zero first-party search data; cannot disavow, submit sitemaps, or see queries.</p>
+          <p>The LPG SEO service account holds <strong>siteFullUser on 14 properties</strong>, every other LPG domain including the facility sites for these very markets (storagemoab.com, fridayharborstorage.com, storagemoriches.com, discountselfstorage.biz). <code class="mono">lookingforstorage.com</code> is <strong>not one of them</strong>. A live pull returned 403 Forbidden. There is no query data, no index coverage report, and no way to file a disavow until this is fixed.</p>
+          <div class="fix"><b>Fix:</b> Add <code class="mono">sc-domain:lookingforstorage.com</code> as a domain property (captures www + apex + http/https) and grant the service account access. <strong>15 minutes.</strong> Do this first; it unblocks the disavow and gives a real baseline for any decision.</p></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">4</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · TRUST</span></div>
+          <h3>Placeholder data and factual errors on a live brand asset.</h3>
+          <p class="impact-line">Impact: a prospect on /contact sees a fake phone number. Credibility leak.</p>
+          <p>The crawl found, on live pages: <code class="mono">/contact</code> displays a placeholder phone <code class="mono">(123) 123-1234</code> and promises a contact form that does not exist (0 forms on the page); <code class="mono">/gunnison-valley</code> has a heading typo <strong>"Smowmass"</strong> and lists the wrong address for Delta Hwy 50 (it shows "239 N 9th Street, Montrose," which is the MSS 9th Street address); and the site phone is inconsistent, header/footer (970) 316-4664 versus the About page's (970) 316-4644. Several outbound links to facility sites and Pay Rent use insecure <code class="mono">http://</code>.</p>
+          <div class="fix"><b>Fix:</b> Replace the placeholder phone with the real number and standardize it sitewide; build or remove the promised contact form; fix the "Smowmass" typo and the Delta address; upgrade all outbound links to <code class="mono">https://</code>. <strong>Half a day of edits.</strong> These are pure downside removal.</p></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">5</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · ON-PAGE / SCHEMA</span></div>
+          <h3>No H1s, bare titles, no descriptions, no business schema, orphan pages.</h3>
+          <p class="impact-line">Impact: even brand-term ranking is handicapped; 5 pages are unreachable from nav.</p>
+          <p>The homepage and <code class="mono">/locations</code> have <strong>no H1</strong>; titles are bare ("Self Storage," "Colorado," "Locations"); 8 of 10 pages have <strong>no meta description</strong>; the homepage ships <strong>two duplicate <code class="mono">WebSite</code> JSON-LD blocks</strong> and there is <strong>no LocalBusiness / SelfStorage / Organization schema anywhere</strong>, nor any og:image. Five pages (<code class="mono">/faq</code>, <code class="mono">/contact</code>, <code class="mono">/size-guide</code>, <code class="mono">/tenant-protection</code>, <code class="mono">/blog</code>) are in the sitemap but orphaned from nav, including the only well-built page (the /faq, which has FAQPage schema). <code class="mono">/blog</code> has zero posts; <code class="mono">/tenant-protection</code> is a 56-word shell.</p>
+          <div class="fix"><b>Fix:</b> Add one real H1 per page, write unique titles + meta descriptions, deduplicate the WebSite schema and add a single Organization + per-location SelfStorage block (Section 06), link the orphan pages from the footer, and either fill or unpublish <code class="mono">/blog</code> and <code class="mono">/tenant-protection</code>. <strong>2-3 days.</strong></p></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="callout opp" style="margin-top: 36px;">
+      <strong>Bottom line:</strong> Findings 2, 3, 4 are pure risk removal you should do this week no matter what (disavow the PBN, verify in GSC, fix the fake phone and wrong address). Findings 1 and 5 are the repositioning: turn the portal into a clean hub that feeds the facilities instead of fighting them. None of this requires a big SEO budget, because the goal is not to make the portal rank for cities, it is to make it stop hurting and start helping.
+    </div>
+  </div>
+</section>
+
+<!-- =================== QUICK WINS =================== -->
+<section id="quickwins">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">03 · Quick Wins</span></div>
+    <h2>What we'd ship<br><em class="display-italic">first</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:740px;">Ordered by effort/impact. The top of this list is risk removal that pays off immediately and is worth doing even if the portal stays a minimal brand shell.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr>
+        <th style="width: 36px;">#</th>
+        <th>Action</th>
+        <th>Why it matters</th>
+        <th>Effort</th>
+        <th>Impact</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td class="kw">Verify <code class="mono">sc-domain:lookingforstorage.com</code> in GSC</td><td>Unblocks disavow, sitemaps, and a real baseline. Every other LPG site has it.</td><td>15 min</td><td><span class="badge crit">HIGH</span></td></tr>
+        <tr><td class="num">2</td><td class="kw">Disavow the Moldova PBN cluster</td><td>Removes a manual-action risk; ~20 of top 30 ref domains are spam.</td><td>1 day</td><td><span class="badge crit">HIGH</span></td></tr>
+        <tr><td class="num">3</td><td class="kw">Replace placeholder phone <code class="mono">(123) 123-1234</code></td><td>A prospect on /contact literally cannot call you. Standardize one number sitewide.</td><td>1 hr</td><td><span class="badge crit">HIGH</span></td></tr>
+        <tr><td class="num">4</td><td class="kw">Fix "Smowmass" typo + wrong Delta address</td><td>Factual errors on a brand asset erode trust and confuse NAP.</td><td>1 hr</td><td><span class="badge high">MED</span></td></tr>
+        <tr><td class="num">5</td><td class="kw">Add one real H1 + unique title/meta per page</td><td>Homepage and /locations have no H1; titles are bare ("Self Storage").</td><td>1 day</td><td><span class="badge high">MED</span></td></tr>
+        <tr><td class="num">6</td><td class="kw">Deduplicate WebSite schema; add Organization JSON-LD</td><td>Two duplicate WebSite blocks; no business schema anywhere.</td><td>0.5 day</td><td><span class="badge high">MED</span></td></tr>
+        <tr><td class="num">7</td><td class="kw">Upgrade outbound + Pay Rent links to https://</td><td>Several facility links and Pay Rent use insecure http://.</td><td>1 hr</td><td><span class="badge med">LOW</span></td></tr>
+        <tr><td class="num">8</td><td class="kw">Link orphan pages (/faq, /contact, /size-guide) from footer</td><td>5 sitemap pages are unreachable from nav; the best page (/faq) is one of them.</td><td>1 hr</td><td><span class="badge med">LOW</span></td></tr>
+        <tr><td class="num">9</td><td class="kw">Fill or unpublish /blog and /tenant-protection</td><td>/blog has 0 posts; /tenant-protection is a 56-word shell. Thin pages dilute the site.</td><td>0.5 day</td><td><span class="badge med">LOW</span></td></tr>
+        <tr><td class="num">10</td><td class="kw">Build the /locations page into a real directory</td><td>It is 58 words with no location list; the only real directory sits on /gunnison-valley.</td><td>1 day</td><td><span class="badge high">MED</span></td></tr>
+        <tr><td class="num">11</td><td class="kw">Add alt text to facility/unit images</td><td>gunnison-valley 18/19 and size-guide 8/9 images have no alt.</td><td>0.5 day</td><td><span class="badge med">LOW</span></td></tr>
+        <tr><td class="num">12</td><td class="kw">Fix tablet breakpoint (768px renders as 375px)</td><td>No tablet layout; 7,873px stacked scroll on tablet.</td><td>0.5 day</td><td><span class="badge med">LOW</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- =================== URL CATALOG =================== -->
+<section id="hierarchy" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">04 · URL &times; Error &times; Fix Catalog</span></div>
+    <h2>Every page,<br>every <em class="display-italic">defect</em>, every fix.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">The portal is small, 11 pages plus a Cubby checkout, so this catalog is complete, not a sample. Five pages are linked from nav; five are orphaned in the sitemap; one is a checkout. Each card lists the real defects from the live crawl and the exact fix.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <span class="sub-eyebrow">Linked pages (in nav / footer)</span>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.lookingforstorage.com/</div>
+          <div class="url-audit-meta">homepage · 155 words · Duda site aef754d1 · the brand front door</div>
+        </div>
+        <span class="badge crit">P0 · CRITICAL</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">No H1</div>
+          <div class="issue-current">The page has no <code>&lt;h1&gt;</code>; Google has no primary topical signal for the brand front door.</div>
+          <div class="issue-fix"><b>Fix:</b> Add <code>&lt;h1&gt;Locally owned self storage in leisure markets&lt;/h1&gt;</code> (the existing hero line).</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Bare title, no description</div>
+          <div class="issue-current">Title is literally <code>Self Storage</code> (12 chars); no meta description; no og:image.</div>
+          <div class="issue-fix"><b>Fix:</b> <code>Looking For Storage | Locally Owned Self Storage in CO, UT, WA, TX &amp; NY</code> + 150-char description + og:image.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Duplicate WebSite schema</div>
+          <div class="issue-current">Two identical <code>WebSite</code> JSON-LD blocks ship on the page; no Organization or LocalBusiness markup.</div>
+          <div class="issue-fix"><b>Fix:</b> Remove one block; add a single <code>Organization</code> with the 5 markets as <code>areaServed</code> (Section 06).</div>
+        </div>
+        <div class="url-issue warn">
+          <div class="issue-name">Thin + CWV</div>
+          <div class="issue-current">155 words; mobile LCP 3.2s, CLS 0.177; 14 render-blocking scripts (Lighthouse Perf 71).</div>
+          <div class="issue-fix"><b>Fix:</b> Expand to ~400 words of brand/operator copy; set image dimensions to kill CLS; defer non-critical scripts.</div>
+        </div>
+        <div class="url-issue ok">
+          <div class="issue-name">Routing model is correct</div>
+          <div class="issue-current">CTAs correctly hand off to facility sites; this is the right job for the portal.</div>
+          <div class="issue-fix"><b>Keep:</b> lean into this, make the page a clean router, not a city-ranking competitor.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.lookingforstorage.com/locations</div>
+          <div class="url-audit-meta">58 words · holds 132 of 149 ranking keywords · positions 51-100</div>
+        </div>
+        <span class="badge crit">P0 · CRITICAL</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">No H1, near-empty</div>
+          <div class="issue-current">58 words, no H1, and <strong>no actual location list</strong>, yet this single URL holds 132 of the site's 149 keywords (all buried page 5+).</div>
+          <div class="issue-fix"><b>Fix:</b> Rebuild into a real directory: H1, a card per market (CO / UT / WA / TX / NY) with address, hours, and an https link to each facility site.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Catch-all keyword sink</div>
+          <div class="issue-current">Because there are no per-market pages, every market query collapses onto this one weak URL and none reach page 1.</div>
+          <div class="issue-fix"><b>Fix:</b> If kept for SEO, split into per-region sections with internal anchors; otherwise route to facility sites and de-emphasize.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">No meta description</div>
+          <div class="issue-current">Missing description; this is the page most queries land on.</div>
+          <div class="issue-fix"><b>Fix:</b> "Find a Looking For Storage facility near you across Colorado, Utah, Washington, Texas and New York."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.lookingforstorage.com/gunnison-valley</div>
+          <div class="url-audit-meta">314 words · the only real market page · "Colorado" content under a "gunnison" slug</div>
+        </div>
+        <span class="badge crit">P0 · TRUST</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">Factual errors</div>
+          <div class="issue-current">Heading typo <code>"Smowmass"</code>; Delta Hwy 50 shows the wrong address (<code>239 N 9th Street, Montrose</code>, which is MSS 9th Street's).</div>
+          <div class="issue-fix"><b>Fix:</b> Correct to "Snowmass"; set Delta to <code>694 US-50, Delta, CO</code>. Verify every address against the LPG registry.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Slug/content mismatch</div>
+          <div class="issue-current">Slug is <code>/gunnison-valley</code> but the content covers all 16 Colorado facilities, confusing relevance.</div>
+          <div class="issue-fix"><b>Fix:</b> Rename to <code>/colorado</code> (301 the old slug) or scope content to the Gunnison Valley only.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Alt text missing</div>
+          <div class="issue-current">18 of 19 images have no alt attribute.</div>
+          <div class="issue-fix"><b>Fix:</b> Add descriptive alt ("Drive-up storage units at Discount Self Storage, Gunnison CO").</div>
+        </div>
+        <div class="url-issue warn">
+          <div class="issue-name">Has H1, missing description</div>
+          <div class="issue-current">An H1 is present (good), but the page has no meta description.</div>
+          <div class="issue-fix"><b>Fix:</b> Add a Colorado-scoped meta description.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.lookingforstorage.com/about-us</div>
+          <div class="url-audit-meta">506 words · strongest page on the site · team bios</div>
+        </div>
+        <span class="badge high">P1 · POLISH</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue ok">
+          <div class="issue-name">Real content + H1</div>
+          <div class="issue-current">506 words with team bios; this is the page that should carry the brand story and AI trust signals.</div>
+          <div class="issue-fix"><b>Keep:</b> this is the model for what the homepage should look like.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Phone inconsistency</div>
+          <div class="issue-current">Lists Kris at (970) 316-46<strong>44</strong>; header/footer use (970) 316-46<strong>64</strong>.</div>
+          <div class="issue-fix"><b>Fix:</b> Reconcile to one correct number; mismatched NAP hurts local trust.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">No meta description / schema</div>
+          <div class="issue-current">No description; no Organization/Person schema despite real named people.</div>
+          <div class="issue-fix"><b>Fix:</b> Add description + Organization with <code>employee</code>/<code>founder</code> Person nodes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.lookingforstorage.com/terms-and-conditions</div>
+          <div class="url-audit-meta">2,221 words · complete · legal</div>
+        </div>
+        <span class="badge med">P2 · OK</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue ok">
+          <div class="issue-name">Complete</div>
+          <div class="issue-current">Full T&amp;C content present.</div>
+          <div class="issue-fix"><b>Keep:</b> add a meta description and <code>noindex</code> if you do not want it competing for crawl attention.</div>
+        </div>
+      </div>
+    </div>
+
+    <span class="sub-eyebrow">Orphaned pages (in sitemap.xml, not linked anywhere)</span>
+
+    <div class="url-group warn">
+      <h4>Five pages are published but unreachable from navigation</h4>
+      <p>All five sit in <code class="mono">sitemap.xml</code> at priority 1.0 but are linked from no menu or footer, so users never reach them and link equity is wasted. One of them is the best-built page on the entire site.</p>
+      <div class="url-list">
+        <span><code>/faq</code> <span class="cnt">425 words, FAQPage schema, has meta desc, the best page, orphaned</span></span>
+        <span><code>/contact</code> <span class="cnt">placeholder phone, promised form missing</span></span>
+        <span><code>/size-guide</code> <span class="cnt">335 words, 8/9 images no alt</span></span>
+        <span><code>/tenant-protection</code> <span class="cnt">56-word stub, body empty</span></span>
+        <span><code>/blog</code> <span class="cnt">zero posts, has meta desc</span></span>
+      </div>
+      <div class="group-fix"><b>Template-level fix:</b> Link <code>/faq</code>, <code>/contact</code>, and <code>/size-guide</code> from the footer immediately (they are genuinely useful). <b>Fix</b> <code>/contact</code>'s placeholder phone and build/remove the form. <b>Unpublish</b> <code>/blog</code> (empty) and <code>/tenant-protection</code> (stub) until they have real content, or remove them from the sitemap so they stop signaling thin content.</div>
+    </div>
+
+    <div class="url-group opp">
+      <h4>The /faq page is a hidden asset, surface it</h4>
+      <p>It is the only page with valid <code class="mono">FAQPage</code> schema and a real meta description. Surfacing it (footer link + a homepage FAQ teaser) makes the portal eligible for FAQ rich results and feeds AI assistants the operator-level answers they cite.</p>
+      <div class="group-fix"><b>Move:</b> link it sitewide, expand to the 12 operator-level questions in Section 07, and keep its schema. This is the cheapest AI-visibility win on the portal.</div>
+    </div>
+
+    <div class="url-group">
+      <h4>Off-domain routing: the portal correctly hands off to 10 facility domains</h4>
+      <p>"See Units" and market nav items link out to the individual facility Duda sites. This is the right model for a hub, but three market links and Pay Rent use insecure <code class="mono">http://</code>.</p>
+      <div class="url-list">
+        <span><code>storagemoab.com</code> <span class="cnt">UT</span></span>
+        <span><code>fridayharborstorage.com</code> <span class="cnt">WA · http</span></span>
+        <span><code>storagemoriches.com</code> <span class="cnt">NY · http</span></span>
+        <span><code>southpadrestorage.com</code> <span class="cnt">TX · http</span></span>
+        <span><code>discountselfstorage.biz</code> <span class="cnt">CO</span></span>
+        <span><code>slateriverstorage.com</code> <span class="cnt">CO</span></span>
+        <span><code>elkmountainstorage.com</code> <span class="cnt">CO</span></span>
+        <span><code>snowmassselfstorage.com</code> <span class="cnt">CO</span></span>
+        <span><code>vailairportstorage.com</code> <span class="cnt">CO</span></span>
+        <span><code>lookingforstorage.cubby.cc</code> <span class="cnt">Pay Rent · http</span></span>
+      </div>
+      <div class="group-fix"><b>Fix:</b> Upgrade all outbound links to <code>https://</code>. Keep the handoff model; this is exactly how a parent hub should pass visitors (and link equity) down to the facilities.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== KEYWORD STRATEGY =================== -->
+<section id="keywords">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">05 · Keyword Strategy</span></div>
+    <h2>Stop chasing cities.<br>Own the <em class="display-italic">operator</em> layer.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">The facility sites should keep the city head terms; they already rank for them. The portal's lane is the operator/brand and "discount/deals/prices" category layer where a sibling already ranks page 1 and the umbrella can consolidate without cannibalizing.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <h3>Portal lane: brand + operator + category (do not cannibalize facilities)</h3>
+    <p style="max-width:780px; margin-top:10px;">Keyword-gap terms where an LPG sibling already ranks page 1 but the portal is absent. These are commercial, non-geographic, and a natural fit for an umbrella brand.</p>
+    <div class="table-scroll" style="margin-top:18px;">
+    <table>
+      <thead><tr><th>Keyword</th><th class="num">US volume</th><th>Best LPG rank today</th><th>Portal target</th></tr></thead>
+      <tbody>
+        <tr><td class="kw">discount self storage</td><td class="num">720</td><td>sibling #2</td><td><span class="badge opp">HUB PAGE</span></td></tr>
+        <tr><td class="kw">discount storage</td><td class="num">1,300</td><td>sibling #7</td><td><span class="badge opp">HUB PAGE</span></td></tr>
+        <tr><td class="kw">self storage near me prices</td><td class="num">2,400</td><td>sibling #13</td><td><span class="badge high">CONTENT</span></td></tr>
+        <tr><td class="kw">self storage deals near me</td><td class="num">1,900</td><td>sibling #12</td><td><span class="badge high">CONTENT</span></td></tr>
+        <tr><td class="kw">discount storage units near me</td><td class="num">320</td><td>sibling #5</td><td><span class="badge opp">HUB PAGE</span></td></tr>
+        <tr><td class="kw">outdoor storage facilities near me</td><td class="num">590</td><td>sibling #26</td><td><span class="badge high">CONTENT</span></td></tr>
+        <tr><td class="kw">storage unit discounts</td><td class="num">480</td><td>sibling #21</td><td><span class="badge high">CONTENT</span></td></tr>
+        <tr><td class="kw">looking for storage (brand)</td><td class="num">70</td><td>portal #11</td><td><span class="badge brand">DEFEND</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 style="margin-top:56px;">Facility lane: leave these to the children</h3>
+    <p style="max-width:780px; margin-top:10px;">High-volume use-case demand that validates the leisure-market angle, but should be captured on the facility domains (which already rank), not the portal. The portal should link to them, not compete.</p>
+    <div class="table-scroll" style="margin-top:18px;">
+    <table>
+      <thead><tr><th>Keyword</th><th class="num">US volume</th><th class="num">KD</th><th>Owner</th></tr></thead>
+      <tbody>
+        <tr><td class="kw">rv storage</td><td class="num">49,500</td><td class="num">23</td><td>Facility (Eagle Canopy, Moriches, Parachute)</td></tr>
+        <tr><td class="kw">climate controlled storage</td><td class="num">40,500</td><td class="num">20</td><td>Facility (Slate River, Vail Airport)</td></tr>
+        <tr><td class="kw">boat storage</td><td class="num">18,100</td><td class="num">&ndash;</td><td>Facility (Moriches, Friday Harbor)</td></tr>
+        <tr><td class="kw">drive up storage</td><td class="num">2,400</td><td class="num">&ndash;</td><td>Facility (all)</td></tr>
+        <tr><td class="kw">self storage gunnison</td><td class="num">local</td><td class="num">&ndash;</td><td>discountselfstorage.biz (#4)</td></tr>
+        <tr><td class="kw">storage units moab utah</td><td class="num">210</td><td class="num">low</td><td>storagemoab.com (#7)</td></tr>
+        <tr><td class="kw">friday harbor storage</td><td class="num">local</td><td class="num">&ndash;</td><td>fridayharborstorage.com</td></tr>
+        <tr><td class="kw">boat / rv storage moriches</td><td class="num">local</td><td class="num">&ndash;</td><td>storagemoriches.com</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout warn" style="margin-top:28px;"><strong>The "looking for storage" trap:</strong> the brand term itself is only 70/mo with HIGH competition and KD 60 because it collides with the generic phrase "looking for storage." Defend it, but do not mistake it for a growth channel. The portal's real value is consolidation and routing, not head-term volume.</div>
+  </div>
+</section>
+
+<!-- =================== SCHEMA =================== -->
+<section id="schema" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">06 · Schema Markup Plan</span></div>
+    <h2>Give machines a<br><em class="display-italic">map</em> of the network.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">The portal ships two duplicate WebSite blocks and nothing else. For an umbrella brand, schema's job is to tell search engines and AI assistants that one operator runs many facilities across five states, and to make the orphaned /faq eligible for rich results.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="two-col">
+      <div>
+        <h4>Phase 1, this week (with the quick wins)</h4>
+        <ul>
+          <li><strong>Deduplicate</strong> the WebSite JSON-LD to one block.</li>
+          <li><strong>Organization</strong> on the homepage with all five markets as <code class="mono">areaServed</code> and each facility site in <code class="mono">subOrganization</code> / <code class="mono">sameAs</code>.</li>
+          <li><strong>FAQPage</strong> kept on /faq and surfaced sitewide.</li>
+        </ul>
+        <h4 style="margin-top:24px;">Phase 2, the hub</h4>
+        <ul>
+          <li><strong>SelfStorage</strong> (or LocalBusiness) node per market on /locations, each <code class="mono">sameAs</code> the facility domain.</li>
+          <li><strong>BreadcrumbList</strong> on every page.</li>
+          <li><strong>Person</strong> nodes on /about-us for the named team.</li>
+        </ul>
+        <div class="callout opp" style="margin-top:20px;">AI assistants preferentially cite entities with structured data. An Organization graph linking the umbrella to 18 facilities is exactly the signal that could get "Looking For Storage" mentioned as the operator behind facilities the LLMs already cite.</div>
+      </div>
+      <div>
+        <h4>Organization (homepage)</h4>
+        <pre class="code"><span class="c">// one block, replaces the two WebSite dupes</span>
+{
+  <span class="k">"@context"</span>: <span class="s">"https://schema.org"</span>,
+  <span class="k">"@type"</span>: <span class="s">"Organization"</span>,
+  <span class="k">"name"</span>: <span class="s">"Looking For Storage"</span>,
+  <span class="k">"url"</span>: <span class="s">"https://www.lookingforstorage.com/"</span>,
+  <span class="k">"telephone"</span>: <span class="s">"+1-970-316-4664"</span>,
+  <span class="k">"email"</span>: <span class="s">"Help@LookingForStorage.com"</span>,
+  <span class="k">"areaServed"</span>: [
+    <span class="s">"Gunnison Valley, CO"</span>, <span class="s">"Moab, UT"</span>,
+    <span class="s">"Friday Harbor, WA"</span>, <span class="s">"South Padre Island, TX"</span>,
+    <span class="s">"Moriches, NY"</span>
+  ],
+  <span class="k">"sameAs"</span>: [
+    <span class="s">"https://www.discountselfstorage.biz/"</span>,
+    <span class="s">"https://www.storagemoab.com/"</span>,
+    <span class="s">"https://www.fridayharborstorage.com/"</span>,
+    <span class="s">"https://www.storagemoriches.com/"</span>
+  ]
+}</pre>
+        <h4 style="margin-top:18px;">SelfStorage (per market, on /locations)</h4>
+        <pre class="code">{
+  <span class="k">"@context"</span>: <span class="s">"https://schema.org"</span>,
+  <span class="k">"@type"</span>: <span class="s">"SelfStorage"</span>,
+  <span class="k">"name"</span>: <span class="s">"Discount Self Storage, Gunnison"</span>,
+  <span class="k">"parentOrganization"</span>: <span class="s">"Looking For Storage"</span>,
+  <span class="k">"address"</span>: { <span class="k">"@type"</span>: <span class="s">"PostalAddress"</span>,
+    <span class="k">"addressLocality"</span>: <span class="s">"Gunnison"</span>,
+    <span class="k">"addressRegion"</span>: <span class="s">"CO"</span> },
+  <span class="k">"url"</span>: <span class="s">"https://www.discountselfstorage.biz/"</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTENT STRATEGY =================== -->
+<section id="content">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">07 · Content Strategy</span></div>
+    <h2>Content the umbrella<br>can own <em class="display-italic">honestly</em>.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">The portal should not write "self storage in [city]" pages; the facilities own those. It should own operator-level, cross-market, and trust content, the kind a multi-state brand can publish credibly and that AI assistants cite for "how does storage work" questions.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <h3>10-piece hub roadmap (operator-level, non-cannibalizing)</h3>
+    <div class="table-scroll" style="margin-top:18px;">
+    <table>
+      <thead><tr><th style="width:34px;">#</th><th>Piece</th><th>Target intent</th><th>Why the umbrella, not a facility</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td class="kw">Rebuilt /locations directory hub</td><td>brand + "storage near me"</td><td>Only the parent can show all 5 markets at once</td></tr>
+        <tr><td class="num">2</td><td class="kw">"What size storage unit do I need?" + calculator</td><td>2,900/mo informational</td><td>Cross-market; feeds every facility</td></tr>
+        <tr><td class="num">3</td><td class="kw">"How much does a storage unit cost?" guide</td><td>18,100/mo informational</td><td>Operator authority; AI-citable</td></tr>
+        <tr><td class="num">4</td><td class="kw">Leisure-market storage guide (ski / boat / RV towns)</td><td>category/brand</td><td>The umbrella's unique angle</td></tr>
+        <tr><td class="num">5</td><td class="kw">RV &amp; boat storage explainer, link to facilities</td><td>49.5k + 18.1k category</td><td>Routes to Eagle Canopy, Moriches, Parachute</td></tr>
+        <tr><td class="num">6</td><td class="kw">Climate-controlled vs drive-up explainer</td><td>40.5k category</td><td>Routes to Slate River, Vail Airport</td></tr>
+        <tr><td class="num">7</td><td class="kw">Expanded /faq (12 operator questions)</td><td>FAQ rich result + AI</td><td>Already has schema; just orphaned</td></tr>
+        <tr><td class="num">8</td><td class="kw">"Why locally owned storage" brand page</td><td>brand differentiation</td><td>Pure operator story</td></tr>
+        <tr><td class="num">9</td><td class="kw">Moving to/from a resort town checklist</td><td>seasonal informational</td><td>Cross-market, seasonal traffic</td></tr>
+        <tr><td class="num">10</td><td class="kw">Tenant protection / insurance explainer (fix the stub)</td><td>trust + conversion</td><td>Replaces the 56-word shell</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout" style="margin-top:28px;"><strong>The seasonal layer is the umbrella's unfair advantage.</strong> These are the cross-market, seasonal topics no single facility site can own, and the clearest path to AI citations: <strong>winter boat storage</strong> (Moriches / Friday Harbor / SPI, Sep-Dec), <strong>ski &amp; snowboard gear storage</strong> (Crested Butte / Gunnison, Sep-Nov), <strong>snowbird / Winter Texan storage</strong> (South Padre Island, Oct-Dec), <strong>Jeep / off-road / UTV storage</strong> (Moab), <strong>college summer storage</strong> (Gunnison + Long Island, Jun-Aug), and <strong>hurricane-season storage</strong> (SPI, Jun-Nov). Publish a single "Seasonal Storage Calendar" hub and route each entry to the facility that serves it.</div>
+
+    <h3 style="margin-top:56px;">12 operator-level questions for the /faq (FAQPage schema)</h3>
+    <div class="three-col" style="margin-top:18px; font-size:14.5px;">
+      <div>
+        <strong>Cost &amp; sizing</strong>
+        <ul>
+          <li>How much does a storage unit cost per month?</li>
+          <li>What size unit do I need?</li>
+          <li>How big is a 10x10 unit?</li>
+          <li>Do you offer discounts or move-in specials?</li>
+        </ul>
+      </div>
+      <div>
+        <strong>How it works</strong>
+        <ul>
+          <li>How do I rent and pay online?</li>
+          <li>Is there a long-term contract? (month-to-month)</li>
+          <li>What do I need to bring to move in?</li>
+          <li>Do you require insurance / tenant protection?</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Leisure-market specifics</strong>
+        <ul>
+          <li>Do you store RVs, boats, and trailers?</li>
+          <li>Do you have climate-controlled units?</li>
+          <li>Which locations have 24/7 drive-up access?</li>
+          <li>Which states and towns do you serve?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== BACKLINKS =================== -->
+<section id="backlinks" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">08 · Backlink Strategy</span></div>
+    <h2>First <em class="display-italic">subtract</em>,<br>then add.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">This is the rare domain where the priority is removing links, not building them. The existing profile is a spam network. Disavow it, then earn a small number of legitimate citations that befit a real multi-state operator.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="url-group warn">
+      <h4>Tier 0, disavow (do this first)</h4>
+      <p>Approximately 20 of the top 30 referring domains resolve to one Moldova IP (<code class="mono">195.20.19.178</code>) across throwaway <code class="mono">.top / .icu / .xyz / .md</code> domains, with overt spam anchors. Three unrelated domains (skitownstorage.com, storage4life.com, selfstorage4life.com) share the cloud.</p>
+      <div class="group-fix"><b>Action:</b> Assemble a domain-level disavow for the whole cluster and submit via GSC (after verifying the domain, Finding 3). Stop any paid link activity on this domain.</div>
+    </div>
+
+    <div class="two-col" style="margin-top:8px;">
+      <div>
+        <h4>Tier 1, listings &amp; directories (claim per facility, feeds AI)</h4>
+        <ul>
+          <li>Google Business Profile, Bing Places, Apple Business Connect</li>
+          <li>SpareFoot, StorageCafe, SelfStorage.com, Storage.com</li>
+          <li>RentCafe, Yelp, MapQuest, MoversCorp</li>
+          <li>U-Haul affiliate listings, Storagefront (relevant, AS 27)</li>
+        </ul>
+        <p class="small">These are the actual SERP competitors in this niche; claiming and standardizing each facility's listing is the realistic citation play, and it feeds AI answers directly.</p>
+      </div>
+      <div>
+        <h4>Tier 2, industry &amp; brand authority</h4>
+        <ul>
+          <li>Self Storage Association (SSA) + the CO, TX, WA and NY state storage associations</li>
+          <li>Better Business Bureau</li>
+          <li>ludlowpropertygroup.com (the one legit link today) + a footer link from each facility site to the hub</li>
+          <li>Local news / "best of" roundups per resort town</li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-col" style="margin-top:24px;">
+      <div>
+        <h4>Tier 3, per-market local partners</h4>
+        <ul>
+          <li>Chambers of commerce + tourism bureaus: Discover Moab, San Juan Islands Visitors Bureau, Visit South Padre Island, Gunnison-Crested Butte Tourism, Discover Long Island</li>
+          <li>Cross-link partners: marinas, RV parks, and ski resorts in each market</li>
+          <li>Seasonal "moving to a ski/beach town" pieces pitched to regional outlets</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tier 4, internal (free, high value)</h4>
+        <ul>
+          <li>A footer link from each of the 10+ facility sites back to the hub, building a clean internal brand graph instead of a spam external one</li>
+          <li>The cost/size/seasonal guides (Section 07) as linkable reference assets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== COMPETITIVE =================== -->
+<section id="competitive">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">09 · Competitive Landscape</span></div>
+    <h2>The portal competes<br>with <em class="display-italic">directories</em>, not operators.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 760px;">Because the umbrella ranks in the page-2-to-10 neighborhood, its "competitors" are aggregators, not other storage brands. The real operators it should be measured against are LPG's own facility sites, which already win.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Domain</th><th>Type</th><th class="num">Keyword overlap</th><th class="num">Avg pos</th><th>Read</th></tr></thead>
+      <tbody>
+        <tr><td class="kw">mapquest.com</td><td>Directory</td><td class="num">80</td><td class="num">10.4</td><td>Outranks portal on shared terms</td></tr>
+        <tr><td class="kw">sparefoot.com</td><td>Aggregator</td><td class="num">76</td><td class="num">18.5</td><td>List each facility here</td></tr>
+        <tr><td class="kw">rentcafe.com</td><td>Aggregator</td><td class="num">75</td><td class="num">12.9</td><td>List each facility here</td></tr>
+        <tr><td class="kw">selfstorage.com</td><td>Aggregator</td><td class="num">69</td><td class="num">25.8</td><td>List each facility here</td></tr>
+        <tr><td class="kw">uhaul.com</td><td>Aggregator</td><td class="num">63</td><td class="num">22.6</td><td>Affiliate listings</td></tr>
+        <tr><td class="kw">discountselfstorage.biz</td><td><b>LPG facility</b></td><td class="num">&ndash;</td><td class="num">#4</td><td>~8,956 visits/mo, the benchmark</td></tr>
+        <tr><td class="kw">gunnisonsecurestorage.com</td><td>Real operator</td><td class="num">&ndash;</td><td class="num">&ndash;</td><td>284 visits/mo, beats portal</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="quote">The portal competes in the same low SERP neighborhood as listing sites, not as a destination brand. Its job is to feed the operators that win, not to imitate the directories that list them.
+      <cite>ThinkFlowLabs analysis, DataForSEO + Semrush competitor data, June 2026</cite>
+    </div>
+
+    <div class="callout opp" style="margin-top:8px;"><strong>The precedent for the hub model:</strong> Every major operator (Extra Space, Public Storage, CubeSmart, U-Haul) and, most relevantly, the closest multi-brand analog, National Storage Affiliates, which runs <em>iStorage, RightSpace and SecurCare on one domain with locally-branded location pages</em>, consolidates authority on a single hub while preserving local identity. That is the "upgrade, don't retire" template for lookingforstorage.com. The caveat for LPG: the facility domains currently hold all the SEO and AI equity, so any future 301 consolidation must transfer it carefully. The low-risk near-term path is to build the portal into a content + directory hub first and keep the facility sites live, exactly the Sprint 1-2 plan in Section 11.</div>
+  </div>
+</section>
+
+<!-- =================== LLM VISIBILITY =================== -->
+<section id="llm" class="dark">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar" style="background:#8FD3E0;"></span><span class="eyebrow" style="color:#8FD3E0;">10 · AI / LLM Visibility</span></div>
+    <h2>Zero citations<br>for the brand. <em class="display-italic">Yet.</em></h2>
+    <p class="lede" style="margin-top: 18px; max-width: 780px; color:#D8CDB5;">We asked the four flagship models powering AI search the same five questions a real customer would ask, with web search on. "Looking For Storage" was recommended in <strong>none</strong> of the 20 answers. The facilities it represents were named in <strong>13 of 16</strong> applicable cells. The umbrella is invisible to AI; the network is not.</p>
+
+    <div style="background:#11151B; border:1px solid #2A3038; border-radius:18px; padding:30px 34px; margin:32px 0;">
+      <div style="font-family:var(--mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#8FD3E0; margin-bottom:18px;">user_prompt · web_search = true · same string to all 4 models</div>
+      <ol style="font-family:var(--serif); font-size:20px; line-height:1.5; color:#F2EAD7; margin:0; padding-left:22px;">
+        <li>Best self storage in Gunnison Valley, Colorado</li>
+        <li>How do I rent a self storage unit in Moab, Utah?</li>
+        <li>Self storage on South Padre Island, Texas</li>
+        <li>How much does self storage cost in Friday Harbor, Washington?</li>
+        <li>Boat and RV storage in Moriches, Long Island, New York</li>
+      </ol>
+    </div>
+
+    <h3 style="color:#F6E7C7; margin-top:40px;">Matrix A, did the model recommend the PARENT BRAND?</h3>
+    <div class="table-scroll" style="margin-top:16px;">
+    <table class="matrix" style="background:#11151B; color:#E7DFD0; border-color:#2A3038;">
+      <thead><tr style="background:#181D24;">
+        <th style="background:#181D24; color:#8FD3E0;">Prompt</th>
+        <th style="background:#181D24; color:#8FD3E0;">Claude S4.6</th>
+        <th style="background:#181D24; color:#8FD3E0;">Gemini 3.1 Pro</th>
+        <th style="background:#181D24; color:#8FD3E0;">GPT-5.5</th>
+        <th style="background:#181D24; color:#8FD3E0;">Sonar Reasoning Pro</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="background:#11151B;">1 · Gunnison Valley</td><td class="miss"></td><td class="soft">grounding only</td><td class="miss"></td><td class="miss"></td></tr>
+        <tr><td style="background:#11151B;">2 · Moab rent</td><td class="miss"></td><td class="miss"></td><td class="miss"></td><td class="miss"></td></tr>
+        <tr><td style="background:#11151B;">3 · South Padre</td><td class="miss"></td><td class="miss"></td><td class="miss"></td><td class="miss"></td></tr>
+        <tr><td style="background:#11151B;">4 · Friday Harbor cost</td><td class="miss"></td><td class="miss"></td><td class="miss"></td><td class="miss"></td></tr>
+        <tr><td style="background:#11151B;">5 · Moriches boat/RV</td><td class="miss"></td><td class="miss"></td><td class="miss"></td><td class="miss"></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="color:#9A937F; margin-top:10px;">Hard brand citations: 0 / 20. Soft (silent grounding source only): 1 / 20.</p>
+
+    <h3 style="color:#F6E7C7; margin-top:44px;">Matrix B, did the model cite a LPG FACILITY (the siblings)?</h3>
+    <div class="table-scroll" style="margin-top:16px;">
+    <table class="matrix" style="background:#11151B; color:#E7DFD0; border-color:#2A3038;">
+      <thead><tr style="background:#181D24;">
+        <th style="background:#181D24; color:#8FD3E0;">Prompt (market)</th>
+        <th style="background:#181D24; color:#8FD3E0;">Claude</th>
+        <th style="background:#181D24; color:#8FD3E0;">Gemini</th>
+        <th style="background:#181D24; color:#8FD3E0;">GPT-5.5</th>
+        <th style="background:#181D24; color:#8FD3E0;">Sonar</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="background:#11151B;">1 · Gunnison (Discount/Slate/Elk)</td><td class="hit">✓</td><td class="hit">✓</td><td class="hit">✓</td><td class="hit">✓</td></tr>
+        <tr><td style="background:#11151B;">2 · Moab (Moab Self Storage)</td><td class="hit">✓</td><td class="hit">✓</td><td class="hit">✓</td><td class="hit">✓</td></tr>
+        <tr><td style="background:#11151B;">3 · South Padre (none operated)</td><td class="miss">n/a</td><td class="miss">n/a</td><td class="miss">n/a</td><td class="miss">n/a</td></tr>
+        <tr><td style="background:#11151B;">4 · Friday Harbor (FH Storage)</td><td class="hit">✓</td><td class="hit">✓</td><td class="miss"></td><td class="hit">✓</td></tr>
+        <tr><td style="background:#11151B;">5 · Moriches (Moriches Storage)</td><td class="miss"></td><td class="hit">✓</td><td class="miss"></td><td class="hit">✓</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="color:#9A937F; margin-top:10px;">Facility citations: 13 / 16 applicable cells (81%). The network is highly visible; the umbrella is not.</p>
+
+    <h3 style="color:#F6E7C7; margin-top:44px;">Who AI recommends in LPG's markets</h3>
+    <div style="margin-top:18px; background:#11151B; border:1px solid #2A3038; border-radius:10px; padding:26px;">
+      <div class="bar-row"><span style="color:#E7DFD0;">LPG facility sites (combined)</span>
+        <div class="bar-bg" style="background:#222831;"><div class="bar-fill green" style="width:81%"></div></div>
+        <span class="bar-val" style="color:#C9C1AE;">13/16</span>
+      </div>
+      <div class="bar-row"><span style="color:#E7DFD0;">Aggregators (SpareFoot, RentCafe, U-Haul)</span>
+        <div class="bar-bg" style="background:#222831;"><div class="bar-fill alt" style="width:70%"></div></div>
+        <span class="bar-val" style="color:#C9C1AE;">most</span>
+      </div>
+      <div class="bar-row"><span style="color:#E7DFD0;">Local competitors (Gunnison Secure, etc.)</span>
+        <div class="bar-bg" style="background:#222831;"><div class="bar-fill" style="width:45%"></div></div>
+        <span class="bar-val" style="color:#C9C1AE;">often</span>
+      </div>
+      <div class="bar-row"><span style="color:#E7DFD0;">LookingForStorage (parent brand)</span>
+        <div class="bar-bg" style="background:#222831;"><div class="bar-fill" style="width:3%; background:#5A4A4A;"></div></div>
+        <span class="bar-val" style="color:#C9C1AE;">0/20</span>
+      </div>
+    </div>
+
+    <div class="callout" style="background:#1C2A2E; border-color:#2F4A52; color:#CFE8EE; margin-top:36px;">
+      <strong>The signal that matters:</strong> Gemini pulled <code class="mono">lookingforstorage.com</code> as a silent grounding source for the Gunnison query, alongside slateriverstorage.com and discountselfstorage.biz. The crawlers already associate the umbrella with the network. With an Organization schema graph (Section 06) and an accurate, linked hub, "Looking For Storage" could become the named operator AI cites behind facilities it already recommends. The path from 0 to cited runs through schema and accuracy, not through chasing city head terms.
+    </div>
+
+    <div class="callout warn" style="background:#2A2418; border-color:#4A3F22; color:#F0DDB0; margin-top:20px;">
+      <strong>One facility-level AEO gap to fix in parallel:</strong> a separate scan (gpt-4o, web search) cited Moab Self Storage and Elk Mountain Storage on their <em>own domains</em>, but <strong>Discount Self Storage (Gunnison) surfaced only through a MapQuest listing, not discountselfstorage.biz</strong>. That facility site needs the same schema, amenity tags and review depth its siblings have, so it earns its own-domain citation rather than renting one from a directory.
+    </div>
+  </div>
+</section>
+
+<!-- =================== ROADMAP =================== -->
+<section id="roadmap" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">11 · 90-Day Roadmap</span></div>
+    <h2>From liability<br>to <em class="display-italic">clean hub</em>.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 740px;">Scoped to match the strategy: remove risk first, reposition second, and only invest in growth content if LPG decides the hub is worth it. This is deliberately lightweight, the facilities remain the acquisition engine.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="roadmap">
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Sprint 1 · Days 1-30</div>
+        <h3>Stop the bleeding</h3>
+        <ul>
+          <li><span class="check"></span> <span>Verify <code class="mono">sc-domain</code> in GSC + grant service account</span> <span class="pri">P0</span></li>
+          <li><span class="check"></span> <span>Disavow the Moldova PBN cluster</span> <span class="pri">P0</span></li>
+          <li><span class="check"></span> <span>Replace placeholder phone; standardize NAP</span> <span class="pri">P0</span></li>
+          <li><span class="check"></span> <span>Fix "Smowmass" + wrong Delta address</span> <span class="pri">P0</span></li>
+          <li><span class="check"></span> <span>Add H1s + titles + meta descriptions</span> <span class="pri">P1</span></li>
+          <li><span class="check"></span> <span>Dedupe WebSite schema; add Organization</span> <span class="pri">P1</span></li>
+          <li><span class="check"></span> <span>https on all outbound + Pay Rent links</span> <span class="pri">P1</span></li>
+        </ul>
+      </div>
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Sprint 2 · Days 31-60</div>
+        <h3>Reposition as a hub</h3>
+        <ul>
+          <li><span class="check"></span> <span>Rebuild /locations into a real 5-market directory</span> <span class="pri">P1</span></li>
+          <li><span class="check"></span> <span>Link orphan pages from footer; surface /faq</span> <span class="pri">P1</span></li>
+          <li><span class="check"></span> <span>Fill or unpublish /blog + /tenant-protection</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>Per-market SelfStorage schema, sameAs facilities</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>Footer link from each facility site to the hub</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>Claim/clean facility listings on SpareFoot, StorageCafe, RentCafe</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>Fix tablet breakpoint + image alt text</span> <span class="pri">P3</span></li>
+        </ul>
+      </div>
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Sprint 3 · Days 61-90</div>
+        <h3>Optional growth (decision gate)</h3>
+        <ul>
+          <li><span class="check"></span> <span>Decide: minimal shell vs invested hub</span> <span class="pri">GATE</span></li>
+          <li><span class="check"></span> <span>If invested: cost + size guides (cross-market)</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>RV/boat + climate explainers routing to facilities</span> <span class="pri">P2</span></li>
+          <li><span class="check"></span> <span>Expand /faq to 12 operator questions</span> <span class="pri">P3</span></li>
+          <li><span class="check"></span> <span>Chamber + tourism board citations per market</span> <span class="pri">P3</span></li>
+          <li><span class="check"></span> <span>Re-run the 5x4 LLM test to measure brand lift</span> <span class="pri">P3</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px;">Targets, 90 days</h3>
+    <div class="kpi-grid" style="margin-top:18px;">
+      <div class="kpi cta"><div class="kpi-label">PBN links disavowed</div><div class="kpi-value">~20</div><div class="kpi-trend up">risk removed</div></div>
+      <div class="kpi"><div class="kpi-label">GSC coverage</div><div class="kpi-value">100<small>%</small></div><div class="kpi-trend up">verified + measured</div></div>
+      <div class="kpi"><div class="kpi-label">Trust-error pages</div><div class="kpi-value">0</div><div class="kpi-trend up">from 3+</div></div>
+      <div class="kpi"><div class="kpi-label">Pages with H1+schema</div><div class="kpi-value">11<small>/11</small></div><div class="kpi-trend up">from ~0</div></div>
+    </div>
+    <div class="callout opp" style="margin-top:28px;"><strong>Success here is not "the portal ranks for cities."</strong> Success is: the portal is measured, clean, accurate, schema-rich, links to the facilities, and is no longer a manual-action risk or a credibility leak. Whether to invest further into it as a growth hub is a business decision for the Day-60 gate, the facility sites remain the engine either way.</div>
+  </div>
+</section>
+
+<!-- =================== APPENDIX =================== -->
+<section id="appendix">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">12 · Appendix</span></div>
+    <h2>Method, sources,<br>and <em class="display-italic">limits</em>.</h2>
+
+    <div class="ornament">· · ·</div>
+
+    <details class="acc" open>
+      <summary>Methodology</summary>
+      <div class="body">
+        <p>This audit combined five passes: (1) a live Playwright crawl of all 11 pages plus sitemap discovery, capturing H1-H6, meta, schema, word counts, alt-text, links, and 12 screenshots across desktop/tablet/mobile; (2) DataForSEO Labs (ranked keywords, SERP competitors, keyword ideas, Lighthouse, Google Trends, SERP checks); (3) Semrush (Authority Score, organic positions, backlinks, anchors, keyword gap, questions); (4) a Google Search Console access check via the LPG SEO service account; and (5) a 5x4 flagship-LLM citation test via DataForSEO's LLM API with web search enabled.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Verbatim LLM prompts (reproduce the test)</summary>
+      <div class="body">
+        <p>Models: <code class="mono">claude-sonnet-4-6</code>, <code class="mono">gemini-3.1-pro-preview</code>, <code class="mono">gpt-5.5</code>, <code class="mono">sonar-reasoning-pro</code>. Each prompt sent to all four with <code class="mono">web_search=true</code>, default temperature. 20 calls total, ~$1.05.</p>
+        <ol>
+          <li>Best self storage in Gunnison Valley, Colorado</li>
+          <li>How do I rent a self storage unit in Moab, Utah?</li>
+          <li>Self storage on South Padre Island, Texas</li>
+          <li>How much does self storage cost in Friday Harbor, Washington?</li>
+          <li>Boat and RV storage in Moriches, Long Island, New York</li>
+        </ol>
+        <p>Result: 0/20 hard citations of the parent brand, 1/20 soft (Gemini grounding source on prompt 1), 13/16 applicable cells cited a LPG facility site.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Files produced</summary>
+      <div class="body">
+        <p><code class="mono">audit/playwright-audit.json</code> + summary, 12 screenshots; <code class="mono">audit/dataforseo/</code> (16 JSON + SUMMARY); <code class="mono">audit/semrush/</code> (9 JSON + SUMMARY); <code class="mono">research/llm-flagship-run/citation-tally.md</code>; <code class="mono">data/GSC-STATUS.md</code>.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>What we did NOT do / limitations</summary>
+      <div class="body">
+        <ul>
+          <li><strong>No GSC query data:</strong> the domain is not verified in Search Console, so all traffic figures are third-party estimates (Semrush ~0, DataForSEO ~34/mo) rather than first-party clicks.</li>
+          <li><strong>Backlinks via Semrush only:</strong> DataForSEO's Backlinks API is not on this subscription (error 40204); the PBN finding is from Semrush refdomains + anchors.</li>
+          <li><strong>Semrush Traffic Analytics + Site Audit unavailable</strong> on the current plan; Lighthouse + Playwright covered the technical layer instead.</li>
+          <li><strong>Estimates are directional.</strong> Exact volumes/positions shift; the strategic conclusion (facilities win, umbrella is invisible) is robust across all sources.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Note on scope and the "do not optimize" flag</summary>
+      <div class="body">
+        <p>The LPG property registry records lookingforstorage.com as a "parent portal, not optimizing per Jim's direction." This document is an <strong>audit</strong>, read-only research and a report, not a build. Its recommendations are scoped accordingly: the priority actions are risk removal (disavow, GSC verification, fixing the placeholder phone and wrong address), and the growth recommendations are explicitly gated on a business decision. Nothing here changes the live site without LPG's go-ahead.</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mark">ThinkFlowLabs</div>
+    <p style="margin-top:14px;">SEO Audit &amp; Portal Strategy for Looking For Storage (Ludlow Property Group)</p>
+    <p class="small">Prepared June 18, 2026 · Confidential · noindex. Data: Playwright, DataForSEO, Semrush, Brave, Perplexity, DataForSEO LLM API.</p>
+  </div>
+</footer>
+
+</body>
+</html>
