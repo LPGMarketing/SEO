@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<title>Traverse City Storage: SEO Audit and Growth Strategy (July 2026)</title>
+<meta name="description" content="A technical, content, competitive and local-visibility SEO audit of traversecitystorage.com prepared by ThinkFlowLabs, covering four Michigan facilities, a broken location-page routing bug, a missing Google Business Profile, keyword strategy and a 90-day roadmap." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,30..100,0..1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ DESIGN TOKENS ============ */
+  :root {
+    --ink:        #0E1014;
+    --ink-2:      #1F2630;
+    --muted:      #5E6675;
+    --line:       #E6DFD2;
+    --line-2:     #EFE7D8;
+    --cream:      #FBF6EB;
+    --cream-2:    #F4ECD9;
+    --paper:      #FFFBF1;
+    --coral:      #1F5B3F;
+    --coral-dk:   #14402C;
+    --coral-sft:  #DCEEE3;
+    --gold:       #C89A4A;
+    --gold-sft:   #F6E7C7;
+    --green:      #1F7A6A;
+    --green-sft:  #DAEEE7;
+    --amber:      #B45309;
+    --amber-sft:  #FFE9BD;
+    --red-bg:     #FFEBE9;
+
+    --r-sm: 4px; --r-md: 10px; --r-lg: 18px; --r-xl: 26px;
+    --shadow-sm: 0 1px 0 rgba(20,18,12,.06);
+    --shadow-md: 0 14px 38px -22px rgba(60,40,18,.32), 0 2px 0 rgba(20,18,12,.04);
+    --shadow-lg: 0 30px 80px -30px rgba(60,40,18,.36);
+
+    --serif:      "Fraunces", "Times New Roman", serif;
+    --sans:       "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono:       "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    font-size: 16.5px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--coral-dk); text-decoration: none; border-bottom: 1px solid rgba(31,91,63,.25); }
+  a:hover { border-bottom-color: var(--coral-dk); }
+
+  /* ============ LAYOUT ============ */
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 84px 0; border-top: 1px solid var(--line); position: relative; }
+  section.alt { background: var(--paper); }
+  section.dark { background: var(--ink); color: #F2EAD7; border-top-color: #2A2520; }
+  section.dark a { color: #FFD8AC; border-bottom-color: rgba(255,216,172,.3); }
+
+  /* ============ TYPOGRAPHY ============ */
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -.012em; line-height: 1.08; margin: 0; }
+  h1 { font-size: clamp(48px, 8vw, 96px); font-weight: 380; letter-spacing: -.03em; }
+  h2 { font-size: clamp(34px, 4.6vw, 58px); font-weight: 400; letter-spacing: -.022em; }
+  h3 { font-size: clamp(22px, 2.6vw, 30px); font-weight: 500; line-height: 1.18; }
+  h4 { font-size: 19px; font-weight: 600; line-height: 1.3; font-family: var(--sans); letter-spacing: -.005em; }
+  .display-italic { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .eyebrow {
+    font-family: var(--sans); font-weight: 500; font-size: 12px;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--coral-dk);
+  }
+  p { margin: 0 0 1em; }
+  p.lede { font-size: 21px; line-height: 1.55; color: var(--ink-2); }
+  ul, ol { margin: 0 0 1em; padding-left: 1.2em; }
+  ul li, ol li { margin-bottom: .35em; }
+  strong { font-weight: 600; }
+  .mono { font-family: var(--mono); font-size: .9em; }
+  .small { font-size: 13px; color: var(--muted); }
+
+  /* ============ HERO ============ */
+  .hero {
+    background:
+      radial-gradient(60% 80% at 80% 0%, #DCEEE3 0%, transparent 60%),
+      radial-gradient(50% 70% at 0% 70%, #F6E7C7 0%, transparent 55%),
+      var(--cream);
+    border-top: 0;
+    padding: 56px 0 96px;
+    overflow: hidden; position: relative;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='1' cy='1' r='.6' fill='%231F5B3F' opacity='.06'/></svg>");
+    pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: end; position: relative; }
+  .hero h1 { margin-bottom: .18em; }
+  .hero h1 em { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .hero .meta { font-family: var(--sans); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+  .hero .by-line { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--line-2); margin-top: 36px; font-size: 14px; }
+  .hero .by-line span b { color: var(--ink); font-weight: 600; }
+  .hero-side {
+    background: white; border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 30px; box-shadow: var(--shadow-md);
+    font-size: 14px;
+  }
+  .hero-side h4 { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .15em; font-family: var(--sans); margin-bottom: 16px; font-weight: 600; }
+  .hero-side dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; }
+  .hero-side dt { color: var(--muted); }
+  .hero-side dd { margin: 0; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+  .hero-side .severity-strip { margin: 22px -30px -30px; padding: 18px 30px; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); color: white; border-radius: 0 0 var(--r-lg) var(--r-lg); display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
+  @media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+  /* ============ TLDR (Executive Summary) ============ */
+  .tldr { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; }
+  .tldr h2 em { font-style: italic; color: var(--coral); font-variation-settings: "SOFT" 100, "WONK" 1; }
+  .tldr-bullets { font-size: 17px; line-height: 1.6; }
+  .tldr-bullets li { margin-bottom: 16px; padding-left: 4px; }
+  .tldr-bullets li::marker { color: var(--coral); }
+  .verdict-card {
+    background: var(--ink); color: #F2EAD7;
+    border-radius: var(--r-lg); padding: 36px;
+    position: sticky; top: 24px;
+  }
+  .verdict-card h4 { color: #F6E7C7; font-family: var(--serif); font-size: 24px; margin-bottom: 14px; font-weight: 500; }
+  .verdict-card p { font-size: 15px; line-height: 1.65; color: #D8CDB5; }
+  .verdict-card .score-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.12); font-family: var(--mono); font-size: 12px; }
+  .verdict-card .score-row b { color: white; font-size: 18px; }
+  @media (max-width: 820px) { .tldr { grid-template-columns: 1fr; } .verdict-card { position: static; } }
+
+  /* ============ KPI GRID ============ */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .kpi {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 22px 22px 18px; position: relative; overflow: hidden;
+  }
+  .kpi-label { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .kpi-value { font-family: var(--serif); font-size: 46px; font-weight: 400; line-height: 1; letter-spacing: -.02em; color: var(--ink); }
+  .kpi-value small { font-size: 17px; color: var(--muted); margin-left: 4px; font-family: var(--sans); font-weight: 500; }
+  .kpi-trend { font-size: 12px; margin-top: 8px; font-family: var(--mono); }
+  .kpi-trend.up { color: var(--green); }
+  .kpi-trend.dn { color: #A33B32; }
+  .kpi.cta::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--coral); }
+  @media (max-width: 820px) { .kpi-grid { grid-template-columns: 1fr 1fr; } .kpi-value { font-size: 36px; } }
+
+  /* ============ FINDINGS CARDS ============ */
+  .findings { display: grid; gap: 24px; }
+  .finding {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-lg);
+    padding: 36px; display: grid; grid-template-columns: 88px 1fr; gap: 28px;
+    box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+  }
+  .finding .num {
+    font-family: var(--serif); font-size: 78px; font-weight: 400; line-height: 1; color: var(--coral); letter-spacing: -.04em; opacity: .9;
+  }
+  .finding h3 { margin-bottom: 8px; }
+  .finding .impact-line { font-size: 13.5px; color: var(--muted); margin-bottom: 18px; font-family: var(--mono); letter-spacing: .02em; }
+  .finding p { font-size: 16px; }
+  .finding .fix {
+    background: var(--cream-2); padding: 18px 22px; border-radius: var(--r-md);
+    margin-top: 18px; border-left: 3px solid var(--coral); font-size: 15.5px;
+  }
+  .finding .fix b { color: var(--ink); }
+  .badge {
+    display: inline-block; padding: 4px 11px; border-radius: 999px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700;
+  }
+  .badge.crit { background: var(--coral); color: white; }
+  .badge.high { background: var(--amber-sft); color: var(--amber); }
+  .badge.med { background: var(--gold-sft); color: var(--gold); }
+  .badge.opp { background: var(--green-sft); color: var(--green); }
+  .badge.brand { background: var(--ink); color: var(--cream); }
+  @media (max-width: 820px) {
+    .finding { grid-template-columns: 1fr; padding: 26px; }
+    .finding .num { font-size: 56px; }
+  }
+
+  /* ============ DATA TABLES ============ */
+  table {
+    width: 100%; border-collapse: collapse; font-size: 14.5px;
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;
+  }
+  th { text-align: left; font-weight: 600; padding: 14px 16px; background: var(--cream-2); border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+  td { padding: 14px 16px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  th.num { text-align: right; }
+  td.kw { font-weight: 500; }
+  td .badge { font-size: 10px; padding: 3px 8px; }
+
+  .table-scroll { overflow-x: auto; }
+
+  /* ============ URL AUDIT CARDS ============ */
+  .url-audit { background: white; border: 1px solid var(--line); border-radius: var(--r-md); margin-bottom: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+  .url-audit.crit { border-color: #F4C7C5; }
+  .url-audit-head { background: var(--cream-2); padding: 16px 22px; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .url-audit.crit .url-audit-head { background: var(--coral-sft); }
+  .url-audit-url { font-family: var(--mono); font-size: 13.5px; font-weight: 600; color: var(--ink); word-break: break-all; line-height: 1.4; }
+  .url-audit-meta { font-size: 12px; color: var(--muted); font-family: var(--mono); margin-top: 4px; letter-spacing: .01em; }
+  .url-audit-body { padding: 0; }
+  .url-issue { display: grid; grid-template-columns: 200px 1fr 1.5fr; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--line-2); font-size: 13.5px; }
+  .url-issue:first-child { border-top: 0; }
+  .url-issue .issue-name { font-weight: 600; color: var(--coral-dk); display: flex; align-items: flex-start; gap: 8px; padding-top: 1px; }
+  .url-issue .issue-name::before { content: "✗"; font-weight: 700; flex-shrink: 0; }
+  .url-issue.ok .issue-name { color: var(--green); }
+  .url-issue.ok .issue-name::before { content: "✓"; }
+  .url-issue.warn .issue-name { color: var(--amber); }
+  .url-issue.warn .issue-name::before { content: "!"; }
+  .url-issue .issue-current { color: var(--ink-2); line-height: 1.5; }
+  .url-issue .issue-fix { color: var(--ink); background: var(--cream); padding: 9px 13px; border-radius: 4px; font-size: 13px; border-left: 3px solid var(--coral); line-height: 1.5; }
+  .url-issue .issue-fix b { color: var(--ink); }
+  .url-issue code { font-size: 11.5px; background: rgba(0,0,0,.04); padding: 1px 5px; border-radius: 3px; }
+  .url-issue .issue-fix code { background: rgba(20,18,12,.07); }
+
+  .url-group { background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: var(--r-md); padding: 26px 28px; margin-bottom: 22px; }
+  .url-group.opp { border-left-color: var(--green); }
+  .url-group.warn { border-left-color: var(--amber); }
+  .url-group h4 { font-family: var(--sans); font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+  .url-group p { font-size: 14.5px; margin-bottom: 0; }
+  .url-group .url-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); margin-top: 16px; background: white; padding: 16px 18px; border-radius: 4px; border: 1px solid var(--line); }
+  .url-group .url-list span.cnt { color: var(--muted); margin-left: 6px; font-size: 11px; }
+  .url-group .group-fix { margin-top: 16px; padding: 14px 18px; background: var(--cream-2); border-radius: 4px; font-size: 14px; line-height: 1.55; }
+  .url-group .group-fix b { color: var(--coral-dk); }
+  .url-group .group-fix code { font-size: 11.5px; background: rgba(20,18,12,.07); padding: 1px 5px; border-radius: 3px; }
+
+  .sub-eyebrow { display: inline-block; font-family: var(--sans); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--coral-dk); margin-top: 48px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--coral); }
+
+  @media (max-width: 820px) {
+    .url-issue { grid-template-columns: 1fr; gap: 8px; }
+    .url-group .url-list { grid-template-columns: 1fr; }
+  }
+
+  /* ============ PILLS / CALLOUTS ============ */
+  .callout {
+    background: var(--red-bg); border: 1px solid #F4C7C5;
+    border-radius: var(--r-md); padding: 22px 26px;
+    font-size: 15.5px; color: #7A2A22; margin: 24px 0;
+  }
+  .callout.opp { background: var(--green-sft); border-color: #BFE0D6; color: #135548; }
+  .callout.warn { background: var(--amber-sft); border-color: #F2D5A0; color: var(--amber); }
+  .callout strong { color: inherit; }
+
+  /* ============ TWO-COL ============ */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 820px) { .two-col, .three-col { grid-template-columns: 1fr; } }
+
+  /* ============ HIERARCHY CARDS ============ */
+  .page-card {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 22px 24px; margin-bottom: 14px;
+  }
+  .page-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 12px; }
+  .page-card-head h4 { font-family: var(--mono); font-size: 14px; color: var(--ink); letter-spacing: 0; word-break: break-all; }
+  .pc-issues { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pc-issue { font-size: 11.5px; padding: 3px 9px; border-radius: 4px; background: var(--coral-sft); color: var(--coral-dk); font-weight: 600; }
+  .pc-issue.ok { background: var(--green-sft); color: var(--green); }
+  .pc-issue.warn { background: var(--amber-sft); color: var(--amber); }
+
+  /* ============ ROADMAP ============ */
+  .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .road-col {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 28px;
+  }
+  .road-col .label { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 12.5px; letter-spacing: .15em; text-transform: uppercase; color: var(--coral-dk); margin-bottom: 6px; }
+  .road-col .dot { width: 9px; height: 9px; border-radius: 999px; background: var(--coral); }
+  .road-col h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 18px; }
+  .road-col ul { list-style: none; padding: 0; }
+  .road-col li { padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: start; }
+  .road-col li:last-child { border-bottom: 0; }
+  .road-col li .check { width: 18px; height: 18px; border: 1.5px solid var(--line); border-radius: 4px; margin-top: 2px; }
+  .road-col li .pri { font-family: var(--mono); font-size: 10.5px; color: var(--muted); padding: 3px 7px; border: 1px solid var(--line); border-radius: 4px; align-self: start; }
+  @media (max-width: 1000px) { .roadmap { grid-template-columns: 1fr; } }
+
+  /* ============ SCHEMA SNIPPETS ============ */
+  pre.code {
+    background: #1A1F26; color: #DCD0AE; padding: 22px 26px;
+    border-radius: var(--r-md); font-family: var(--mono); font-size: 13px;
+    overflow-x: auto; line-height: 1.55; margin: 18px 0;
+  }
+  .code .k { color: #FFD89B; }
+  .code .s { color: #B5DCC7; }
+  .code .c { color: #6E6452; font-style: italic; }
+
+  /* ============ FOOTER ============ */
+  footer { padding: 56px 0 36px; background: var(--ink); color: #BAB099; text-align: center; }
+  footer .mark { font-family: var(--serif); font-style: italic; color: #7FBF9A; font-size: 28px; font-variation-settings: "SOFT" 100, "WONK" 1; }
+  footer .small { color: #76705F; }
+
+  /* ============ STICKY NAV ============ */
+  .topnav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251, 246, 235, 0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line); padding: 14px 0;
+  }
+  .topnav .inner { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+  .topnav a { color: var(--ink); border-bottom: 0; font-size: 13px; font-weight: 500; }
+  .topnav .mark { font-family: var(--serif); font-style: italic; color: var(--coral); font-size: 20px; font-variation-settings: "SOFT" 100, "WONK" 1; border: 0; }
+  .topnav nav { display: flex; gap: 22px; flex-wrap: wrap; }
+  @media (max-width: 820px) { .topnav nav { display: none; } }
+
+  /* ============ HORIZONTAL BAR CHART ============ */
+  .bar-row { display: grid; grid-template-columns: 200px 1fr 80px; gap: 14px; align-items: center; padding: 8px 0; font-size: 14px; }
+  .bar-bg { height: 22px; background: var(--cream-2); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); }
+  .bar-fill.alt { background: linear-gradient(90deg, var(--gold) 0%, #A77F35 100%); }
+  .bar-fill.green { background: linear-gradient(90deg, #2C9D8B 0%, var(--green) 100%); }
+  .bar-val { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; color: var(--ink-2); }
+  @media (max-width: 600px) { .bar-row { grid-template-columns: 120px 1fr 60px; font-size: 13px; } }
+
+  /* ============ DIVIDERS ============ */
+  .ornament { text-align: center; margin: 48px 0; color: var(--coral); font-family: var(--serif); font-size: 22px; letter-spacing: .4em; opacity: .7; }
+  .section-eyebrow { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+  .section-eyebrow .bar { width: 36px; height: 1px; background: var(--coral); }
+
+  /* ============ MISC ============ */
+  .quote {
+    border-left: 3px solid var(--coral); padding: 12px 0 12px 26px;
+    font-family: var(--serif); font-size: 22px; line-height: 1.4; color: var(--ink-2);
+    font-style: italic; margin: 28px 0;
+  }
+  .quote cite { display: block; margin-top: 10px; font-family: var(--sans); font-size: 13px; color: var(--muted); font-style: normal; letter-spacing: .04em; }
+
+  details.acc { background: white; border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; margin-bottom: 10px; }
+  details.acc summary { cursor: pointer; font-weight: 600; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  details.acc summary::after { content: "+"; font-family: var(--serif); font-size: 22px; color: var(--coral); }
+  details.acc[open] summary::after { content: "−"; }
+  details.acc[open] { box-shadow: var(--shadow-md); }
+  details.acc .body { margin-top: 14px; font-size: 15px; color: var(--ink-2); }
+
+  /* ============ PRINT ============ */
+  @media print {
+    body { background: white; }
+    section { padding: 28px 0; page-break-inside: avoid; }
+    .topnav, .hero::before { display: none; }
+    .finding, .road-col, table { box-shadow: none; }
+    a { color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div class="wrap inner">
+    <a href="#top" class="mark">traverse city storage · seo audit</a>
+    <nav>
+      <a href="#tldr">Summary</a>
+      <a href="#snapshot">Snapshot</a>
+      <a href="#critical">Critical</a>
+      <a href="#shipped">Shipped</a>
+      <a href="#hierarchy">URL Catalog</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#local">Local / GBP</a>
+      <a href="#schema">Schema</a>
+      <a href="#content">Content</a>
+      <a href="#competitive">Competitive</a>
+      <a href="#roadmap">90-Day Plan</a>
+    </nav>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="meta">SEO SAUCE · FACILITY AUDIT &nbsp;·&nbsp; CONFIDENTIAL</div>
+      <h1>Four locations.<br><em>Zero</em> of them reachable.<br>And <em>no listing</em> at all.</h1>
+      <p class="lede" style="margin-top:32px; max-width:640px;">
+        A technical, content, competitive and local-visibility audit of <strong>traversecitystorage.com</strong>, built from live crawls of every URL, DataForSEO Business Listings and live Traverse City SERPs, Google Ads volume data, and a shadow-DOM read of the Cubby inventory widget. The site launched on 29 June as an unedited template. Every one of its four location pages returned a 404, not one page named the city it operates in, and the brand has no Google Business Profile in a market whose local pack is held by a listing with 3.9 stars. Most of it was fixed during this audit. The rest is the plan below.
+      </p>
+      <div class="by-line">
+        <span>Prepared by <b>ThinkFlowLabs</b></span>
+        <span>·</span>
+        <span>Issued <b>July 31, 2026</b></span>
+        <span>·</span>
+        <span>Market <b>Traverse City &amp; Grand Traverse County, Michigan</b></span>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h4>AT-A-GLANCE</h4>
+      <dl>
+        <dt>Location pages returning 404</dt><dd>4 of 4</dd>
+        <dt>Pages naming the city</dt><dd>0 of 10</dd>
+        <dt>LocalBusiness schema</dt><dd>none</dd>
+        <dt>Google Business Profiles</dt><dd>0</dd>
+        <dt>Head-term demand</dt><dd>320 / mo · $11.79 CPC</dd>
+        <dt>Local pack #1 holds</dt><dd>3.9 stars · 17 reviews</dd>
+        <dt>Legacy listing we own</dt><dd>3.8 · 16 reviews · unclaimed</dd>
+        <dt>Facility photography</dt><dd>0 · all stock</dd>
+      </dl>
+      <div class="severity-strip">
+        <span>Overall health</span>
+        <span>&#128308; Template, never cooked</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="tldr" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Executive Summary</span></div>
+    <div class="tldr">
+      <div>
+        <h2>The situation in <em class="display-italic">60 seconds</em>.</h2>
+        <p class="lede" style="margin-top:24px;">
+          Traverse City Storage runs <strong>four facilities</strong> on the northeast side of Traverse City, Michigan, and went live on 29 June 2026 as a Duda site (<span class="mono">1052fb71</span>) that was never edited past the template stage. This is not a ranking problem. It is a completeness problem, and that is good news, because completeness is cheap to fix.
+        </p>
+        <p style="max-width:780px;">
+          Before this audit: every internal link to a location page was broken, the homepage title was the literal string "Self Storage Units", all four facility pages shared the identical title "Self Storage", the content library still held <span class="mono">(123) 123-1234</span> and <span class="mono">EMAIL@EMAIL.COM</span>, and the site emitted no LocalBusiness markup of any kind. The header call button displayed an Illinois phone number while its link dialled a Michigan one.
+        </p>
+        <p style="max-width:780px;">
+          The commercial context makes this urgent rather than merely untidy. The head-term cluster runs <strong>320 searches a month at an $11.79 cost per click</strong>, roughly <strong>$3,800 a month of equivalent paid traffic</strong>, and the local pack that captures most of it is held by a listing with <strong>3.9 stars and 17 reviews</strong>. Second place is held on <strong>eight reviews</strong>. This is the softest storage pack in the LPG portfolio, and we are not competing in it, because we have no listing to compete with.
+        </p>
+      </div>
+      <ul class="tldr-bullets">
+        <li><b>Fixed today:</b> 4 broken location pages, 10 page titles, sitewide schema, placeholder contact data, a wrong phone number</li>
+        <li><b>Biggest lever:</b> claim the unclaimed predecessor listing sitting 66 metres from our own gate, with its 16 reviews intact</li>
+        <li><b>Blocking dependency:</b> there is no facility photography, which stalls both the hero rebuild and the GBP photo plan</li>
+        <li><b>Measurement gap:</b> not in the property registry, so no GSC, no GA4, nothing measurable</li>
+      </ul>
+    </div>
+
+    <div class="callout opp" style="margin-top:36px;">
+      <strong>The clean-slate advantage:</strong> the domain is one month old, so there are no legacy rankings to protect, no penalties to inherit, and no cannibalisation to untangle. Every fix compounds from a true zero. The flip side is that there is also no Search Console or Analytics baseline, because the property was never registered. Wiring those is step one of being able to prove any of this worked.
+    </div>
+  </div>
+</section>
+
+<section id="snapshot">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">State of the site</span></div>
+    <h2>What the data<br><em class="display-italic">actually says</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:760px;">Ten pages, roughly 2,750 words in total. For comparison, Vail Airport Storage runs 71 URLs at 2,000 to 5,000 words each. Every figure below was measured live on 31 July 2026.</p>
+
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-label">Location pages live</div>
+        <div class="kpi-value">0<small>/4</small></div>
+        <div class="kpi-trend dn">all returned 404</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Titles naming the city</div>
+        <div class="kpi-value">0<small>/10</small></div>
+        <div class="kpi-trend dn">home was "Self Storage Units"</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">LocalBusiness schema</div>
+        <div class="kpi-value">0</div>
+        <div class="kpi-trend dn">one bare WebSite node</div>
+      </div>
+      <div class="kpi cta">
+        <div class="kpi-label">Google Business Profiles</div>
+        <div class="kpi-value">0<small>/4</small></div>
+        <div class="kpi-trend dn">verified twice, two methods</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Total site word count</div>
+        <div class="kpi-value">2,750</div>
+        <div class="kpi-trend dn">across all 10 pages</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Facility photos</div>
+        <div class="kpi-value">0</div>
+        <div class="kpi-trend dn">all stock, logo is temp</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Head-term demand</div>
+        <div class="kpi-value">320<small>/mo</small></div>
+        <div class="kpi-trend up">$11.79 CPC · medium comp</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Rentable units in widget</div>
+        <div class="kpi-value">0</div>
+        <div class="kpi-trend dn">waitlist only</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:64px;">Page-by-page word count, before any fixes</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Page</th><th>Title as shipped</th><th>Words</th><th>Schema</th></tr></thead>
+      <tbody>
+        <tr><td><span class="mono">/</span></td><td>Self Storage Units</td><td class="num">347</td><td>WebSite only</td></tr>
+        <tr><td><span class="mono">/facilities</span></td><td>Self Storage Locations Near You</td><td class="num">82</td><td>none</td></tr>
+        <tr><td><span class="mono">/about-us</span></td><td>About Our Self Storage Facility</td><td class="num">259</td><td>none</td></tr>
+        <tr><td><span class="mono">/contact</span></td><td>Contact Us</td><td class="num">187</td><td>none</td></tr>
+        <tr><td><span class="mono">/faq</span></td><td>Self Storage FAQs</td><td class="num">311</td><td>none</td></tr>
+        <tr><td><span class="mono">/size-guide</span></td><td>Self Storage Size Guide</td><td class="num">798</td><td>none</td></tr>
+        <tr><td><span class="mono">/facility/...garfield</span></td><td>Self Storage</td><td class="num">255</td><td>none</td></tr>
+        <tr><td><span class="mono">/facility/...318-welch</span></td><td>Self Storage</td><td class="num">257</td><td>none</td></tr>
+        <tr><td><span class="mono">/facility/...344-welch</span></td><td>Self Storage</td><td class="num">257</td><td>none</td></tr>
+        <tr><td><span class="mono">/facility/...duell</span></td><td>Self Storage</td><td class="num">254</td><td>none</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="margin-top:14px;">Four location pages sharing one title string is a duplicate-title problem across the only pages that can win local intent.</p>
+  </div>
+</section>
+
+<section id="critical" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Critical findings</span></div>
+    <h2>What's actually<br><em class="display-italic">holding the site back</em>.</h2>
+    <div class="ornament">· · ·</div>
+
+    <div class="findings">
+      <article class="finding">
+        <div class="num">1</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · FIXED TODAY</span></div>
+          <h3>Every location page returned a 404, from every internal link.</h3>
+          <p class="impact-line">Impact: on a four-location brand, the entire local surface was unreachable by click.</p>
+          <p>The <span class="mono">/facilities</span> page rendered its links as <span class="mono">traverse-city-storage---garfield</span> with a triple dash, while the live page and the sitemap both use <span class="mono">traverse-city-storage-garfield</span> with a single one. Anyone browsing to a location hit a dead end. Google could still crawl the pages because the sitemap carried the working slugs, but no human could reach them.</p>
+          <p><b>Root cause is upstream.</b> The <span class="mono">facility/~page-item~</span> dynamic page binds to an <strong>external</strong> collection whose <span class="mono">page_item_url</span> values disagree with Duda's own slug normalisation. Four 301 redirects were shipped as a patch and verified live. The feed itself should be corrected in Cubby so the redirects can eventually be retired.</p>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">2</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · NEEDS THE CLIENT</span></div>
+          <h3>The brand has no Google Business Profile, and the predecessor listing holding 16 reviews is unclaimed 66 metres away.</h3>
+          <p class="impact-line">Impact: invisible in the local pack, which is where most storage clicks in this market are decided.</p>
+          <p>Two independent DataForSEO sweeps (a 15 km title search and a 3 km category search around the facility cluster, both including unclaimed listings) returned nothing at any of the four addresses. The brand is not losing a ranking contest, it is not in the index.</p>
+          <p>The opening is unusually good. <strong>Colonial Self Storage LLC</strong> at 1057 W South Airport Rd carries <strong>3.8 stars across 16 reviews</strong> and is <strong>unclaimed</strong>. Two facts tie it to us: its phone number, <span class="mono">(231) 929-8181</span>, was already sitting in our own Duda content library, and its map pin is <strong>66 metres</strong> from the N Garfield gate. Claiming and <em>renaming</em> it preserves the CID and the reviews. Starting a fresh listing throws away 16 reviews in a market where 17 wins the pack.</p>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">3</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge high">HIGH · FIXED TODAY</span></div>
+          <h3>Not one page named Traverse City, and the site emitted no LocalBusiness markup at all.</h3>
+          <p class="impact-line">Impact: a local business that told neither users nor search engines where it operates.</p>
+          <p>The homepage title was the generic string "Self Storage Units". All ten pages have been rewritten to name the city, phrased from the winning query forms in the volume data. Separately, the entire site emitted a single bare <span class="mono">WebSite</span> node: no address, no coordinates, no hours, no entity. An <span class="mono">Organization</span> plus four <span class="mono">SelfStorage</span> nodes with full postal addresses, geo coordinates, separate office and gate hours, and amenity features now ship on five page types.</p>
+          <p><b>Deliberately omitted:</b> <span class="mono">sameAs</span> and <span class="mono">hasMap</span> pointing at a GBP CID, because no listing exists yet, and <span class="mono">priceRange</span>, because the Cubby widget returns no rentable units and any price would be invented. Both go in the moment those exist.</p>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">4</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge high">HIGH · WORKED AROUND</span></div>
+          <h3>The dynamic page's title cannot be set through the Duda API.</h3>
+          <p class="impact-line">Impact: four location pages shared one title, and the obvious fix silently did nothing.</p>
+          <p>Setting the page-level SEO title on the dynamic facility page had <strong>no effect whatsoever</strong>. The live title stayed "Self Storage" on all four because the external collection's <span class="mono">G.seo-title</span> field wins. This was caught only by verifying the live page after publishing, not by trusting the API's success response.</p>
+          <p>Worked around with a header block that maps each facility label to a unique, street-level title and meta description. Verified live on all four. The durable fix belongs upstream in the feed.</p>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">5</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge high">HIGH · BLOCKS THE REBUILD</span></div>
+          <h3>Every image is stock, the logo is a temp file, and the copy contradicts itself.</h3>
+          <p class="impact-line">Impact: blocks the family hero rebuild and the entire GBP photo plan.</p>
+          <p>The homepage runs <span class="mono">stock-interior-01</span>, <span class="mono">stock-facility-exterior</span> and two more stock files, and the logo is still <span class="mono">650x250-logo-temp.png</span>. The LPG family hero is built around a real facility photograph behind a gradient scrim, so it cannot be installed honestly over stock imagery.</p>
+          <p>Two truth problems sit alongside it. The facility pages post gate access as <strong>6 AM to 10 PM</strong> while the section directly below claims <strong>24/7 access</strong>. And the header call button <em>displayed</em> <span class="mono">(618)-384-0023</span>, an Illinois number, while its link dialled the correct Michigan one. The phone bug was fixed today. The hours contradiction needs an operations answer, not an SEO one.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="shipped">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Shipped in this session</span></div>
+    <h2>What we<br><em class="display-italic">already fixed</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:760px;">All of the following is live on the published site and was verified on the live domain after publishing, not in draft.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Fix</th><th>Before</th><th>After</th><th>Verified</th></tr></thead>
+      <tbody>
+        <tr><td>Location page routing</td><td>4 of 4 returned 404</td><td>4 x 301 redirects to the correct slug</td><td class="ok">301 confirmed live</td></tr>
+        <tr><td>Page titles and meta</td><td>0 of 10 named the city</td><td>10 of 10, phrased from volume data</td><td class="ok">crawled live</td></tr>
+        <tr><td>Structured data</td><td>one bare WebSite node</td><td>Organization + WebSite + 4x SelfStorage</td><td class="ok">parsed on 5 pages</td></tr>
+        <tr><td>Facility titles</td><td>4 pages sharing "Self Storage"</td><td>4 unique street-level titles</td><td class="ok">all 4 rendered</td></tr>
+        <tr><td>Content library</td><td><span class="mono">(123) 123-1234</span>, <span class="mono">EMAIL@EMAIL.COM</span>, empty text</td><td>real phone, email, description, hours, service area</td><td class="ok">no placeholders remain</td></tr>
+        <tr><td>Header phone</td><td>displayed <span class="mono">(618)-384-0023</span>, dialled a different number</td><td>one number, display matches link</td><td class="ok">1 number sitewide</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout warn" style="margin-top:36px;">
+      <strong>One method note worth keeping.</strong> The API reported success on the facility title change and the live page still said "Self Storage". Structural checks and success responses are not verification. Every claim in the table above was re-read from the live domain after the final publish.
+    </div>
+  </div>
+</section>
+
+<section id="hierarchy" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">URL catalog</span></div>
+    <h2>Every fixable issue,<br><em class="display-italic">by URL</em>.</h2>
+    <div class="ornament">· · ·</div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">/facility/traverse-city-storage---{garfield, 318-welch, 344-welch, duell}</div>
+          <div class="url-audit-meta">4 URLs · every internal link to a location page</div>
+        </div>
+        <span class="badge crit">P0 · ROUTING</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">Triple-dash slug returned 404</div>
+          <div class="issue-current">The facilities listing linked <span class="mono">---garfield</span>; the live page and sitemap use <span class="mono">-garfield</span>.</div>
+          <div class="issue-fix"><b>Fixed:</b> four 301 rules, verified live. <b>Still to do:</b> correct <span class="mono">page_item_url</span> in the external Cubby collection so the redirects can be retired.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">/facility/... (all four)</div>
+          <div class="url-audit-meta">~255 words each · identical titles · no per-location schema</div>
+        </div>
+        <span class="badge crit">P0 · DUPLICATE TITLES</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">All four shared the title "Self Storage"</div>
+          <div class="issue-current">Bound to the external collection's <span class="mono">G.seo-title</span>, which overrides the Duda API.</div>
+          <div class="issue-fix"><b>Fixed:</b> unique street-level titles via a header block. <b>Durable fix:</b> populate <span class="mono">G.seo-title</span> and <span class="mono">G.seo-descrip</span> per row in the feed.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">Thin content on the pages that must win local intent</div>
+          <div class="issue-current">~255 words, no prices, no sizes, no unit table. The Cubby widget renders an empty grey box.</div>
+          <div class="issue-fix"><b>Fix:</b> once inventory returns units, add a size and price table, a neighbourhood paragraph, and drive-times from Acme, Williamsburg and Kingsley. Target 700 to 900 words.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">/facilities</div>
+          <div class="url-audit-meta">82 words · the hub page for a four-location brand</div>
+        </div>
+        <span class="badge high">P1 · THIN</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">Eighty-two words on the most important navigational page</div>
+          <div class="issue-current">A heading, four cards, one CTA. No addresses shown, no differentiation between sites.</div>
+          <div class="issue-fix"><b>Fix:</b> expand to ~500 words. Show each address, its cross street, what makes it different, and a real drive-time from downtown. This page should answer "which of your four do I want".</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">/faq</div>
+          <div class="url-audit-meta">311 words · no FAQPage schema</div>
+        </div>
+        <span class="badge high">P1 · SCHEMA</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">No FAQPage markup</div>
+          <div class="issue-current">Real questions exist as plain content and are invisible as structured data.</div>
+          <div class="issue-fix"><b>Fix:</b> add FAQPage JSON-LD with 40 to 60 word direct answers, the format snippets and AI answers quote. Use range pricing only, never per-unit prices.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">/size-guide</div>
+          <div class="url-audit-meta">798 words · the strongest page on the site</div>
+        </div>
+        <span class="badge med">P2 · SCHEMA</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">Best content, no structured data</div>
+          <div class="issue-current">Genuinely useful and already the deepest page, but marked up as plain prose.</div>
+          <div class="issue-fix"><b>Fix:</b> add <span class="mono">ItemList</span> schema, one entry per unit size, and link it from every facility page and the FAQ.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">sitewide</div>
+          <div class="url-audit-meta">imagery, hours, breadcrumbs</div>
+        </div>
+        <span class="badge high">P1 · TRUTH &amp; TRUST</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue">
+          <div class="issue-name">Access hours contradict the copy</div>
+          <div class="issue-current">Facility blocks post 6 AM to 10 PM; the section below claims 24/7 access.</div>
+          <div class="issue-fix"><b>Fix:</b> get the real answer from operations, then make hours identical across page copy, schema and every future GBP listing.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">All imagery is stock, logo is a temp file</div>
+          <div class="issue-current"><span class="mono">stock-interior-01</span>, <span class="mono">stock-facility-exterior</span>, <span class="mono">650x250-logo-temp.png</span>.</div>
+          <div class="issue-fix"><b>Fix:</b> photo shoot at all four sites. This single task unblocks the hero rebuild, the GBP photo plan, and the trust signal on every page.</div>
+        </div>
+        <div class="url-issue">
+          <div class="issue-name">No BreadcrumbList anywhere</div>
+          <div class="issue-current">Absent on all ten pages.</div>
+          <div class="issue-fix"><b>Fix:</b> add BreadcrumbList, especially on facility pages where it reinforces the location hierarchy.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="keywords">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Keyword strategy</span></div>
+    <h2>The keywords that<br><em class="display-italic">change the business</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:780px;">Google Ads volume, Traverse City geo, pulled 31 July 2026. These are third-party demand estimates, not our measured traffic, because no Search Console property exists yet.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Keyword</th><th>Volume / mo</th><th>CPC</th><th>Comp.</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td><span class="kw">self storage traverse city</span> <span class="small">(cluster)</span></td><td class="num">320</td><td class="num">$11.79</td><td>63</td><td class="ok">The head term. Own it.</td></tr>
+        <tr><td><span class="kw">boat storage traverse city</span></td><td class="num">30</td><td class="num">$6.69</td><td>46</td><td class="ok">Peaks 70 in August. Real wedge.</td></tr>
+        <tr><td><span class="kw">rv storage traverse city</span></td><td class="num">20</td><td class="num">$6.99</td><td>78</td><td class="med">Verify inventory first</td></tr>
+        <tr><td><span class="kw">cheap storage units traverse city</span></td><td class="num">10</td><td class="num">$6.72</td><td>100</td><td class="dn">Ignore</td></tr>
+        <tr><td><span class="kw">climate controlled storage traverse city</span></td><td class="num">0</td><td>n/a</td><td>n/a</td><td class="dn">No volume. Do not build or claim.</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p style="max-width:790px; margin-top:22px;">The head cluster (<span class="mono">self storage traverse city</span>, <span class="mono">storage units traverse city</span>, <span class="mono">traverse city storage</span>, <span class="mono">storage traverse city mi</span>) all resolve to the same 320 a month. At $11.79 a click that is roughly <strong>$3,800 a month of equivalent paid traffic</strong> sitting on one term.</p>
+
+    <h3 style="margin-top:56px;">Seasonality is the whole content calendar</h3>
+    <p style="max-width:780px;">Northern Michigan storage demand is not flat. It has two peaks and a deep winter trough, which means content and posts should lead <em>into</em> August, not January.</p>
+
+    <div class="bar-row"><span>April</span><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">480</span></div>
+    <div class="bar-row"><span>August</span><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">480</span></div>
+    <div class="bar-row"><span>June</span><div class="bar-bg"><div class="bar-fill" style="width:81%"></div></div><span class="bar-val">390</span></div>
+    <div class="bar-row"><span>October</span><div class="bar-bg"><div class="bar-fill" style="width:81%"></div></div><span class="bar-val">390</span></div>
+    <div class="bar-row"><span>March / May / Sept</span><div class="bar-bg"><div class="bar-fill" style="width:67%"></div></div><span class="bar-val">320</span></div>
+    <div class="bar-row"><span>Jan / Nov / Dec</span><div class="bar-bg"><div class="bar-fill" style="width:54%"></div></div><span class="bar-val">260</span></div>
+    <div class="bar-row"><span>February</span><div class="bar-bg"><div class="bar-fill" style="width:44%"></div></div><span class="bar-val">210</span></div>
+
+    <div class="callout" style="margin-top:36px;">
+      <strong>Do not build:</strong> a climate-controlled page (zero demand, and we do not offer it), or a "cheap storage" page (10 a month at maximum competition). <strong>Do build, once boat inventory is confirmed:</strong> a boat storage page shipped by June so it has time to rank before the August spike of 70.
+    </div>
+  </div>
+</section>
+
+<section id="local" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Local visibility</span></div>
+    <h2>The softest pack<br><em class="display-italic">in the portfolio</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:780px;">Live local pack for <span class="mono">self storage traverse city mi</span>, Traverse City geo, 31 July 2026.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Rank</th><th>Business</th><th>Rating</th><th>Reviews</th><th>km from downtown</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Traverse City Mini Storage</td><td class="num">3.9</td><td class="num">17</td><td class="num">3.35</td></tr>
+        <tr><td class="num">2</td><td>West Bay Self Storage LLC</td><td class="num">4.3</td><td class="num">8</td><td class="num">~8</td></tr>
+        <tr><td class="num">3</td><td>National Storage, Cass Rd</td><td class="num">4.4</td><td class="num">169</td><td class="num">3.70</td></tr>
+        <tr class="crit"><td>·</td><td><b>Traverse City Storage (us)</b></td><td>none</td><td class="num">0</td><td class="num">3.92</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout opp" style="margin-top:32px;">
+      <strong>The one sentence to repeat:</strong> a listing with 3.9 stars and 17 reviews holds the number one pack slot in Traverse City, and a listing with <em>eight</em> reviews holds number two. The barrier to entry here is a claimed listing and roughly a dozen genuine reviews, not a multi-year authority grind.
+    </div>
+
+    <h3 style="margin-top:56px;">Proximity is not the barrier, and here is the proof</h3>
+    <p style="max-width:780px;">Measured before forming any theory. Straight-line distance from the downtown Traverse City centroid to every facility in the competitive set:</p>
+
+    <div class="bar-row"><span>TC Mini (pack #1)</span><div class="bar-bg"><div class="bar-fill" style="width:28%"></div></div><span class="bar-val">3.35 km</span></div>
+    <div class="bar-row"><span>National (pack #3)</span><div class="bar-bg"><div class="bar-fill" style="width:30%"></div></div><span class="bar-val">3.70 km</span></div>
+    <div class="bar-row"><span>Colonial (legacy, ours)</span><div class="bar-bg"><div class="bar-fill" style="width:32%"></div></div><span class="bar-val">3.87 km</span></div>
+    <div class="bar-row"><span>OUR N GARFIELD</span><div class="bar-bg"><div class="bar-fill" style="width:32%"></div></div><span class="bar-val">3.92 km</span></div>
+    <div class="bar-row"><span>CubeSmart (organic #1)</span><div class="bar-bg"><div class="bar-fill" style="width:47%"></div></div><span class="bar-val">5.78 km</span></div>
+    <div class="bar-row"><span>Hammond Rd Vault</span><div class="bar-bg"><div class="bar-fill" style="width:55%"></div></div><span class="bar-val">6.69 km</span></div>
+    <div class="bar-row"><span>Flex Self Storage</span><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><span class="bar-val">9.94 km</span></div>
+    <div class="bar-row"><span>Deluxe Self Storage</span><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">12.18 km</span></div>
+
+    <p style="max-width:780px; margin-top:22px;">Our N Garfield facility is the <strong>fourth closest storage facility to downtown</strong> in the entire competitive set, and closer than CubeSmart, Hammond Road, Flex and Deluxe, every one of which currently outranks us. Nobody should say we are too far out.</p>
+
+    <h3 style="margin-top:56px;">What the reviews are actually about</h3>
+    <p style="max-width:780px;">Google's own topic extraction from each listing's reviews. This is what wins in this market, and it is not price.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Business</th><th>Rating / reviews</th><th>What the reviews talk about</th></tr></thead>
+      <tbody>
+        <tr><td>Deluxe</td><td>4.7 / 77</td><td><b>friendly owner (26)</b>, clean units (8), security cameras (8)</td></tr>
+        <tr><td>National</td><td>4.4 / 169</td><td>secure property (6), rental process (4), gated entry (2)</td></tr>
+        <tr><td>CubeSmart</td><td>4.8 / 104</td><td>clean facilities (5), phone app (5), promptness (4)</td></tr>
+        <tr><td>Hammond Rd</td><td>4.6 / 33</td><td>friendly staff (8), cleanliness (7)</td></tr>
+        <tr><td><b>TC Mini (pack #1)</b></td><td><b>3.9 / 17</b></td><td><b>camera (2), email (2)</b> · that is the entire list</td></tr>
+        <tr><td>Colonial (ours, legacy)</td><td>3.8 / 16</td><td>friendly staff (4), unit (5)</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p style="max-width:780px; margin-top:20px;">Three themes win here: <strong>clean, secure, and a friendly human</strong>. The pack leader's review content is nearly empty, two topics with two mentions each. Review <em>content</em> and velocity are the lever, not lifetime count.</p>
+
+    <div class="callout warn" style="margin-top:32px;">
+      <strong>Review target, phased. Never chase National's 169.</strong> Credibility floor of 10 per claimed location, then 18 at 4.5 or better to clear TC Mini's 3.9/17, then 35 to 40 over twelve months. At five reviews a month, step two lands in about four months. And never ask employees, contractors or partners for reviews; Google flags conflict-of-interest reviews and it can cost the listing.
+    </div>
+  </div>
+</section>
+
+<section id="schema">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Structured data</span></div>
+    <h2>Schema, shipped<br><em class="display-italic">and remaining</em>.</h2>
+
+    <p class="lede" style="margin-top:24px; max-width:760px;">Now live on home, facilities, about, contact and the facility template:</p>
+    <div class="code"><pre>Organization   Traverse City Storage, phone, email, areaServed x7
+WebSite        publisher linked to the Organization
+SelfStorage    x4, one per facility, each carrying:
+                 PostalAddress    full street, city, MI, 49686
+                 GeoCoordinates   exact lat/lon per site
+                 openingHours     office (Mon-Fri 9 to 4) + gate (daily 6 to 22)
+                 amenityFeature   drive-up, gated, cameras, LED, online rental</pre></div>
+
+    <p style="max-width:780px; margin-top:28px;">Still to add, in priority order:</p>
+    <div class="code"><pre>/faq          FAQPage         from the existing 311 words, 40-60 word answers
+/size-guide   ItemList        one entry per unit size
+all pages     BreadcrumbList  currently absent everywhere
+facility x4   sameAs, hasMap  the moment GBP listings exist
+facility x4   priceRange      as a RANGE, once Cubby returns units</pre></div>
+
+    <div class="callout" style="margin-top:32px;">
+      <strong>Why two fields were deliberately left out.</strong> <span class="mono">sameAs</span> and <span class="mono">hasMap</span> need a real GBP CID, and none exists. <span class="mono">priceRange</span> needs real inventory, and the widget currently returns none. Inventing either would put a false claim in machine-readable markup, which is worse than omitting it.
+    </div>
+  </div>
+</section>
+
+<section id="content" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Content strategy</span></div>
+    <h2>Timed to the<br><em class="display-italic">northern Michigan calendar</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:780px;">The site has 2,750 words total. Depth is not the first priority, truth and reachability were. But these are the pieces that earn the head term and the August wedge.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>#</th><th>Piece</th><th>Target</th><th>Ship by</th><th>Pri</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Expand <span class="mono">/facilities</span> to a real comparison hub</td><td>head term support</td><td>Sprint 2</td><td><span class="badge crit">P0</span></td></tr>
+        <tr><td class="num">2</td><td>Four facility pages to 700-900 words with sizes and prices</td><td>location intent</td><td>Sprint 2</td><td><span class="badge crit">P0</span></td></tr>
+        <tr><td class="num">3</td><td>Boat storage in Traverse City</td><td>30/mo, peaks 70 in Aug</td><td>by June</td><td><span class="badge high">P1</span></td></tr>
+        <tr><td class="num">4</td><td>Rewrite <span class="mono">/about-us</span> around genuine local ownership</td><td>trust, E-E-A-T</td><td>Sprint 2</td><td><span class="badge high">P1</span></td></tr>
+        <tr><td class="num">5</td><td>FAQ expansion with direct-answer formatting</td><td>snippets, AI answers</td><td>Sprint 2</td><td><span class="badge high">P1</span></td></tr>
+        <tr><td class="num">6</td><td>What fits in a 10x10, with real photos</td><td>size intent</td><td>Sprint 3</td><td><span class="badge high">P1</span></td></tr>
+        <tr><td class="num">7</td><td>Storage for the cottage season changeover</td><td>seasonal, Apr and Oct</td><td>Sprint 3</td><td><span class="badge med">P2</span></td></tr>
+        <tr><td class="num">8</td><td>Contractor and trades storage</td><td>business segment</td><td>Sprint 3</td><td><span class="badge med">P2</span></td></tr>
+        <tr><td class="num">9</td><td>Neighbourhood pages: Acme, Williamsburg, Kingsley</td><td>corridor intent</td><td>Sprint 3</td><td><span class="badge med">P2</span></td></tr>
+        <tr><td class="num">10</td><td>RV storage, only if inventory is confirmed</td><td>20/mo, peaks Sep-Oct</td><td>conditional</td><td><span class="badge med">P2</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="competitive">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Competitive landscape</span></div>
+    <h2>Nobody here is doing<br><em class="display-italic">anything sophisticated</em>.</h2>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Competitor</th><th>Rating / reviews</th><th>Position</th><th>Photos</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>CubeSmart</td><td>4.8 / 104</td><td><b>organic #1</b></td><td class="num">18</td><td>National brand, climate controlled, 5.78 km out</td></tr>
+        <tr><td>National Storage</td><td>4.4 / 169</td><td>pack #3, organic #4</td><td class="num">5</td><td>Most reviews in market, three TC locations</td></tr>
+        <tr><td>TC Mini Storage</td><td><b>3.9 / 17</b></td><td><b>pack #1</b>, organic #5</td><td class="num">8</td><td>The one to beat. Weakest strong listing</td></tr>
+        <tr><td>West Bay</td><td>4.3 / <b>8</b></td><td><b>pack #2</b></td><td class="num">·</td><td>Holds a pack slot on eight reviews</td></tr>
+        <tr><td>Blair Storage</td><td>·</td><td>organic #2</td><td class="num">·</td><td>Very simple site, ranks on relevance alone</td></tr>
+        <tr><td>Flex Self Storage</td><td>5.0 / 10</td><td>organic #6</td><td class="num">1</td><td>New build, climate controlled, Williamsburg</td></tr>
+        <tr class="crit"><td><b>Traverse City Storage</b></td><td>none</td><td>absent</td><td class="num">0</td><td>Four locations, no listing, no photos</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p style="max-width:790px; margin-top:24px;">Eight photos is enough to hold the number one pack slot in this market. Nobody fills the GBP services field. Nobody posts. Organic page one is winnable and the pack is very winnable, because the competition is not a wall of sophisticated marketing, it is a handful of listings doing the basics adequately.</p>
+
+    <div class="callout opp" style="margin-top:32px;">
+      <strong>Photo cadence beats photo volume.</strong> Ten photos a week for eight weeks per location, because the weekly upload cadence is itself the ranking signal. Never bulk dump. Order: gate and signage, drive-up rows, a unit interior with the door up, lighting at dusk, the office, size comparisons, an aerial.
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">90-day plan</span></div>
+    <h2>What happens<br><em class="display-italic">in the next 90 days</em>.</h2>
+    <p class="lede" style="margin-top:24px; max-width:760px;">Priority tags: P0 = must-ship, P1 = should-ship, P2 = flywheel.</p>
+    <div class="ornament">· · ·</div>
+
+    <div class="roadmap">
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Days 0-30</div>
+        <h3>Claim the map</h3>
+        <p class="small">Everything here needs the GBP login or an operations decision. None of it is site work.</p>
+        <ul>
+          <li><div class="check"></div><span>Claim Colonial Self Storage and rename it, preserving 16 reviews</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Create listings for the other three addresses</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Publish categories, attributes, the 678-character description, services</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Photo shoot at all four sites</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Resolve the 6-to-10 versus 24/7 access-hours contradiction</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Register in the property registry, wire GA4 and Search Console</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Start the review drive toward 10 per location</span><span class="pri">P1</span></li>
+        </ul>
+      </div>
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Days 31-60</div>
+        <h3>Make the site real</h3>
+        <p class="small">Photography lands, so the family template can finally go on honestly.</p>
+        <ul>
+          <li><div class="check"></div><span>Family hero on home and all four facility pages</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Replace stock imagery and the temp logo sitewide</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Fix the external feed: slugs and per-row SEO titles</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>FAQPage, ItemList, BreadcrumbList schema</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Add sameAs and hasMap to the new GBP CIDs</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Expand /facilities and the four facility pages</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Begin the weekly GBP posting calendar</span><span class="pri">P1</span></li>
+        </ul>
+      </div>
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Days 61-90</div>
+        <h3>Compound</h3>
+        <p class="small">Wedges, cadence, and the first real measurement.</p>
+        <ul>
+          <li><div class="check"></div><span>Boat storage page, live well before the August spike</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Photo cadence, 10 per week per location</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Review velocity to 18+ at 4.5 or better</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Neighbourhood pages for Acme, Williamsburg, Kingsley</span><span class="pri">P2</span></li>
+          <li><div class="check"></div><span>First real GSC read, 30 days of clean data</span><span class="pri">P2</span></li>
+          <li><div class="check"></div><span>Re-run the local pack check and re-baseline</span><span class="pri">P2</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="verdict-card" style="margin-top:56px;">
+      <h4>Our verdict</h4>
+      <p>This is a strong physical position attached to an unfinished digital one. Four facilities inside four kilometres of downtown, in a market whose local pack is held by a 3.9-star listing and whose second slot is held on eight reviews, and we were not in the running because the brand had no listing and no reachable location pages.</p>
+      <p>Nothing in this report is technically hard. The site-side blockers were fixed in a single session. What remains is mostly physical and administrative: claim a listing we already own, photograph four buildings, and ask real customers for reviews. Those three things, done in the next 30 days, put us in the pack.</p>
+      <p><b>Targets:</b> local pack presence for the head term by week 8, 18 or more reviews at 4.5+ by week 12, organic page one for <span class="mono">self storage traverse city</span> by week 12.</p>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Methodology</span></div>
+    <h2>Method &amp;<br><em class="display-italic">limitations</em>.</h2>
+
+    <p style="max-width:800px; margin-top:24px;"><b>Sources.</b> DataForSEO Business Listings (two sweeps: 15 km title search and 3 km category search around the facility cluster, both with unclaimed listings included), DataForSEO live SERP for the Traverse City geo, Google Ads search volume for the Traverse City location, live HTTP status checks on every URL, live rendered-DOM crawls via Playwright at 1440 width, a read-only walk of the Cubby widget's nested shadow roots, and the Duda Partner API for site configuration.</p>
+
+    <p style="max-width:800px;"><b>What we could not measure.</b> There is <strong>no Google Search Console or Analytics data in this report</strong>, and that is not an oversight. The property is absent from the LPG property registry, so no Search Console property was ever registered and the service account has no access. The domain is also one month old, so meaningful data would be thin regardless. Semrush was not pulled for the same reason. <strong>Every volume figure here is third-party estimated demand, not our measured traffic.</strong> Fixing this is a P0 in the 30-day plan precisely because none of the targets above are provable until it is done.</p>
+
+    <p style="max-width:800px;"><b>Caveats worth stating.</b> Distances are straight-line from the downtown centroid, not drive-time. West Bay's coordinates were not returned by the API, so its distance is approximate from its Cherry Bend Road address. Google's crawl lags: National Storage showed 165 reviews in one call and 169 in the live pack the same day, and we cite the live figure. Maps and local results are personalised, so ranks vary by user and device. Review velocity was not sampled because we have no listing of our own to sample. Amenity claims in the schema were taken only from the facility pages' own published feature list, never from keyword demand or competitor listings.</p>
+
+    <div class="callout" style="margin-top:32px;">
+      <strong>Companion documents.</strong> The full Google Business Profile package, including the paste-ready 678-character description, the category add-and-avoid lists, twelve review-response templates and an eight-week posting calendar, is in <span class="mono">Traverse City Storage GBP Stack</span>. The reusable build standard captured from Vail Airport Storage is in <span class="mono">lpg-facility-site-hero-blueprint</span>.
+    </div>
+
+    <p class="small" style="margin-top:40px;">Prepared by ThinkFlowLabs for Ludlow Property Group · 31 July 2026 · Confidential</p>
+  </div>
+</section>
+
+</body>
+</html>

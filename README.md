@@ -8,6 +8,7 @@ Each subfolder of this repo is one engagement. Pages are blocked from search eng
 
 | Client | Folder | URL |
 |---|---|---|
+| Traverse City Storage (4 locations, MI) | [`/traverse-city-audit/`](./traverse-city-audit/) | https://lpgmarketing.github.io/SEO/traverse-city-audit/ |
 | LudlowPropertyGroup.com (corporate site) | [`/ludlowpropertygroup-audit/`](./ludlowpropertygroup-audit/) | https://lpgmarketing.github.io/SEO/ludlowpropertygroup-audit/ |
 | Looking For Storage (parent portal) | [`/lookingforstorage-audit/`](./lookingforstorage-audit/) | https://lpgmarketing.github.io/SEO/lookingforstorage-audit/ |
 | Aspen Self Storage on Cooper | [`/aspen-self-storage-audit/`](./aspen-self-storage-audit/) | https://lpgmarketing.github.io/SEO/aspen-self-storage-audit/ |
