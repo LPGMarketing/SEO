@@ -1,0 +1,1578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<title>Big Sky Storage SEO Audit, October 2026</title>
+<meta name="description" content="SEO, local and AI visibility audit of bigskystorage.com ahead of the October 16, 2026 opening. Built from Google Search Console, GA4, Semrush, DataForSEO, a live crawl and a 20-call flagship LLM test." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,30..100,0..1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============ DESIGN TOKENS ============ */
+  :root {
+    --ink:        #0E1014;
+    --ink-2:      #1F2630;
+    --muted:      #5E6675;
+    --line:       #E6DFD2;
+    --line-2:     #EFE7D8;
+    --cream:      #FBF6EB;
+    --cream-2:    #F4ECD9;
+    --paper:      #FFFBF1;
+    --coral:      #E63946;
+    --coral-dk:   #BC2C2C;
+    --coral-sft:  #FBE3E2;
+    --gold:       #C89A4A;
+    --gold-sft:   #F6E7C7;
+    --green:      #1F7A6A;
+    --green-sft:  #DAEEE7;
+    --amber:      #B45309;
+    --amber-sft:  #FFE9BD;
+    --red-bg:     #FFEBE9;
+
+    --r-sm: 4px; --r-md: 10px; --r-lg: 18px; --r-xl: 26px;
+    --shadow-sm: 0 1px 0 rgba(20,18,12,.06);
+    --shadow-md: 0 14px 38px -22px rgba(60,40,18,.32), 0 2px 0 rgba(20,18,12,.04);
+    --shadow-lg: 0 30px 80px -30px rgba(60,40,18,.36);
+
+    --serif:      "Fraunces", "Times New Roman", serif;
+    --sans:       "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono:       "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    font-size: 16.5px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--coral-dk); text-decoration: none; border-bottom: 1px solid rgba(188,44,44,.25); }
+  a:hover { border-bottom-color: var(--coral-dk); }
+
+  /* ============ LAYOUT ============ */
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 84px 0; border-top: 1px solid var(--line); position: relative; }
+  section.alt { background: var(--paper); }
+  section.dark { background: var(--ink); color: #F2EAD7; border-top-color: #2A2520; }
+  section.dark a { color: #FFD8AC; border-bottom-color: rgba(255,216,172,.3); }
+
+  /* ============ TYPOGRAPHY ============ */
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -.012em; line-height: 1.08; margin: 0; }
+  h1 { font-size: clamp(48px, 8vw, 96px); font-weight: 380; letter-spacing: -.03em; }
+  h2 { font-size: clamp(34px, 4.6vw, 58px); font-weight: 400; letter-spacing: -.022em; }
+  h3 { font-size: clamp(22px, 2.6vw, 30px); font-weight: 500; line-height: 1.18; }
+  h4 { font-size: 19px; font-weight: 600; line-height: 1.3; font-family: var(--sans); letter-spacing: -.005em; }
+  .display-italic { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .eyebrow {
+    font-family: var(--sans); font-weight: 500; font-size: 12px;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--coral-dk);
+  }
+  p { margin: 0 0 1em; }
+  p.lede { font-size: 21px; line-height: 1.55; color: var(--ink-2); }
+  ul, ol { margin: 0 0 1em; padding-left: 1.2em; }
+  ul li, ol li { margin-bottom: .35em; }
+  strong { font-weight: 600; }
+  .mono { font-family: var(--mono); font-size: .9em; }
+  .small { font-size: 13px; color: var(--muted); }
+
+  /* ============ HERO ============ */
+  .hero {
+    background:
+      radial-gradient(60% 80% at 80% 0%, #FBE3E2 0%, transparent 60%),
+      radial-gradient(50% 70% at 0% 70%, #F6E7C7 0%, transparent 55%),
+      var(--cream);
+    border-top: 0;
+    padding: 56px 0 96px;
+    overflow: hidden; position: relative;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='1' cy='1' r='.6' fill='%23E63946' opacity='.06'/></svg>");
+    pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: end; position: relative; }
+  .hero h1 { margin-bottom: .18em; }
+  .hero h1 em { font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--coral); }
+  .hero .meta { font-family: var(--sans); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+  .hero .by-line { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--line-2); margin-top: 36px; font-size: 14px; }
+  .hero .by-line span b { color: var(--ink); font-weight: 600; }
+  .hero-side {
+    background: white; border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 30px; box-shadow: var(--shadow-md);
+    font-size: 14px;
+  }
+  .hero-side h4 { font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .15em; font-family: var(--sans); margin-bottom: 16px; font-weight: 600; }
+  .hero-side dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; }
+  .hero-side dt { color: var(--muted); }
+  .hero-side dd { margin: 0; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+  .hero-side .severity-strip { margin: 22px -30px -30px; padding: 18px 30px; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); color: white; border-radius: 0 0 var(--r-lg) var(--r-lg); display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
+  @media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+  /* ============ TLDR (Executive Summary) ============ */
+  .tldr { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; }
+  .tldr h2 em { font-style: italic; color: var(--coral); font-variation-settings: "SOFT" 100, "WONK" 1; }
+  .tldr-bullets { font-size: 17px; line-height: 1.6; }
+  .tldr-bullets li { margin-bottom: 16px; padding-left: 4px; }
+  .tldr-bullets li::marker { color: var(--coral); }
+  .verdict-card {
+    background: var(--ink); color: #F2EAD7;
+    border-radius: var(--r-lg); padding: 36px;
+    position: sticky; top: 24px;
+  }
+  .verdict-card h4 { color: #F6E7C7; font-family: var(--serif); font-size: 24px; margin-bottom: 14px; font-weight: 500; }
+  .verdict-card p { font-size: 15px; line-height: 1.65; color: #D8CDB5; }
+  .verdict-card .score-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 22px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); font-family: var(--mono); font-size: 12px; }
+  .verdict-card .score-row b { color: white; font-size: 18px; }
+  @media (max-width: 820px) { .tldr { grid-template-columns: 1fr; } .verdict-card { position: static; } }
+
+  /* ============ KPI GRID ============ */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .kpi {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 22px 22px 18px; position: relative; overflow: hidden;
+  }
+  .kpi-label { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .kpi-value { font-family: var(--serif); font-size: 46px; font-weight: 400; line-height: 1; letter-spacing: -.02em; color: var(--ink); }
+  .kpi-value small { font-size: 17px; color: var(--muted); margin-left: 4px; font-family: var(--sans); font-weight: 500; }
+  .kpi-trend { font-size: 12px; margin-top: 8px; font-family: var(--mono); }
+  .kpi-trend.up { color: var(--green); }
+  .kpi-trend.dn { color: var(--coral-dk); }
+  .kpi.cta::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--coral); }
+  @media (max-width: 820px) { .kpi-grid { grid-template-columns: 1fr 1fr; } .kpi-value { font-size: 36px; } }
+
+  /* ============ FINDINGS CARDS ============ */
+  .findings { display: grid; gap: 24px; }
+  .finding {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-lg);
+    padding: 36px; display: grid; grid-template-columns: 88px 1fr; gap: 28px;
+    box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+  }
+  .finding .num {
+    font-family: var(--serif); font-size: 78px; font-weight: 400; line-height: 1; color: var(--coral); letter-spacing: -.04em; opacity: .9;
+  }
+  .finding h3 { margin-bottom: 8px; }
+  .finding .impact-line { font-size: 13.5px; color: var(--muted); margin-bottom: 18px; font-family: var(--mono); letter-spacing: .02em; }
+  .finding p { font-size: 16px; }
+  .finding .fix {
+    background: var(--cream-2); padding: 18px 22px; border-radius: var(--r-md);
+    margin-top: 18px; border-left: 3px solid var(--coral); font-size: 15.5px;
+  }
+  .finding .fix b { color: var(--ink); }
+  .badge {
+    display: inline-block; padding: 4px 11px; border-radius: 999px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700;
+  }
+  .badge.crit { background: var(--coral); color: white; }
+  .badge.high { background: var(--amber-sft); color: var(--amber); }
+  .badge.med { background: var(--gold-sft); color: var(--gold); }
+  .badge.opp { background: var(--green-sft); color: var(--green); }
+  .badge.brand { background: var(--ink); color: var(--cream); }
+  @media (max-width: 820px) {
+    .finding { grid-template-columns: 1fr; padding: 26px; }
+    .finding .num { font-size: 56px; }
+  }
+
+  /* ============ DATA TABLES ============ */
+  table {
+    width: 100%; border-collapse: collapse; font-size: 14.5px;
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;
+  }
+  th { text-align: left; font-weight: 600; padding: 14px 16px; background: var(--cream-2); border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+  td { padding: 14px 16px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  th.num { text-align: right; }
+  td.kw { font-weight: 500; }
+  td .badge { font-size: 10px; padding: 3px 8px; }
+
+  .table-scroll { overflow-x: auto; }
+
+  /* ============ URL AUDIT CARDS ============ */
+  .url-audit { background: white; border: 1px solid var(--line); border-radius: var(--r-md); margin-bottom: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+  .url-audit.crit { border-color: #F4C7C5; }
+  .url-audit-head { background: var(--cream-2); padding: 16px 22px; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .url-audit.crit .url-audit-head { background: var(--coral-sft); }
+  .url-audit-url { font-family: var(--mono); font-size: 13.5px; font-weight: 600; color: var(--ink); word-break: break-all; line-height: 1.4; }
+  .url-audit-meta { font-size: 12px; color: var(--muted); font-family: var(--mono); margin-top: 4px; letter-spacing: .01em; }
+  .url-audit-body { padding: 0; }
+  .url-issue { display: grid; grid-template-columns: 200px 1fr 1.5fr; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--line-2); font-size: 13.5px; }
+  .url-issue:first-child { border-top: 0; }
+  .url-issue .issue-name { font-weight: 600; color: var(--coral-dk); display: flex; align-items: flex-start; gap: 8px; padding-top: 1px; }
+  .url-issue .issue-name::before { content: "✗"; font-weight: 700; flex-shrink: 0; }
+  .url-issue.ok .issue-name { color: var(--green); }
+  .url-issue.ok .issue-name::before { content: "✓"; }
+  .url-issue.warn .issue-name { color: var(--amber); }
+  .url-issue.warn .issue-name::before { content: "!"; }
+  .url-issue .issue-current { color: var(--ink-2); line-height: 1.5; }
+  .url-issue .issue-fix { color: var(--ink); background: var(--cream); padding: 9px 13px; border-radius: 4px; font-size: 13px; border-left: 3px solid var(--coral); line-height: 1.5; }
+  .url-issue .issue-fix b { color: var(--ink); }
+  .url-issue code { font-size: 11.5px; background: rgba(0,0,0,.04); padding: 1px 5px; border-radius: 3px; }
+  .url-issue .issue-fix code { background: rgba(20,18,12,.07); }
+
+  .url-group { background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: var(--r-md); padding: 26px 28px; margin-bottom: 22px; }
+  .url-group.opp { border-left-color: var(--green); }
+  .url-group.warn { border-left-color: var(--amber); }
+  .url-group h4 { font-family: var(--sans); font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+  .url-group p { font-size: 14.5px; margin-bottom: 0; }
+  .url-group .url-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); margin-top: 16px; background: white; padding: 16px 18px; border-radius: 4px; border: 1px solid var(--line); }
+  .url-group .url-list span.cnt { color: var(--muted); margin-left: 6px; font-size: 11px; }
+  .url-group .group-fix { margin-top: 16px; padding: 14px 18px; background: var(--cream-2); border-radius: 4px; font-size: 14px; line-height: 1.55; }
+  .url-group .group-fix b { color: var(--coral-dk); }
+  .url-group .group-fix code { font-size: 11.5px; background: rgba(20,18,12,.07); padding: 1px 5px; border-radius: 3px; }
+
+  .sub-eyebrow { display: inline-block; font-family: var(--sans); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--coral-dk); margin-top: 48px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--coral); }
+
+  @media (max-width: 820px) {
+    .url-issue { grid-template-columns: 1fr; gap: 8px; }
+    .url-group .url-list { grid-template-columns: 1fr; }
+  }
+
+  /* ============ PILLS / CALLOUTS ============ */
+  .callout {
+    background: var(--coral-sft); border: 1px solid #F4C7C5;
+    border-radius: var(--r-md); padding: 22px 26px;
+    font-size: 15.5px; color: var(--coral-dk); margin: 24px 0;
+  }
+  .callout.opp { background: var(--green-sft); border-color: #BFE0D6; color: #135548; }
+  .callout.warn { background: var(--amber-sft); border-color: #F2D5A0; color: var(--amber); }
+  .callout strong { color: inherit; }
+
+  /* ============ TWO-COL ============ */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 820px) { .two-col, .three-col { grid-template-columns: 1fr; } }
+
+  /* ============ HIERARCHY CARDS ============ */
+  .page-card {
+    background: white; border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: 22px 24px; margin-bottom: 14px;
+  }
+  .page-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 12px; }
+  .page-card-head h4 { font-family: var(--mono); font-size: 14px; color: var(--ink); letter-spacing: 0; word-break: break-all; }
+  .pc-issues { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pc-issue { font-size: 11.5px; padding: 3px 9px; border-radius: 4px; background: var(--coral-sft); color: var(--coral-dk); font-weight: 600; }
+  .pc-issue.ok { background: var(--green-sft); color: var(--green); }
+  .pc-issue.warn { background: var(--amber-sft); color: var(--amber); }
+
+  /* ============ ROADMAP ============ */
+  .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .road-col {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: var(--r-lg); padding: 28px;
+  }
+  .road-col .label { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 12.5px; letter-spacing: .15em; text-transform: uppercase; color: var(--coral-dk); margin-bottom: 6px; }
+  .road-col .dot { width: 9px; height: 9px; border-radius: 999px; background: var(--coral); }
+  .road-col h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 18px; }
+  .road-col ul { list-style: none; padding: 0; }
+  .road-col li { padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: start; }
+  .road-col li:last-child { border-bottom: 0; }
+  .road-col li .check { width: 18px; height: 18px; border: 1.5px solid var(--line); border-radius: 4px; margin-top: 2px; }
+  .road-col li .pri { font-family: var(--mono); font-size: 10.5px; color: var(--muted); padding: 3px 7px; border: 1px solid var(--line); border-radius: 4px; align-self: start; }
+  @media (max-width: 1000px) { .roadmap { grid-template-columns: 1fr; } }
+
+  /* ============ SCHEMA SNIPPETS ============ */
+  pre.code {
+    background: #1A1F26; color: #DCD0AE; padding: 22px 26px;
+    border-radius: var(--r-md); font-family: var(--mono); font-size: 13px;
+    overflow-x: auto; line-height: 1.55; margin: 18px 0;
+  }
+  .code .k { color: #FFD89B; }
+  .code .s { color: #B5DCC7; }
+  .code .c { color: #6E6452; font-style: italic; }
+
+  /* ============ FOOTER ============ */
+  footer { padding: 56px 0 36px; background: var(--ink); color: #BAB099; text-align: center; }
+  footer .mark { font-family: var(--serif); font-style: italic; color: var(--coral); font-size: 28px; font-variation-settings: "SOFT" 100, "WONK" 1; }
+  footer .small { color: #76705F; }
+
+  /* ============ STICKY NAV ============ */
+  .topnav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251, 246, 235, 0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line); padding: 14px 0;
+  }
+  .topnav .inner { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+  .topnav a { color: var(--ink); border-bottom: 0; font-size: 13px; font-weight: 500; }
+  .topnav .mark { font-family: var(--serif); font-style: italic; color: var(--coral); font-size: 20px; font-variation-settings: "SOFT" 100, "WONK" 1; border: 0; }
+  .topnav nav { display: flex; gap: 22px; flex-wrap: wrap; }
+  @media (max-width: 820px) { .topnav nav { display: none; } }
+
+  /* ============ HORIZONTAL BAR CHART ============ */
+  .bar-row { display: grid; grid-template-columns: 200px 1fr 80px; gap: 14px; align-items: center; padding: 8px 0; font-size: 14px; }
+  .bar-bg { height: 22px; background: var(--cream-2); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--coral) 0%, var(--coral-dk) 100%); }
+  .bar-fill.alt { background: linear-gradient(90deg, var(--gold) 0%, #A77F35 100%); }
+  .bar-fill.green { background: linear-gradient(90deg, #2C9D8B 0%, var(--green) 100%); }
+  .bar-val { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; color: var(--ink-2); }
+  @media (max-width: 600px) { .bar-row { grid-template-columns: 120px 1fr 60px; font-size: 13px; } }
+
+  /* ============ DIVIDERS ============ */
+  .ornament { text-align: center; margin: 48px 0; color: var(--coral); font-family: var(--serif); font-size: 22px; letter-spacing: .4em; opacity: .7; }
+  .section-eyebrow { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+  .section-eyebrow .bar { width: 36px; height: 1px; background: var(--coral); }
+
+  /* ============ MISC ============ */
+  .quote {
+    border-left: 3px solid var(--coral); padding: 12px 0 12px 26px;
+    font-family: var(--serif); font-size: 22px; line-height: 1.4; color: var(--ink-2);
+    font-style: italic; margin: 28px 0;
+  }
+  .quote cite { display: block; margin-top: 10px; font-family: var(--sans); font-size: 13px; color: var(--muted); font-style: normal; letter-spacing: .04em; }
+
+  details.acc { background: white; border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; margin-bottom: 10px; }
+  details.acc summary { cursor: pointer; font-weight: 600; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  details.acc summary::after { content: "+"; font-family: var(--serif); font-size: 22px; color: var(--coral); }
+  details.acc[open] summary::after { content: "−"; }
+  details.acc[open] { box-shadow: var(--shadow-md); }
+  details.acc .body { margin-top: 14px; font-size: 15px; color: var(--ink-2); }
+
+  /* ============ PRINT ============ */
+  @media print {
+    body { background: white; }
+    section { padding: 28px 0; page-break-inside: avoid; }
+    .topnav, .hero::before { display: none; }
+    .finding, .road-col, table { box-shadow: none; }
+    a { color: var(--ink); }
+  }
+
+  /* ============ BIG SKY STORAGE BRAND OVERRIDE (logo blue #009AE5, footer navy #112D4E) ============ */
+  :root {
+    --coral:      #0A7DC2;
+    --coral-dk:   #0B5A8C;
+    --coral-sft:  #DCEFFA;
+    --line:       #DCE3EA;
+    --line-2:     #E8EEF3;
+    --cream:      #F6F9FB;
+    --cream-2:    #EAF1F6;
+    --paper:      #FCFEFF;
+  }
+  a { border-bottom-color: rgba(11,90,140,.25); }
+  section.dark { background: #0E1A26; }
+  section.dark a { color: #8FD3FF; border-bottom-color: rgba(143,211,255,.3); }
+
+  /* ============ COUNTRY / DATA TABLES ============ */
+  .dtable-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 22px 0 6px;
+    border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--paper);
+    box-shadow: var(--shadow-md); }
+  table.dtable { width: 100%; border-collapse: collapse; min-width: 640px; font-size: 15px; }
+  table.dtable thead th {
+    text-align: left; font-family: var(--sans); font-size: 11.5px; font-weight: 600;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+    padding: 15px 16px; border-bottom: 1px solid var(--line); background: var(--cream-2);
+    white-space: nowrap;
+  }
+  table.dtable tbody td { padding: 13px 16px; border-bottom: 1px solid var(--line-2); vertical-align: middle; }
+  table.dtable tbody tr:last-child td { border-bottom: 0; }
+  table.dtable tbody tr.hi { background: var(--coral-sft); }
+  table.dtable tbody tr.hi td { font-weight: 600; }
+  table.dtable tbody tr.dim td { color: var(--muted); }
+  table.dtable td.n, table.dtable th.n { text-align: right; font-family: var(--mono); font-size: 14px; white-space: nowrap; }
+  table.dtable td.co { font-weight: 600; white-space: nowrap; }
+  .swipe-hint { display: none; font-size: 12.5px; color: var(--muted); margin: 8px 2px 0; letter-spacing: .04em; }
+  @media (max-width: 760px) { .swipe-hint { display: block; } }
+
+  .tag-lo { display:inline-block; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:600;
+    background: var(--green-sft); color: var(--green); letter-spacing:.03em; }
+  .tag-md { display:inline-block; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:600;
+    background: var(--gold-sft); color: #8A6520; letter-spacing:.03em; }
+  .tag-hi { display:inline-block; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:600;
+    background: var(--red-bg); color: #A32C24; letter-spacing:.03em; }
+
+  /* ============ MATRIX (LLM 5x4) ============ */
+  table.mx { width:100%; border-collapse:collapse; min-width:560px; font-size:14.5px; }
+  table.mx thead th { padding:14px 12px; font-family:var(--sans); font-size:11.5px; font-weight:600;
+    letter-spacing:.1em; text-transform:uppercase; color:#B9AFCB; border-bottom:1px solid #2E2739; text-align:center; }
+  table.mx thead th:first-child { text-align:left; width:44%; }
+  table.mx tbody td { padding:14px 12px; border-bottom:1px solid #241E2E; text-align:center; font-family:var(--mono); }
+  table.mx tbody td:first-child { text-align:left; font-family:var(--sans); color:#EFE6FA; }
+  table.mx tbody tr:last-child td { border-bottom:0; }
+  .no { color:#C9556B; font-weight:700; }
+  .mx-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid #2E2739;
+    border-radius:var(--r-lg); background:#16121D; margin:24px 0 8px; }
+
+  /* ============ SCENARIO CARDS ============ */
+  .scen-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:26px; }
+  @media (max-width: 900px) { .scen-grid { grid-template-columns:1fr; } }
+  .scen { background:var(--paper); border:1px solid var(--line); border-radius:var(--r-lg);
+    padding:26px 24px 24px; box-shadow:var(--shadow-md); position:relative; overflow:hidden; }
+  .scen::before { content:''; position:absolute; inset:0 0 auto 0; height:4px;
+    background:linear-gradient(90deg,var(--coral) 0%,var(--coral-dk) 100%); }
+  .scen .letter { font-family:var(--serif); font-size:40px; line-height:1; color:var(--coral);
+    font-style:italic; font-variation-settings:"SOFT" 100,"WONK" 1; margin-bottom:10px; }
+  .scen h4 { margin:0 0 10px; font-size:20px; }
+  .scen p { margin:0 0 14px; font-size:15px; color:var(--ink-2); }
+  .scen .out { border-top:1px dashed var(--line); padding-top:14px; margin-top:auto;
+    font-size:14px; font-family:var(--mono); color:var(--coral-dk); font-weight:500; }
+
+  /* ============ GOOD LIST ============ */
+  .good { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:24px; }
+  @media (max-width: 820px) { .good { grid-template-columns:1fr; } }
+  .good-item { background:var(--green-sft); border:1px solid #BFDFD6; border-radius:var(--r-md);
+    padding:18px 20px; }
+  .good-item b { display:block; font-family:var(--serif); font-size:17px; margin-bottom:5px; color:#14544A; }
+  .good-item span { font-size:14.5px; color:#1F4B44; line-height:1.55; }
+
+  /* ============ QUOTE STACK (dark) ============ */
+  .qstack { display:grid; gap:16px; margin-top:26px; }
+  .qq { border-left:3px solid var(--coral); background:#1A1522; border-radius:0 var(--r-md) var(--r-md) 0;
+    padding:20px 24px; }
+  .qq p { margin:0 0 10px; font-family:var(--serif); font-size:18px; line-height:1.5; color:#F4ECFF; font-style:italic; }
+  .qq cite { font-style:normal; font-family:var(--mono); font-size:12.5px; color:#B79FD6; letter-spacing:.04em; }
+
+  /* ============ TRENDS BARS ============ */
+  .tb { display:grid; grid-template-columns:150px 1fr 52px; gap:14px; align-items:center; margin-bottom:9px; }
+  @media (max-width: 620px) { .tb { grid-template-columns:110px 1fr 46px; gap:10px; font-size:14px; } }
+  .tb .nm { font-size:14.5px; font-weight:500; }
+  .tb .tr { height:11px; background:var(--cream-2); border-radius:999px; overflow:hidden; }
+  .tb .tf { height:100%; background:linear-gradient(90deg,var(--coral) 0%,var(--coral-dk) 100%); border-radius:999px; }
+  .tb .tf.g { background:linear-gradient(90deg,#2FA98F 0%,#1F7A6A 100%); }
+  .tb .tf.d { background:#CFC4DE; }
+  .tb .vv { font-family:var(--mono); font-size:13px; text-align:right; color:var(--muted); }
+
+  /* ============ NUMBER STRIP ============ */
+  .nstrip { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:30px 0 6px;
+    border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden; background:var(--paper); }
+  @media (max-width: 820px) { .nstrip { grid-template-columns:repeat(2,1fr); } }
+  .nstrip div { padding:24px 20px; border-right:1px solid var(--line-2); }
+  .nstrip div:last-child { border-right:0; }
+  @media (max-width: 820px) { .nstrip div:nth-child(2) { border-right:0; } }
+  .nstrip .nv { font-family:var(--serif); font-size:38px; line-height:1; color:var(--coral); font-weight:500; }
+  .nstrip .nl { font-size:13px; color:var(--muted); margin-top:8px; line-height:1.45; }
+
+  /* ============ FIXES FOR REUSED BASE CLASSES ============ */
+  /* hero side card: base .score-row is scoped to .verdict-card only */
+  .hero-side .score-row {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 18px;
+    padding: 13px 0; border-bottom: 1px solid var(--line-2);
+    font-family: var(--sans); font-size: 14px; margin: 0;
+  }
+  .hero-side .score-row:last-of-type { border-bottom: 0; }
+  .hero-side .score-row .k { color: var(--muted); line-height: 1.35; }
+  .hero-side .score-row .s {
+    color: var(--ink); font-family: var(--mono); font-size: 17px; font-weight: 600;
+    white-space: nowrap; font-variant-numeric: tabular-nums;
+  }
+
+  /* tldr used without a side card: go full width */
+  .tldr { display: block !important; }
+  .tldr-bullets { max-width: 960px; }
+
+  /* verdict-card used standalone: no sticky, style h3 */
+  .verdict-card { position: static !important; }
+  .verdict-card h3 {
+    color: #E9D9FF; font-family: var(--serif); font-size: 25px;
+    margin: 0 0 14px; font-weight: 500;
+  }
+  .verdict-card p b { color: #FFFFFF; }
+
+  /* hero wash in brand purple */
+  .hero {
+    background:
+      radial-gradient(60% 80% at 80% 0%, #D6ECFA 0%, transparent 60%),
+      radial-gradient(50% 70% at 0% 70%, #E3EEF6 0%, transparent 55%),
+      var(--cream);
+  }
+  .hero::before {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='1' cy='1' r='.6' fill='%23009AE5' opacity='.07'/></svg>");
+  }
+
+  /* two-col used for SERP comparison */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+  @media (max-width: 900px) { .two-col { grid-template-columns:1fr; } }
+
+  /* dark-section callout readability */
+  section.dark .callout { background:#1A1522; border-color:#33293F; color:#E8DDF7; }
+  section.dark h3 { color:#F4ECFF; }
+  section.dark .bar-row .label { color:#E8DDF7; }
+  section.dark .bar-bg { background:#2A2235; }
+  section.dark .bar-val { color:#C9B6E4; }
+  section.dark .lede { color:#CFC0E4; }
+
+  /* ============ ROADMAP LIST FIX ============ */
+  /* base rule is `display:grid; grid-template-columns:24px 1fr auto`, which assumes
+     every li carries a .check span, the text and a .pri badge. A bare text node lands
+     in the 24px track and breaks one word per line. Flex degrades gracefully instead. */
+  .road-col li {
+    display: flex; gap: 10px; align-items: flex-start;
+    grid-template-columns: none;
+  }
+  .road-col li .check { flex: 0 0 18px; }
+  .road-col li .pri { flex: 0 0 auto; margin-left: auto; }
+  .road-col ul { margin: 0; }
+
+  /* ============ INLINE-SPAN BAR FIX ============ */
+  /* base .bar-fill assumes a block element; these are spans */
+  .bar-bg { display: block; }
+  .bar-fill { display: block; }
+  .tb .tr { display: block; }
+  .tb .tf { display: block; }
+
+  /* ============ DARK TABLE FIX ============ */
+  /* base `table { background:white }` leaks into the dark section */
+  section.dark table, table.mx { background: transparent; border: 0; border-radius: 0; }
+  table.mx thead th { background: #221B2D; color: #CDBBE6; }
+  table.mx tbody td { color: #EFE6FA; background: transparent; }
+  table.mx tbody tr:nth-child(even) td { background: #1B1624; }
+  section.dark .eyebrow { color: #C9B6E4; }
+  section.dark .ornament { color: #6F5A8C; }
+
+  /* ============ SMALL PHONE HARDENING (checked at 390px) ============ */
+  @media (max-width: 520px) {
+    .wrap, .narrow { padding: 0 20px; }
+    .kpi-grid { grid-template-columns: 1fr; }
+    .nstrip { grid-template-columns: 1fr; }
+    .nstrip div { border-right: 0; border-bottom: 1px solid var(--line-2); padding: 20px; }
+    .nstrip div:last-child { border-bottom: 0; }
+    .nstrip .nv { font-size: 32px; }
+    h1 { font-size: 40px; }
+    h2 { font-size: 31px; }
+    .hero-side { padding: 24px; }
+    .hero-side .severity-strip { margin: 18px -24px -24px; padding: 16px 24px; }
+    .scen { padding: 22px 20px; }
+    .good-item { padding: 16px 18px; }
+    .qq { padding: 18px 20px; }
+    .qq p { font-size: 16.5px; }
+    .verdict-card { padding: 26px 22px; }
+    table.dtable, table.mx { font-size: 14px; }
+  }
+
+  /* ============ FOOT ============ */
+  .foot { padding:56px 0 70px; text-align:center; color:var(--muted); font-size:14px; }
+  .foot b { color:var(--ink); }
+
+  /* ============ BIG SKY: nav + hero fit ============ */
+  .topnav { background: rgba(246,249,251,.94) !important; }
+  .topnav .mark { white-space: nowrap; font-size: 18px; }
+  .topnav nav { gap: 16px; flex-wrap: nowrap; }
+  .topnav nav a { white-space: nowrap; font-size: 12.5px; }
+  @media (max-width: 1180px) { .topnav nav a:nth-child(n+11) { display: none; } }
+  .hero h1 { font-size: clamp(42px, 6.2vw, 78px); }
+  section.dark table.mx tbody tr:nth-child(even) td { background: #182B3C !important; }
+  section.dark table.mx tbody td { border-bottom: 1px solid #22384B; }
+
+</style>
+</head>
+<body>
+<!-- =================== STICKY NAV =================== -->
+<div class="topnav">
+  <div class="wrap inner">
+    <a href="#top" class="mark">big sky storage · audit</a>
+    <nav>
+      <a href="#tldr">Summary</a>
+      <a href="#snapshot">Snapshot</a>
+      <a href="#critical">Critical</a>
+      <a href="#quickwins">Quick Wins</a>
+      <a href="#hierarchy">URL Catalog</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#schema">Schema</a>
+      <a href="#content">Content</a>
+      <a href="#backlinks">Backlinks</a>
+      <a href="#competitive">Competitors</a>
+      <a href="#llm">AI/LLM</a>
+      <a href="#roadmap">90-Day Plan</a>
+    </nav>
+  </div>
+</div>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="meta">SEO AUDIT &amp; LAUNCH STRATEGY &nbsp;·&nbsp; INTERNAL</div>
+      <h1>Big Sky Storage opens<br>in <em>eleven days</em>.<br>Google has seen <em>three pages</em>.</h1>
+      <p class="lede" style="margin-top:32px; max-width:620px;">
+        A technical, local, competitive and AI-visibility audit of <strong>www.bigskystorage.com</strong>, built from live Google Search Console and GA4 data, Semrush, DataForSEO, a full-page crawl of all 16 public URLs, Cubby lease data and a 20-call test of the flagship AI models. Written to be acted on before the October 16 opening, then fed to <code class="mono">/duda-sauce</code> for verification and build.
+      </p>
+      <div class="by-line">
+        <span>Prepared for <b>Ludlow Property Group</b></span>
+        <span>·</span>
+        <span>Issued <b>October 5, 2026</b></span>
+        <span>·</span>
+        <span>Data window <b>Sep 4 to Oct 4, 2026</b></span>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h4>AT-A-GLANCE</h4>
+      <dl>
+        <dt>Opening date</dt><dd>Oct 16, 2026</dd>
+        <dt>Sitemap URLs indexed</dt><dd>3 of 18</dd>
+        <dt>GSC clicks / impressions (30d)</dt><dd>22 / 360</dd>
+        <dt>Semrush Authority Score</dt><dd>2 / 100</dd>
+        <dt>Ranked keywords (Semrush)</dt><dd>2</dd>
+        <dt>Referring domains, spam share</dt><dd>~410 · ~97%</dd>
+        <dt>Lighthouse mobile performance</dt><dd>20 / 100</dd>
+        <dt>Active leases (Cubby)</dt><dd>7 · $5,130/mo</dd>
+        <dt>LLM citations (5×4 grid)</dt><dd>13 of 20</dd>
+      </dl>
+      <div class="severity-strip">
+        <span>Overall health</span>
+        <span>Critical, fixable this week</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- =================== EXEC SUMMARY =================== -->
+<section id="tldr" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Executive Summary</span></div>
+    <div class="tldr">
+      <div>
+        <h2>The situation in <em class="display-italic">60 seconds</em>.</h2>
+        <p class="lede" style="margin-top:24px;">
+          Big Sky Storage has the only heated and climate-controlled product in the Gallatin Canyon, real press coverage and a well-written site. Google can barely see any of it, for reasons that are almost entirely mechanical and cheap to fix. AI assistants, oddly, already can.
+        </p>
+        <ol class="tldr-bullets" style="margin-top:24px;">
+          <li><strong>Google has indexed 3 of 18 pages.</strong> The seven pages that sell the product (storage units, heated storage, RV and boat, sizes, heated vs climate) are "Discovered, currently not indexed" or unknown to Google. The homepage links to none of them; they hang off <code class="mono">/blog</code>, which is not indexed either.</li>
+          <li><strong>The Google Maps listing is the wrong business shape.</strong> A listing at 204 Blacksmith Lp already wins the local pack for "big sky storage", but it has no website, no phone, is categorized as a Warehouse and shows as Closed.</li>
+          <li><strong>Every page tells Google this business is "Looking for Storage".</strong> The sitewide Organization schema, the schema email and the footer all carry Cubby's parent brand and <code class="mono">Help@LookingForStorage.com</code>. A GPT-4o scoping probe asked about bigskystorage.com answered that it could not find a website and offered a different "Storage-Big Sky" at 47995 Gallatin Rd; the flagship models do better (Section 10), but the Belgrade name-alike still appears in 5 of their 20 answers.</li>
+          <li><strong>The brand rankings are stuck on the old domain.</strong> storagebigsky.com still ranks #2 for "big sky storage" in Semrush; the new domain ranks for 2 keywords. The bare <code class="mono">https://bigskystorage.com</code> still serves Duda's placeholder certificate.</li>
+          <li><strong>The demand window is now.</strong> "rv storage bozeman" runs 140 searches a month on average and 390 in October; "car storage bozeman" 110 and 320. The facility opens into the fall vehicle swap, the second-home arrival season and the November 25 resort opening.</li>
+        </ol>
+      </div>
+      <div class="verdict-card">
+        <h4>Our verdict</h4>
+        <p>This is not a content problem and not an authority problem yet. It is a <strong>discoverability</strong> problem: unlinked pages, a half-built Maps listing, the wrong entity name in the code and a broken bare domain. Most of it is a day of Duda and Business Profile work.</p>
+        <p>Fix the foundation before <strong>October 16</strong>. Earn 10 reviews and 10 real local links in <strong>60 days</strong>. Target the Bozeman vehicle-storage terms with honest drive-time pages in <strong>90 days</strong>. AI assistants already cite us in 13 of 20 flagship answers; the realistic goal is to match that in Maps and organic by the end of ski season's first month.</p>
+        <div class="score-row">
+          <span>HEALTH&nbsp; <b>24/100</b></span>
+          <span>FIXABLE IN&nbsp; <b>~5 days</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== STATE OF THE SITE =================== -->
+<section id="snapshot">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">01 · State of the Site</span></div>
+    <h2>What 30 days of search<br>data <em class="display-italic">actually</em> says.</h2>
+    <p class="lede" style="margin-top:18px; max-width:740px;">The GSC and GA4 properties were created on September 5, so this is the whole history. Almost every click is a brand search landing on the homepage. Paid search brings the engaged visitors; none of them have bought.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">GSC clicks (30d)</div><div class="kpi-value">22</div><div class="kpi-trend">Sep 4 to Oct 3</div></div>
+      <div class="kpi"><div class="kpi-label">GSC impressions</div><div class="kpi-value">360</div><div class="kpi-trend">~80 a week now</div></div>
+      <div class="kpi"><div class="kpi-label">Site-wide CTR</div><div class="kpi-value">6.1<small>%</small></div><div class="kpi-trend up">brand-driven</div></div>
+      <div class="kpi cta"><div class="kpi-label">Pages indexed</div><div class="kpi-value">3<small>/18</small></div><div class="kpi-trend dn">money pages missing</div></div>
+      <div class="kpi"><div class="kpi-label">"big sky storage" avg pos</div><div class="kpi-value">4.9</div><div class="kpi-trend up">from 8.3 on Sep 8</div></div>
+      <div class="kpi"><div class="kpi-label">GA4 sessions (30d)</div><div class="kpi-value">832</div><div class="kpi-trend dn">247 are a Chicago bot</div></div>
+      <div class="kpi"><div class="kpi-label">Paid checkouts / purchases</div><div class="kpi-value">16<small>/0</small></div><div class="kpi-trend dn">funnel wall at payment</div></div>
+      <div class="kpi"><div class="kpi-label">New leases since Sep 14</div><div class="kpi-value">0</div><div class="kpi-trend dn">7 active, $5,130/mo</div></div>
+    </div>
+
+    <h3 style="margin-top:64px;">Every query Google showed us for</h3>
+    <p style="max-width:780px; margin-top: 12px;">All 26 queries in the property's history, minus seven one-impression junk terms (consignment shops, "b21 storage", "self storage covington"). Note how much of the demand is our own name, and how much of "our name" belongs to someone else.</p>
+    <div class="table-scroll" style="margin-top: 22px;">
+      <table>
+        <thead><tr><th>Query</th><th class="num">Impr</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">Avg pos</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">big sky storage</td><td class="num">57</td><td class="num">8</td><td class="num">14.0%</td><td class="num">4.9</td><td><span class="badge opp">BRAND, CLIMBING</span></td></tr>
+          <tr><td class="kw">big sky self storage</td><td class="num">22</td><td class="num">0</td><td class="num">0.0%</td><td class="num">7.1</td><td><span class="badge high">NAME COLLISION</span></td></tr>
+          <tr><td class="kw">big sky storage units</td><td class="num">15</td><td class="num">2</td><td class="num">13.3%</td><td class="num">5.7</td><td><span class="badge opp">BRAND</span></td></tr>
+          <tr><td class="kw">storage units big sky mt</td><td class="num">14</td><td class="num">0</td><td class="num">0.0%</td><td class="num">5.6</td><td><span class="badge crit">LOSING CLICK</span></td></tr>
+          <tr><td class="kw">storage units near me</td><td class="num">13</td><td class="num">0</td><td class="num">0.0%</td><td class="num">6.9</td><td><span class="badge high">NEEDS MAPS</span></td></tr>
+          <tr><td class="kw">storage</td><td class="num">5</td><td class="num">0</td><td class="num">0.0%</td><td class="num">6.6</td><td><span class="badge med">LOCAL</span></td></tr>
+          <tr><td class="kw">big sky storage official website</td><td class="num">4</td><td class="num">0</td><td class="num">0.0%</td><td class="num">7.8</td><td><span class="badge crit">ENTITY CONFUSION</span></td></tr>
+          <tr><td class="kw">car storage near me</td><td class="num">3</td><td class="num">0</td><td class="num">0.0%</td><td class="num">5.7</td><td><span class="badge opp">BAY PRODUCT</span></td></tr>
+          <tr><td class="kw">big sky rv storage</td><td class="num">1</td><td class="num">0</td><td class="num">0.0%</td><td class="num">3.0</td><td><span class="badge opp">BAY PRODUCT</span></td></tr>
+          <tr><td class="kw">temp controlled storage near me</td><td class="num">1</td><td class="num">0</td><td class="num">0.0%</td><td class="num">3.0</td><td><span class="badge opp">DIFFERENTIATOR</span></td></tr>
+          <tr><td class="kw">lazy j storage</td><td class="num">1</td><td class="num">0</td><td class="num">0.0%</td><td class="num">10.0</td><td><span class="badge med">COMPETITOR</span></td></tr>
+          <tr><td class="kw">climate controlled storage units gallatin</td><td class="num">1</td><td class="num">0</td><td class="num">0.0%</td><td class="num">35.0</td><td><span class="badge high">NOT INDEXED PAGE</span></td></tr>
+          <tr><td class="kw">luxury car storage montana</td><td class="num">1</td><td class="num">0</td><td class="num">0.0%</td><td class="num">42.0</td><td><span class="badge high">NOT INDEXED PAGE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px;">Position caveat: GSC averages every device and searcher location. A live mobile SERP pulled from Big Sky on Oct 5 (DataForSEO) found our paid ad #1 and the Maps listing in the pack for "big sky storage", but bigskystorage.com was not in the organic top 20 for any of five core queries. Semrush US puts us #25 for "storage units big sky mt". Treat organic visibility as near zero outside branded desktop searches.</p>
+
+    <h3 style="margin-top:64px;">Where the 832 GA4 sessions came from</h3>
+    <div class="table-scroll" style="margin-top: 22px;">
+      <table>
+        <thead><tr><th>Channel</th><th class="num">Sessions</th><th class="num">Engaged</th><th class="num">Add to cart</th><th class="num">Checkouts</th><th class="num">Purchases</th><th>Read</th></tr></thead>
+        <tbody>
+          <tr><td>Direct</td><td class="num">616</td><td class="num">34%</td><td class="num">15</td><td class="num">7</td><td class="num">1</td><td><span class="badge crit">247 = CHICAGO BOT</span></td></tr>
+          <tr><td>Paid Search</td><td class="num">160</td><td class="num">66%</td><td class="num">20</td><td class="num">16</td><td class="num">0</td><td><span class="badge high">WALL AT PAYMENT</span></td></tr>
+          <tr><td>Organic Search</td><td class="num">28</td><td class="num">61%</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td><span class="badge med">TINY, ENGAGED</span></td></tr>
+          <tr><td>Referral</td><td class="num">15</td><td class="num">60%</td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td>lookingforstorage.com, LPG, Facebook</td></tr>
+          <tr><td>AI Assistant (chatgpt.com)</td><td class="num">2</td><td class="num">100%</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td><span class="badge opp">11 MIN AVG SESSION</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px;">Chicago / Direct: 247 sessions, 5% engagement, 6.7 seconds average, concentrated in the week of Sep 14. Moses Lake, Des Moines, San Jose, Ashburn and Frankfurt show the same pattern. Real direct traffic is closer to 300. Montana-only: Paid 76 sessions (10 add to cart, 6 checkouts), Organic 15, Direct 15.</p>
+  </div>
+</section>
+
+<!-- =================== THE 5 CRITICAL FINDINGS =================== -->
+<section id="critical" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">02 · The Five Critical Findings</span></div>
+    <h2>What's <em class="display-italic">actually</em><br>holding the site back.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 740px;">Each one was observed on the live site, the live SERP or the live API on October 5. Each has a fix that fits inside the eleven days before opening.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="findings">
+      <article class="finding">
+        <div class="num">1</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · INDEXING</span></div>
+          <h3>Google has indexed 3 of 18 sitemap URLs, and none of the pages that sell.</h3>
+          <p class="impact-line">Impact: the heated, RV and storage-units pages cannot rank for anything. Every non-brand query falls back to the homepage.</p>
+          <p>URL Inspection API, Oct 5: indexed are <code class="mono">/</code>, <code class="mono">/reserve-before-big-sky-storage-opens</code> and <code class="mono">/how-far-big-sky-storage-from-town-center-bozeman</code>. Twelve URLs are "Discovered, currently not indexed", including <code class="mono">/storage-units-big-sky-mt</code>, <code class="mono">/heated-storage-big-sky-mt</code> and <code class="mono">/rv-boat-trailer-storage-big-sky-mt</code>. Three are unknown to Google: <code class="mono">/what-size-storage-unit-big-sky-mt</code>, <code class="mono">/tenant-protection</code>, <code class="mono">/terms-and-conditions</code>.</p>
+          <p>The cause is structural. The homepage's internal links go to about, blog, contact, faq, photo-gallery, size-guide, tenant-protection, privacy and terms. <strong>None of the seven landing pages are linked from the homepage or the main nav.</strong> They live as Duda blog posts, reachable only through <code class="mono">/blog</code>, which is itself not indexed. To Google, they are orphans on a brand-new, low-authority domain.</p>
+          <div class="fix"><b>Fix:</b> Add a "Storage at Big Sky" block to the homepage and footer linking all seven landing pages with descriptive anchors ("heated storage in Big Sky", "RV, boat and trailer storage"). Add the three product pages to the main nav under a Storage menu. Then request indexing for each in the GSC URL Inspection tool (manual, 10 a day), and submit to Bing Webmaster Tools with IndexNow. Eta: <strong>half a day.</strong></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">2</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · LOCAL</span></div>
+          <h3>The Maps listing wins the pack, with no website, no phone and the wrong category.</h3>
+          <p class="impact-line">Impact: the single highest-converting surface for a storage facility sends nobody to the site and gives nobody a number to call.</p>
+          <p>DataForSEO's live local pack shows a "Big Sky Storage" listing at 204 Blacksmith Lp in position #1 for "big sky storage" and #3 for "heated storage big sky", carrying <strong>no website and no phone</strong>. ChatGPT's map card shows the same place as <strong>"Closed · Warehouse"</strong>. It is absent from the pack for "storage units big sky mt", which belongs to Lazy J, Big Sky Warehouses and Canyon Storage. This is the listing everything else (reviews, AI answers, the Google Ads location asset) will hang off.</p>
+          <div class="fix"><b>Fix:</b> First check the LPG Business Profile manager and Zernio for an existing claim, since filing a duplicate on an unclaimed or pending place triggers suspension. Then claim the existing place, set primary category <strong>Self storage facility</strong>, add <code class="mono">https://www.bigskystorage.com/?utm_source=GBP</code>, (406) 623-9410, opening date Oct 16, access and office hours, the real construction photos and the services list. Link it to Google Ads account 8099839192. Eta: <strong>1 hour plus verification time.</strong></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">3</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · ENTITY</span></div>
+          <h3>Every page tells Google the business is called "Looking for Storage".</h3>
+          <p class="impact-line">Impact: Google and AI assistants cannot resolve a single clean entity for Big Sky Storage, so they substitute name-alikes.</p>
+          <p>Sitewide JSON-LD ships <code class="mono">{"@type":"Organization","name":"Looking for Storage","image":null}</code>, injected from Duda's business info. The homepage's otherwise good <code class="mono">SelfStorage</code> node lists <code class="mono">"email":"Help@LookingForStorage.com"</code>, and the same address appears 6 times in the homepage HTML and 18 times on <code class="mono">/about-us</code>, visible in the footer. A <code class="mono">SearchAction</code> points to <code class="mono">/search?q=</code>, a page that does not exist.</p>
+          <p>The name space is already crowded: Big Sky Self Storage (Belgrade, ranks #1 for "big sky self storage"), a Big Sky Storage in Helena, and a "Storage-Big Sky" at 47995 Gallatin Rd #201 with phone (406) 995-4296. Asked about bigskystorage.com, a GPT-4o scoping probe replied that it could not find a website and offered that one instead. In the flagship test, Claude split us into two businesses and the Belgrade name-alike appeared in 5 of 20 answers.</p>
+          <div class="fix"><b>Fix:</b> In Duda business info set the name to Big Sky Storage and a Big Sky email address (Fishman or ops to choose the inbox). Remove the sitewide SearchAction. Give the <code class="mono">SelfStorage</code> node a stable <code class="mono">@id</code> and reference it from every page. Add a disambiguation FAQ: "Is Big Sky Storage the same as Big Sky Self Storage in Belgrade?" The Cubby footer email is an org-scoped Cubby setting; change it only after confirming scope, since it is shared across LPG facilities. Eta: <strong>2 hours.</strong></div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">4</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · DOMAIN</span></div>
+          <h3>The brand rankings are stuck on the old domain, and the bare domain is broken.</h3>
+          <p class="impact-line">Impact: the only equity the brand has is on a domain we are retiring, and anyone typing bigskystorage.com with https sees a security warning.</p>
+          <p>Semrush: <code class="mono">storagebigsky.com</code> (Authority Score 7) still ranks #2 for "big sky storage" (140/mo) and #3 for "storage units big sky mt" (110/mo). It 301s correctly to <code class="mono">https://www.bigskystorage.com/</code>, but the new domain (AS 2) holds only 2 keywords. Brave's index still shows the old domain. Separately, <code class="mono">https://bigskystorage.com/</code> serves Duda's placeholder certificate <code class="mono">CN=broken-ssl.multiscreensite.com</code> and fails with <code class="mono">SEC_E_UNTRUSTED_ROOT</code>; <code class="mono">http://</code> apex and <code class="mono">www</code> are fine. This has been open since at least Sep 8.</p>
+          <div class="fix"><b>Fix:</b> In Duda's domain settings, add the bare domain as a connected domain and reissue SSL so Duda's certificate covers both hostnames (apex A record must point at Duda). Verify <code class="mono">storagebigsky.com</code> in Search Console and file a <strong>Change of Address</strong> to bigskystorage.com, which transfers signals much faster than a 301 alone. Keep the 301 in place permanently. Eta: <strong>1 hour</strong>, DNS owner (Fishman) required.</div>
+        </div>
+      </article>
+
+      <article class="finding">
+        <div class="num">5</div>
+        <div>
+          <div style="margin-bottom:6px;"><span class="badge crit">CRITICAL · CORE WEB VITALS</span></div>
+          <h3>Mobile performance is 20. The heated-storage page's LCP is 22 seconds.</h3>
+          <p class="impact-line">Impact: half of our GSC impressions (180 of 360) are mobile; a 12-second homepage loses them before the hero renders.</p>
+          <p>DataForSEO Lighthouse (mobile, Oct 5): homepage Performance <strong>20</strong>, Accessibility 93, Best Practices 77, SEO 100; LCP <strong>12.0 s</strong>, CLS <strong>0.794</strong>, TBT 1,050 ms. <code class="mono">/heated-storage-big-sky-mt</code>: Performance 51, LCP <strong>22.4 s</strong>, caused by a 2.1 MB PNG hero. Desktop crawl measured CLS 0.386 on the homepage, one shift at 198 ms on block <code class="mono">#1716942098</code>, down from 0.456 on Sep 11 but still failing (good is under 0.1). The Cubby widget is ~7,000 px and lazy-loads below.</p>
+          <div class="fix"><b>Fix:</b> Re-export every hero and band image as WebP at 1600 px wide (target under 250 KB). Give the hero image explicit width and height and <code class="mono">fetchpriority="high"</code>. Reserve height for the block that shifts. Move the Cubby widget below a fixed-height placeholder. Re-test until mobile Performance is 60+ and CLS under 0.1. Eta: <strong>1 day.</strong></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="callout opp" style="margin-top: 36px;">
+      <strong>Bottom line:</strong> none of the five needs new content or new budget. Findings 1 to 4 are configuration in Duda, the Business Profile and DNS. Shipped before Oct 16, they turn opening-week press, reviews and the existing ads into rankings instead of letting them leak to name-alikes.
+    </div>
+  </div>
+</section>
+
+<!-- =================== QUICK WINS =================== -->
+<section id="quickwins">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">03 · Quick Wins</span></div>
+    <h2>What we'd ship<br><em class="display-italic">first</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:740px;">Ordered by effort against impact. Everything here is a Duda, Business Profile or GA4 change. The first eight should land before October 16.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width: 36px;">#</th><th>Quick win</th><th>Where</th><th>Effort</th><th>Expected lift</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td><strong>Link the 7 landing pages from the homepage, nav and footer,</strong> then request indexing.</td><td>Duda home + header</td><td>2 hours</td><td>Moves 7 pages from orphaned to crawlable. Precondition for any non-brand ranking.</td></tr>
+        <tr><td class="num">2</td><td><strong>Claim and complete the Maps listing:</strong> category, website, phone, hours, photos, opening date.</td><td>Business Profile</td><td>1 hour + verification</td><td>Pack #1 for the brand starts sending clicks and calls. Unlocks reviews and the Ads call asset.</td></tr>
+        <tr><td class="num">3</td><td><strong>Rename the sitewide Organization from "Looking for Storage" to Big Sky Storage</strong> and replace the schema email.</td><td>Duda business info</td><td>30 min</td><td>One clean entity for Google and AI answers.</td></tr>
+        <tr><td class="num">4</td><td><strong>Fix the bare-domain SSL certificate.</strong></td><td>Duda domains + DNS</td><td>1 hour</td><td>Removes the security warning on <code class="mono">https://bigskystorage.com</code>.</td></tr>
+        <tr><td class="num">5</td><td><strong>GSC Change of Address</strong> from storagebigsky.com.</td><td>Search Console</td><td>30 min</td><td>Transfers the #2 and #3 brand rankings to the new domain.</td></tr>
+        <tr><td class="num">6</td><td><strong>Noindex <code class="mono">/checkout</code> and remove it, privacy and terms from the sitemap.</strong></td><td>Duda page SEO settings</td><td>15 min</td><td>Stops a $0.00 Cubby form from being a search landing page (6 GA4 landings already, 0% engaged).</td></tr>
+        <tr><td class="num">7</td><td><strong>Compress hero and band images to WebP</strong>, fix the CLS block.</td><td>Duda media</td><td>1 day</td><td>Mobile Performance 20 to 60+, LCP from 12 s toward 3 s.</td></tr>
+        <tr><td class="num">8</td><td><strong>Exclude bot traffic in GA4</strong> (Chicago / Direct cluster) and build a "Montana, engaged" comparison.</td><td>GA4 552964343</td><td>30 min</td><td>Real baseline before opening; the current Direct number is ~40% bot.</td></tr>
+        <tr><td class="num">9</td><td><strong>Fire <code class="mono">generate_lead</code> on the waitlist and contact forms</strong> and import purchase and lead into Google Ads.</td><td>GA4 + Ads</td><td>Half a day</td><td>The 26 contact-form leads become measurable; Ads can optimize to something.</td></tr>
+        <tr><td class="num">10</td><td><strong>Remove the duplicate H1</strong> on about-us, faq, contact, size-guide and tenant-protection.</td><td>Duda interior heroes</td><td>1 hour</td><td>One topical H1 per page.</td></tr>
+        <tr><td class="num">11</td><td><strong>Add alt text and rehost the 7 size-guide images</strong> served from another site's Duda folder (<code class="mono">irp.cdn-website.com/075da5da/</code>).</td><td><code class="mono">/size-guide</code></td><td>1 hour</td><td>Image search eligibility; no dependency on another site's assets.</td></tr>
+        <tr><td class="num">12</td><td><strong>Settle the bay count.</strong> Explore Big Sky printed "48 drive-in units, 15 to 45 ft deep"; Cubby inventory shows 36 heated bays.</td><td>Ops + press</td><td>1 call</td><td>The press article is our best link. Its facts and ours need to match before AI tools repeat either.</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 style="margin-top: 64px;">Title and meta fixes</h3>
+    <p style="max-width: 800px; margin-top:8px;">Titles are in good shape across the site. The issues are descriptions over 160 characters (truncated on mobile), a blog index that reads like a template and one landing page whose title runs 79 characters.</p>
+    <div class="table-scroll" style="margin-top: 22px;">
+    <table>
+      <thead><tr><th>URL</th><th>Current problem</th><th>Suggested rewrite</th></tr></thead>
+      <tbody>
+        <tr><td class="mono" style="font-size:12.5px;">/</td><td>Description 172 chars; "Opening October 2026" will be stale on Oct 16.</td><td>Description: <strong>"Heated and climate-controlled storage in the Gallatin Canyon, minutes from Big Sky. 6x5 interior units to 12x45 heated drive-up bays. Call (406) 623-9410."</strong> (151)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/rv-boat-trailer-storage-big-sky-mt</td><td>Title 79 chars, cut at ~60.</td><td><strong>"Heated RV, Boat &amp; Trailer Storage near Big Sky, MT"</strong> (51)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/faq</td><td>Description 170 chars.</td><td><strong>"Opening date, reservations, heated drive-up bays, elevator access and directions to Big Sky Storage in the Gallatin Canyon."</strong> (124)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/photo-gallery</td><td>Description 184 chars.</td><td><strong>"Photos of Big Sky Storage on US-191: heated drive-up bays to 12x45, climate-controlled interior units, stairs and elevator."</strong> (123)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/about-us</td><td>Description 162 chars.</td><td><strong>"Locally owned, fully heated storage on Blacksmith Loop between Big Sky and Gallatin Gateway. Who built it and why."</strong> (115)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/blog</td><td>"Storage Tips &amp; Insights", 69-char description, no og:image, 304 words.</td><td><strong>"Big Sky Storage Guides: Heated Storage, Vehicle Bays, Sizing"</strong> + an intro paragraph and og:image.</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">/storage-units-big-sky-mt</td><td>Meta says "Heated, climate controlled drive-up units". Interior units are not drive-up.</td><td><strong>"Heated drive-up bays and climate-controlled interior units in Big Sky, MT. 24/7 gated access. Call (406) 623-9410."</strong> (verify access hours first)</td></tr>
+        <tr><td class="mono" style="font-size:12.5px;">All 7 landing pages</td><td>"Opens October 2026; reserve now" in every description.</td><td>Swap to "Now open" copy on Oct 16. Schedule it now so it does not linger.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- =================== URL CATALOG =================== -->
+<section id="hierarchy" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">04 · URL × Error × Fix Catalog</span></div>
+    <h2>Every page,<br><em class="display-italic">audited</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">All 16 public URLs plus the bare and legacy domains, crawled fully scrolled on Oct 5 and cross-checked against GSC URL Inspection, GSC performance, GA4 landing data and Lighthouse. Each card maps the issue, what we observed and the fix.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="sub-eyebrow">A · Domain level</div>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://bigskystorage.com/ · storagebigsky.com</div>
+          <div class="url-audit-meta">Bare domain + legacy domain · storagebigsky.com AS 7, #2 "big sky storage"</div>
+        </div>
+        <span class="badge crit">P0 · CRITICAL</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Bare-domain TLS</div><div class="issue-current">Serves <code>CN=broken-ssl.multiscreensite.com</code>, untrusted root. Open since at least Sep 8.</div><div class="issue-fix"><b>Fix:</b> connect the apex in Duda, reissue SSL covering apex + www, confirm with <code>curl -sSI https://bigskystorage.com/</code> returning 301 to www.</div></div>
+        <div class="url-issue"><div class="issue-name">Legacy domain equity</div><div class="issue-current">storagebigsky.com 301s to www.bigskystorage.com but still ranks #2 / #3 in Semrush; Brave shows it.</div><div class="issue-fix"><b>Fix:</b> verify storagebigsky.com in GSC, run Change of Address. Keep the 301 forever.</div></div>
+        <div class="url-issue ok"><div class="issue-name">Redirects</div><div class="issue-current">http to https, http apex to www, and storagebigsky.com all 301 to <code>https://www.bigskystorage.com/</code>. 404s return 404.</div><div class="issue-fix">No change.</div></div>
+        <div class="url-issue warn"><div class="issue-name">robots.txt</div><div class="issue-current">No Disallow rules. Sitemap submitted, last read Oct 5, 0 errors.</div><div class="issue-fix"><b>Fix:</b> leave robots open; handle <code>/checkout</code> with noindex instead.</div></div>
+      </div>
+    </div>
+
+    <div class="sub-eyebrow" style="margin-top:40px;">B · Top unique URLs</div>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/</div>
+          <div class="url-audit-meta">20 clicks · 355 imp · pos 6.9 · 739 GA4 landings · INDEXED · Lighthouse mobile 20 · LCP 12.0s · CLS 0.794</div>
+        </div>
+        <span class="badge crit">P0 · CRITICAL</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">No links to landing pages</div><div class="issue-current">Internal links go to 9 utility pages only. None of the 7 landing pages are linked.</div><div class="issue-fix"><b>Fix:</b> add a "Storage at Big Sky" card row (heated storage, RV/boat/trailer, storage units, size guide, heated vs climate, drive times) and a footer link list.</div></div>
+        <div class="url-issue"><div class="issue-name">Organization schema</div><div class="issue-current"><code>Organization.name = "Looking for Storage"</code>, <code>image: null</code>; <code>SelfStorage.email = Help@LookingForStorage.com</code>.</div><div class="issue-fix"><b>Fix:</b> rename in Duda business info; set a Big Sky email; add <code>logo</code>.</div></div>
+        <div class="url-issue"><div class="issue-name">Dead SearchAction</div><div class="issue-current"><code>WebSite.potentialAction</code> targets <code>/search?q=</code>, which 404s.</div><div class="issue-fix"><b>Fix:</b> remove the SearchAction (sitewide injection).</div></div>
+        <div class="url-issue"><div class="issue-name">Map coordinates</div><div class="issue-current">Served HTML <code>data-lat="45.59196" data-lng="-111.19707"</code> (Gallatin Gateway town, 38 km north); a script rewrites it to 45.250331,-111.254884 after load; schema geo 45.249142,-111.253266. Cubby's facility record: 45.2491434,-111.2532586.</div><div class="issue-fix"><b>Fix:</b> set the Duda map widget's own location to the Cubby record so the served HTML is right, then delete the runtime patch. One coordinate everywhere.</div></div>
+        <div class="url-issue"><div class="issue-name">Duplicate H1</div><div class="issue-current">Two <code>&lt;h1&gt;Big Sky Storage&lt;/h1&gt;</code> in served HTML (desktop + mobile headers); one is hidden by script.</div><div class="issue-fix"><b>Fix:</b> make the header logo text a <code>div</code>, keep one H1 in the hero.</div></div>
+        <div class="url-issue"><div class="issue-name">Performance</div><div class="issue-current">LCP 12.0 s, CLS 0.794, TBT 1,050 ms (mobile). Desktop CLS 0.386 from block <code>#1716942098</code>.</div><div class="issue-fix"><b>Fix:</b> WebP hero, width/height, <code>fetchpriority="high"</code>, reserve height for the shifting block and the Cubby widget.</div></div>
+        <div class="url-issue warn"><div class="issue-name">Meta description</div><div class="issue-current">172 chars, includes "Opening October 2026".</div><div class="issue-fix"><b>Fix:</b> see the rewrite table in Section 03.</div></div>
+        <div class="url-issue ok"><div class="issue-name">Passing</div><div class="issue-current">Title 55 chars, self canonical, SelfStorage + FAQPage graph, real photos, 802 words, lang + viewport set, GA4 G-GGL43XW0HM firing.</div><div class="issue-fix">Keep.</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit crit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/checkout</div>
+          <div class="url-audit-meta">6 GA4 landings · 0% engaged · in sitemap · Discovered, not indexed</div>
+        </div>
+        <span class="badge crit">P0 · CRITICAL</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Indexable checkout</div><div class="issue-current">200, no robots meta, no X-Robots-Tag, listed in sitemap.xml, no H1, 49 words.</div><div class="issue-fix"><b>Fix:</b> Duda page settings: hide from search engines (noindex) and exclude from sitemap.</div></div>
+        <div class="url-issue"><div class="issue-name">$0.00 pricing exposed</div><div class="issue-current">Cubby form shows Coverage "$0.00 - $0.00 / month", rent $0 through Nov 30 and a $49 reservation fee. This is the only machine-readable price on the storefront.</div><div class="issue-fix"><b>Fix:</b> noindex keeps it out of search; ops to confirm the 2-months-free configuration is intended before opening.</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/storage-units-big-sky-mt</div>
+          <div class="url-audit-meta">12 GA4 landings · 92% engaged (best on the site) · Discovered, not indexed · 673 words</div>
+        </div>
+        <span class="badge high">P0 · HIGH</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Not indexed</div><div class="issue-current">Orphaned blog post; only linked from <code>/blog</code>.</div><div class="issue-fix"><b>Fix:</b> link from home + nav, request indexing.</div></div>
+        <div class="url-issue"><div class="issue-name">Typed as a blog post</div><div class="issue-current">Schema is <code>BlogPosting</code> twice (Duda blog + injected graph), authored by a Person named "Big Sky Storage".</div><div class="issue-fix"><b>Fix:</b> keep one BlogPosting, add <code>about: {"@id":"https://www.bigskystorage.com/#facility"}</code> and a <code>BreadcrumbList</code>; fix author to Organization.</div></div>
+        <div class="url-issue warn"><div class="issue-name">Copy accuracy</div><div class="issue-current">Meta says "climate controlled drive-up units"; interior units are not drive-up. "24/7 gated access" needs ops confirmation.</div><div class="issue-fix"><b>Fix:</b> separate the two families in the description; confirm access hours.</div></div>
+        <div class="url-issue warn"><div class="issue-name">Images</div><div class="issue-current">2 images without alt.</div><div class="issue-fix"><b>Fix:</b> descriptive alt ("heated drive-up bay door at Big Sky Storage").</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/heated-storage-big-sky-mt</div>
+          <div class="url-audit-meta">1 GA4 landing · Discovered, not indexed · 630 words · Lighthouse mobile 51 · LCP 22.4s</div>
+        </div>
+        <span class="badge high">P0 · HIGH</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Not indexed</div><div class="issue-current">Orphaned; the site's core differentiator page.</div><div class="issue-fix"><b>Fix:</b> link from home hero copy ("every unit is heated") and nav.</div></div>
+        <div class="url-issue"><div class="issue-name">2.1 MB PNG hero</div><div class="issue-current">LCP 22.4 s on mobile.</div><div class="issue-fix"><b>Fix:</b> WebP, 1600 px, under 250 KB.</div></div>
+        <div class="url-issue warn"><div class="issue-name">Thin for its job</div><div class="issue-current">630 words, BlogPosting only, no FAQ.</div><div class="issue-fix"><b>Fix:</b> add the five heated-storage questions Semrush surfaced ("are storage units heated", "how much does heated storage cost", "do I need to winterize my boat in heated storage") as an FAQ block with FAQPage schema.</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/rv-boat-trailer-storage-big-sky-mt</div>
+          <div class="url-audit-meta">4 GA4 landings · Discovered, not indexed · 1,461 words · Article + FAQPage + BreadcrumbList</div>
+        </div>
+        <span class="badge high">P0 · HIGH</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Not indexed</div><div class="issue-current">Best-built landing page on the site, invisible.</div><div class="issue-fix"><b>Fix:</b> link + request indexing. This page is the answer to "rv storage bozeman" (390 in October).</div></div>
+        <div class="url-issue warn"><div class="issue-name">Title length</div><div class="issue-current">79 chars.</div><div class="issue-fix"><b>Fix:</b> "Heated RV, Boat &amp; Trailer Storage near Big Sky, MT".</div></div>
+        <div class="url-issue warn"><div class="issue-name">Duplicate article schema</div><div class="issue-current">BlogPosting (Duda) + Article (injected) for the same page; 3 images without alt; Facebook comments embed with empty <code>app_id</code>; no <code>og:url</code>.</div><div class="issue-fix"><b>Fix:</b> one article node; alt text; remove the comments embed; set og:url.</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/contact</div>
+          <div class="url-audit-meta">0 clicks · 17 imp · pos 8.7 · Discovered, not indexed · 130 words</div>
+        </div>
+        <span class="badge med">P1 · MED</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Two H1s</div><div class="issue-current">"Contact Big Sky Storage" and "Contact Us".</div><div class="issue-fix"><b>Fix:</b> demote "Contact Us" to a label.</div></div>
+        <div class="url-issue"><div class="issue-name">Thin NAP page</div><div class="issue-current">130 words; the address is Gallatin Gateway 59730 while the business serves Big Sky.</div><div class="issue-fix"><b>Fix:</b> add driving directions from Big Sky Town Center, Meadow Village and Four Corners, a static map image and an explicit drive time from Big Sky Town Center (use the figure already published on the drive-times post). Keep the postal address as is (it must match the Business Profile).</div></div>
+      </div>
+    </div>
+
+    <div class="url-audit">
+      <div class="url-audit-head">
+        <div>
+          <div class="url-audit-url">https://www.bigskystorage.com/size-guide</div>
+          <div class="url-audit-meta">0 clicks · 39 imp (sitelink) · 7 GA4 landings · Discovered, not indexed · 385 words</div>
+        </div>
+        <span class="badge med">P1 · MED</span>
+      </div>
+      <div class="url-audit-body">
+        <div class="url-issue"><div class="issue-name">Images from another site</div><div class="issue-current">7 unit images, no alt, served from <code>irp.cdn-website.com/075da5da/</code> (another Duda site's folder).</div><div class="issue-fix"><b>Fix:</b> upload to this site's library, add alt per size.</div></div>
+        <div class="url-issue"><div class="issue-name">Overlaps the sizing post</div><div class="issue-current"><code>/what-size-storage-unit-big-sky-mt</code> (1,507 words, unknown to Google) targets the same intent.</div><div class="issue-fix"><b>Fix:</b> make /size-guide the visual chart and link to the long post for "what fits"; cross-link both ways.</div></div>
+        <div class="url-issue warn"><div class="issue-name">Two H1s</div><div class="issue-current">"Storage Unit Size Guide" + "Size Guide".</div><div class="issue-fix"><b>Fix:</b> one H1.</div></div>
+      </div>
+    </div>
+
+    <div class="sub-eyebrow" style="margin-top:40px;">C · Pattern groups</div>
+
+    <div class="url-group">
+      <h4>Seven landing pages published as orphaned blog posts</h4>
+      <p>All seven are Duda blog posts. None is linked from the homepage, header or footer. Only three of them are indexed, all through the sitemap.</p>
+      <div class="url-list">
+        <span><code>/storage-units-big-sky-mt</code> <span class="cnt">not indexed</span></span>
+        <span><code>/heated-storage-big-sky-mt</code> <span class="cnt">not indexed</span></span>
+        <span><code>/rv-boat-trailer-storage-big-sky-mt</code> <span class="cnt">not indexed</span></span>
+        <span><code>/heated-vs-climate-controlled-montana</code> <span class="cnt">not indexed</span></span>
+        <span><code>/what-size-storage-unit-big-sky-mt</code> <span class="cnt">unknown</span></span>
+        <span><code>/reserve-before-big-sky-storage-opens</code> <span class="cnt">indexed</span></span>
+        <span><code>/how-far-big-sky-storage-from-town-center-bozeman</code> <span class="cnt">indexed · 16 imp</span></span>
+      </div>
+      <div class="group-fix"><b>Template-level fix:</b> homepage card row + "Storage" nav menu + footer list. On each post: one article schema node, <code>about</code> pointing to the facility <code>@id</code>, og:url, alt on every image, remove the empty-app_id Facebook comments embed, replace the en-dash ranges ("5x10 to 10x10", "35 to 45 min") flagged by the crawl.</div>
+    </div>
+
+    <div class="url-group warn">
+      <h4>Duplicate H1 on interior pages</h4>
+      <p>The interior hero H1 plus the original Duda page title both render as H1 after load.</p>
+      <div class="url-list">
+        <span><code>/about-us</code> <span class="cnt">39 imp</span></span>
+        <span><code>/faq</code></span>
+        <span><code>/contact</code> <span class="cnt">17 imp</span></span>
+        <span><code>/size-guide</code> <span class="cnt">39 imp</span></span>
+        <span><code>/tenant-protection</code></span>
+      </div>
+      <div class="group-fix"><b>Template-level fix:</b> change the original Duda title widget on each interior page from H1 to a paragraph style, or delete it, since the interior hero carries the H1.</div>
+    </div>
+
+    <div class="url-group warn">
+      <h4>Thin pages</h4>
+      <p>Pages under 400 words that Google is unlikely to index on a new domain without more substance.</p>
+      <div class="url-list">
+        <span><code>/tenant-protection</code> <span class="cnt">91 words · unknown</span></span>
+        <span><code>/contact</code> <span class="cnt">130 words</span></span>
+        <span><code>/photo-gallery</code> <span class="cnt">206 words</span></span>
+        <span><code>/blog</code> <span class="cnt">304 words</span></span>
+        <span><code>/size-guide</code> <span class="cnt">385 words</span></span>
+      </div>
+      <div class="group-fix"><b>Fix:</b> gallery gets captions per photo (what, where, which unit type); blog index gets a 150-word intro and category links; tenant protection gets the plan options and a claim process; contact gets directions. Do not pad; each addition should answer a real question.</div>
+    </div>
+
+    <div class="url-group">
+      <h4>Sitelink and fragment URLs in GSC</h4>
+      <p>GSC reports <code>/#RentNow</code> (39 imp), <code>/about-us</code>, <code>/size-guide</code> and <code>/photo-gallery</code> (39 each) with identical position 7.9. These are sitelinks under the homepage result, not independent rankings.</p>
+      <div class="url-list">
+        <span><code>/#RentNow</code> <span class="cnt">39 imp</span></span>
+        <span><code>/photo-gallery</code> <span class="cnt">39 imp · 1 click</span></span>
+        <span><code>/about-us</code> <span class="cnt">39 imp</span></span>
+        <span><code>/size-guide</code> <span class="cnt">39 imp</span></span>
+      </div>
+      <div class="group-fix"><b>Read:</b> no fix needed. Google is already building sitelinks for the brand, a good sign. The <code>#RentNow</code> anchor is fine as long as the target exists (it does; the <code>#Rent</code> anchor was repaired in August).</div>
+    </div>
+
+    <div class="url-group warn">
+      <h4>Sitewide: tracking and entity leaks</h4>
+      <p>Seen on every page in the crawl.</p>
+      <div class="url-list">
+        <span><code>Organization: "Looking for Storage"</code></span>
+        <span><code>Help@LookingForStorage.com</code> <span class="cnt">footer + schema</span></span>
+        <span><code>SearchAction /search</code> <span class="cnt">404 target</span></span>
+        <span><code>G-GGL43XW0HM</code> <span class="cnt">Duda GA4</span></span>
+        <span><code>G-2SVMV22G2M</code> <span class="cnt">Cubby GA4</span></span>
+        <span><code>no AW- tag</code> <span class="cnt">Ads blind</span></span>
+      </div>
+      <div class="group-fix"><b>Fix:</b> entity rename (Section 02, finding 3). Add the Google Ads conversion tag and fire it from Cubby's <code>checkout-complete</code> event, which bubbles to <code>document</code>, so no shadow-DOM changes are needed.</div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== KEYWORDS =================== -->
+<section id="keywords">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">05 · Keyword Strategy</span></div>
+    <h2>A small market,<br>and a <em class="display-italic">big neighbor</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">Big Sky itself produces about 120 storage searches a month, and most of them are our own name. The volume lives 35 to 40 minutes north in Bozeman, where the vehicle-storage terms peak in October. The plan: own every Big Sky query outright, then compete for the Bozeman vehicle and RV terms with the one product Bozeman cannot easily offer, a heated drive-up bay on the road to the mountain.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <h3>Tier 1 · Own the name (Big Sky)</h3>
+    <div class="table-scroll" style="margin-top: 18px;">
+      <table>
+        <thead><tr><th>Keyword</th><th class="num">Vol (MT / US)</th><th class="num">KD</th><th class="num">CPC</th><th>Who ranks now</th><th>Target page</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">big sky storage</td><td class="num">70 / 140</td><td class="num">6 to 9</td><td class="num">$6.96</td><td>Bee Safe (Lazy J) #1, storagebigsky.com #2, Lazy J #4; our Maps listing in pack</td><td><code class="mono">/</code></td></tr>
+          <tr><td class="kw">storage units big sky mt</td><td class="num">70 / 110</td><td class="num">12</td><td class="num">$6.96</td><td>beesafe.com #1; we are #25 (Semrush)</td><td><code class="mono">/storage-units-big-sky-mt</code></td></tr>
+          <tr><td class="kw">big sky storage units</td><td class="num">n/a / 70</td><td class="num">6</td><td class="num">n/a</td><td>Lazy J</td><td><code class="mono">/</code></td></tr>
+          <tr><td class="kw">big sky self storage</td><td class="num">40 / 40</td><td class="num">8</td><td class="num">$8.18</td><td>Belgrade "Big Sky Self Storage" #1</td><td>FAQ disambiguation + <code class="mono">/</code></td></tr>
+          <tr><td class="kw">big sky rv storage · heated storage big sky · car storage big sky</td><td class="num">no volume</td><td class="num">n/a</td><td class="num">n/a</td><td>Nobody</td><td>Landing pages (long-tail + AI answers)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:48px;">Tier 2 · The Bozeman vehicle window (peaks in October)</h3>
+    <div class="table-scroll" style="margin-top: 18px;">
+      <table>
+        <thead><tr><th>Keyword</th><th class="num">Avg / Oct (MT)</th><th class="num">KD</th><th class="num">CPC</th><th>Local pack today</th><th>Target page</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">rv storage bozeman</td><td class="num">140 / 390</td><td class="num">11</td><td class="num">$7.94</td><td>Slate Storage 4.9 (291), Your Space 4.7 (155), Gallatin RV &amp; Boat 3.1 (8)</td><td><code class="mono">/rv-boat-trailer-storage-big-sky-mt</code></td></tr>
+          <tr><td class="kw">car storage bozeman</td><td class="num">110 / 320</td><td class="num">15</td><td class="num">$8.99</td><td>Bozeman operators</td><td>New: <code class="mono">/heated-car-storage-bozeman-big-sky</code></td></tr>
+          <tr><td class="kw">climate controlled storage bozeman</td><td class="num">40 to 70</td><td class="num">low</td><td class="num">$6.39</td><td>Bozeman operators</td><td><code class="mono">/heated-vs-climate-controlled-montana</code></td></tr>
+          <tr><td class="kw">storage units bozeman (and 6 variants)</td><td class="num">1,300 each cluster</td><td class="num">13 to 23</td><td class="num">$12.82</td><td>Summit #1, Your Space, Bozeman Self Storage</td><td>Do not chase head-on; we are 35 to 40 min away</td></tr>
+          <tr><td class="kw">storage units belgrade mt</td><td class="num">50</td><td class="num">low</td><td class="num">$10.74</td><td>Belgrade operators</td><td>Skip</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:48px;">Tier 3 · Informational, for FAQ and AI answers (national volume)</h3>
+    <div class="table-scroll" style="margin-top: 18px;">
+      <table>
+        <thead><tr><th>Question / keyword</th><th class="num">US vol</th><th>Placement</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">heated storage</td><td class="num">1,600</td><td><code class="mono">/heated-storage-big-sky-mt</code> FAQ block</td></tr>
+          <tr><td class="kw">what size storage unit for 3 bedroom house</td><td class="num">320</td><td><code class="mono">/what-size-storage-unit-big-sky-mt</code></td></tr>
+          <tr><td class="kw">are storage units heated</td><td class="num">30</td><td>Heated storage FAQ</td></tr>
+          <tr><td class="kw">how much does heated storage cost · how much is a heated storage unit</td><td class="num">20 + 20</td><td>New pricing page (see Section 10, prompt 4)</td></tr>
+          <tr><td class="kw">do i need to winterize my boat in heated storage</td><td class="num">20</td><td>RV/boat page FAQ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn" style="margin-top: 28px;"><strong>Honesty rule for the Bozeman pages:</strong> they must state the drive time plainly and sell the reason to make it (heated bays on the way to the mountain, power in the bay, 12x45 length). Copy that implies we are in Bozeman will rank briefly and convert nobody.</div>
+  </div>
+</section>
+
+<!-- =================== SCHEMA =================== -->
+<section id="schema" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">06 · Schema Markup Plan</span></div>
+    <h2>One entity,<br><em class="display-italic">one coordinate</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">The homepage already ships a good SelfStorage + FAQPage graph. The problem is everything around it: a sitewide "Looking for Storage" Organization, a dead SearchAction, landing pages typed only as blog posts and a coordinate that disagrees with the map widget.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Phase</th><th>What</th><th>Where</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge crit">1 · FIX</span></td><td>Rename Organization to Big Sky Storage, replace schema email, remove SearchAction, add <code class="mono">logo</code>. One coordinate: 45.2491434, -111.2532586 (Cubby facility record) in schema and the map widget.</td><td>Sitewide</td><td>Before Oct 16</td></tr>
+          <tr><td><span class="badge high">2 · CONNECT</span></td><td>Stable <code class="mono">@id</code> <code class="mono">https://www.bigskystorage.com/#facility</code>; every landing page's article node gets <code class="mono">about</code> pointing to it. One article node per page. BreadcrumbList on all seven.</td><td>Landing pages</td><td>Before Oct 16</td></tr>
+          <tr><td><span class="badge med">3 · ENRICH</span></td><td>After the Maps listing is claimed: <code class="mono">hasMap</code>, <code class="mono">sameAs</code> (Business Profile, Facebook, Explore Big Sky article, storagebigsky.com), <code class="mono">openingHoursSpecification</code>, <code class="mono">foundingDate</code> 2026-10-16, <code class="mono">amenityFeature</code> (heated, climate controlled, drive-up, elevator, power in bays). FAQPage on the heated and RV pages.</td><td>Home + landing</td><td>Oct 16 to 30</td></tr>
+          <tr><td><span class="badge opp">4 · EARN</span></td><td><code class="mono">aggregateRating</code> only once real Google reviews exist and are shown on the page. <code class="mono">makesOffer</code> per unit family with standard monthly rates written by <code class="mono">kobe-duda-rate-sync</code>, never the $0.00 promotional figure.</td><td>Home</td><td>After 10 reviews</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:48px;">Phase 1 to 3 · corrected facility node</h3>
+<pre class="code">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "SelfStorage",
+  "@id": "https://www.bigskystorage.com/#facility",
+  "name": "Big Sky Storage",
+  "url": "https://www.bigskystorage.com/",
+  "logo": "https://irp.cdn-website.com/a2480e0c/dms3rep/multi/bigsky-logo-1200.png",
+  "telephone": "+14066239410",
+  "email": "&lt;big sky inbox chosen by ops&gt;",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "204 Blacksmith Loop",
+    "addressLocality": "Gallatin Gateway",
+    "addressRegion": "MT",
+    "postalCode": "59730",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.2491434, "longitude": -111.2532586 },
+  "areaServed": ["Big Sky, MT", "Gallatin Canyon", "Gallatin Gateway, MT", "Four Corners, MT"],
+  "foundingDate": "2026-10-16",
+  "hasMap": "&lt;Business Profile maps URL once claimed&gt;",
+  "sameAs": [
+    "&lt;Business Profile URL&gt;",
+    "https://www.explorebigsky.com/&lt;article path&gt;",
+    "https://storagebigsky.com/"
+  ],
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Heated drive-up bays to 12x45", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Climate-controlled interior units", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Elevator to upper floor", "value": true }
+  ]
+}
+&lt;/script&gt;</pre>
+    <p class="small" style="margin-top:10px;">Logo filename is from the August logo build; /duda-sauce should confirm the exact CDN URL. Add <code class="mono">openingHoursSpecification</code> only with hours ops confirms; the site currently says "24/7 gated access" on one page and nothing elsewhere.</p>
+
+    <h3 style="margin-top:48px;">Phase 2 · landing page article node</h3>
+<pre class="code">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Heated RV, Boat &amp; Trailer Storage near Big Sky, MT",
+      "url": "https://www.bigskystorage.com/rv-boat-trailer-storage-big-sky-mt",
+      "about": { "@id": "https://www.bigskystorage.com/#facility" },
+      "author": { "@type": "Organization", "name": "Big Sky Storage" },
+      "publisher": { "@id": "https://www.bigskystorage.com/#facility" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bigskystorage.com/" },
+        { "@type": "ListItem", "position": 2, "name": "RV, Boat &amp; Trailer Storage" }
+      ]
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+  </div>
+</section>
+
+<!-- =================== CONTENT =================== -->
+<section id="content">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">07 · Content Strategy</span></div>
+    <h2>Ten pieces,<br>timed to the <em class="display-italic">season</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">The seven existing landing pages are good; they need links, not rewrites. New content should follow the calendar: opening week, the fall toy swap, second-home arrivals before Thanksgiving, the November 25 resort opening, snowmobile season from December 15, and the April remodel and move-out season.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>#</th><th>Piece</th><th>Intent / target</th><th>Publish</th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td><strong>Storage unit prices in Big Sky</strong>: standard monthly rates per size and family, filled and kept current by <code class="mono">kobe-duda-rate-sync</code> from the live Cubby STANDARD rate (never hand-typed; confirm Big Sky is in its site list), what is included, how heated bays compare with buying a warehouse condo.</td><td>Cost prompt (lost in 3 of 4 AI answers), "how much does heated storage cost"</td><td>Oct 14</td></tr>
+          <tr><td class="num">2</td><td><strong>Now open</strong> announcement + photo update; flip "Opening October 2026" across all pages.</td><td>Brand, press follow-up, AI "is it open" accuracy</td><td>Oct 16</td></tr>
+          <tr><td class="num">3</td><td><strong>Heated car and truck storage for Bozeman owners</strong>, with the honest drive time and why the bay is worth it.</td><td>car storage bozeman (320 in Oct)</td><td>Oct 20</td></tr>
+          <tr><td class="num">4</td><td><strong>How to store a car over a Montana winter</strong>: fuel, battery tender, tires, starting it or not.</td><td>Informational, links to bays</td><td>Oct 27</td></tr>
+          <tr><td class="num">5</td><td><strong>Second-home owner storage in Big Sky</strong>: caretaker access, deliveries, toys, remodel overflow.</td><td>Second-home arrivals Oct 20 to Nov 25</td><td>Nov 3</td></tr>
+          <tr><td class="num">6</td><td><strong>Ski and gear storage near Big Sky Resort</strong>: what fits a 6x5, condo overflow.</td><td>Resort opening Nov 25</td><td>Nov 12</td></tr>
+          <tr><td class="num">7</td><td><strong>Snowmobile and trailer storage on the way to West Yellowstone</strong></td><td>Snowmobile season Dec 15</td><td>Dec 1</td></tr>
+          <tr><td class="num">8</td><td><strong>Contractor material and tool storage in the Gallatin Canyon</strong></td><td>Builders (referral partners, Section 08)</td><td>Dec 15</td></tr>
+          <tr><td class="num">9</td><td><strong>What freezes in an unheated storage unit in Montana</strong></td><td>Heated differentiator, AI answers</td><td>Jan 12</td></tr>
+          <tr><td class="num">10</td><td><strong>Rent a heated bay or buy a warehouse condo in Big Sky?</strong></td><td>Lazy J Warehouses buyers</td><td>Feb 2</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:56px;">The 30 FAQ questions to answer (FAQPage schema)</h3>
+    <div class="two-col" style="margin-top:18px; grid-template-columns: 1fr 1fr 1fr;">
+      <div>
+        <h4>Location and facility</h4>
+        <ol class="small">
+          <li>Is there storage in Big Sky, or do I have to drive to Bozeman?</li>
+          <li>How far is Big Sky Storage from Town Center and Meadow Village?</li>
+          <li>When does Big Sky Storage open?</li>
+          <li>Are all units heated or climate controlled?</li>
+          <li>Heated vs climate-controlled: what is the difference?</li>
+          <li>What are the access hours?</li>
+          <li>Is the facility plowed in a storm?</li>
+          <li>Is there an elevator to the upper floor?</li>
+          <li>Is Big Sky Storage the same as Big Sky Self Storage in Belgrade?</li>
+          <li>How much is a storage unit in Big Sky?</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Vehicles and toys</h4>
+        <ol class="small" start="11">
+          <li>Can I store a car or truck indoors over the winter?</li>
+          <li>Do the bays have power for a battery tender or block heater?</li>
+          <li>Can I charge an EV in a bay?</li>
+          <li>How long is the longest bay; will my RV fit?</li>
+          <li>What size fits a sled and trailer, drift boat or side-by-side?</li>
+          <li>Do I need to winterize my boat or RV first?</li>
+          <li>Can I store a snowmobile on the way to West Yellowstone?</li>
+          <li>Should I start my stored car during winter?</li>
+          <li>Is a trickle charger enough?</li>
+          <li>Can I store skis, boots and outerwear?</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Owners, contractors, workers</h4>
+        <ol class="small" start="21">
+          <li>Can my caretaker or property manager access my unit?</li>
+          <li>Can deliveries be received for my second home?</li>
+          <li>Can I store furniture and art during a remodel?</li>
+          <li>Can contractors store materials and tools short term?</li>
+          <li>Can I add authorized users or get business invoicing?</li>
+          <li>Rent a heated bay or buy a warehouse condo?</li>
+          <li>Where can seasonal workers store things between jobs?</li>
+          <li>Can roommates share a unit?</li>
+          <li>Do I need insurance for stored items?</li>
+          <li>What can't I store (fuel, propane, perishables)?</li>
+        </ol>
+      </div>
+    </div>
+    <p class="small" style="margin-top:14px;">Questions 12 and 13 must match what the bays actually provide; /duda-sauce should confirm the outlet spec against Notion and Cubby before publishing.</p>
+  </div>
+</section>
+
+<!-- =================== BACKLINKS =================== -->
+<section id="backlinks" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">08 · Backlink Strategy</span></div>
+    <h2>410 linking domains.<br>One of them <em class="display-italic">counts</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">The profile went from 38 referring domains on Sep 11 to about 410 (Semrush) or 460 (DataForSEO) today, and almost all of the growth is automated spam: PBN directories, *.pages.dev, *.top, *.sbs. Competitors receive the same junk, so this is ambient, not an attack. The only real editorial link is explorebigsky.com (AS 35).</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="callout" style="margin-bottom:36px;"><strong>On the spam:</strong> Google says it ignores links like these, and a disavow file is a manual tool for manual actions. Priority is low. If anyone does it, disavow only at the domain level for the four templates Semrush flagged (<code class="mono">/all/424/24.html</code>, <code class="mono">/dir/seo-boosting-backlinks-23736</code>, <code class="mono">/page-aa3e7d95...html</code>, <code class="mono">/domain/domain/part/33673</code>). The real work is earning the 15 links below.</div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Tier</th><th>Targets</th><th>Angle</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge crit">1 · CITATIONS</span></td><td>Google Business Profile, Bing Places, Apple Business Connect, Yelp, Facebook page, Nextdoor, BBB, StorageCafe / RentCafe, SpareFoot, SelfStorage.com, Yellow Pages</td><td>Identical name, address and phone everywhere. StorageCafe already lists Canyon Storage and the Helena "Big Sky Storage"; claiming ours disambiguates. These are the sources the AI models cited most.</td><td>Launch week</td></tr>
+          <tr><td><span class="badge high">2 · LOCAL MEDIA</span></td><td>Explore Big Sky (link the existing article), Lone Peak Lookout, Mountain Outlaw, KBZK, Bozeman Daily Chronicle, Visit Big Sky directory, Big Sky Chamber</td><td>"Big Sky's first heated, climate-controlled storage is open." Ask Explore Big Sky to add our name and URL to the article, which Claude and Gemini both cite.</td><td>Oct 16 to 30</td></tr>
+          <tr><td><span class="badge med">3 · REFERRAL PARTNERS</span></td><td>Alpine Property Management, Big Sky Home Management, Stay Montana, MCC Private Home Management, Big Sky Sotheby's, PureWest, Bozeman Real Estate Group relocation guide, Big Sky Build, Blue Ribbon Builders, Lone Pine Builders, Teton Heritage Builders</td><td>Preferred-vendor or resource pages: owner toy storage, caretaker access accounts, remodel and contractor staging.</td><td>Nov to Dec</td></tr>
+          <tr><td><span class="badge opp">4 · COMMUNITY</span></td><td>Big Sky Community Organization, Big Sky Community Housing Trust, Big Sky Resort Area District, Gallatin River Task Force, Big Sky Community Food Bank, Big Sky Fire Department, Bozeman and Belgrade chambers</td><td>Sponsorships and drives at the facility that come with a partner-page link.</td><td>Ongoing</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px;">Full list of 55 targets with URLs and status in <code class="mono">research/backlink-targets.md</code>. Several model-suggested domains did not resolve and are marked "verify"; do not send outreach to unverified domains.</p>
+  </div>
+</section>
+
+<!-- =================== COMPETITIVE =================== -->
+<section id="competitive">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">09 · Competitive Landscape</span></div>
+    <h2>Nobody else heats.<br>Everybody else is <em class="display-italic">findable</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">The canyon competitors are weak on product and reviews but strong on presence: complete Maps listings, years of directory citations, and in Lazy J's case a page on a national operator's domain that ranks #1 for our name.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Competitor</th><th>Where</th><th>Product</th><th>Reviews</th><th class="num">AS</th><th class="num">Traffic/mo</th><th>Threat</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Lazy J Storage</strong> (Bee Safe)</td><td>44 Straight Iron Rd, same park</td><td>Drive-up, 24/7, no heat advertised</td><td>3.4 (5)</td><td class="num">19 / 7</td><td class="num">~2,659 domain / 16 site</td><td><span class="badge crit">OWNS OUR NAME</span></td></tr>
+          <tr><td><strong>Canyon Storage</strong></td><td>47430 Gallatin Rd, Big Sky</td><td>Drive-up, RV; no website</td><td>none shown</td><td class="num">n/a</td><td class="num">~4</td><td><span class="badge med">MAY BE CLOSED</span></td></tr>
+          <tr><td><strong>Lazy J Warehouses</strong></td><td>Blacksmith Loop, same park</td><td>Heated warehouse condos for sale, 14 ft doors</td><td>n/a</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="badge high">BUY VS RENT</span></td></tr>
+          <tr><td><strong>Big Sky Warehouses</strong></td><td>47220 Gallatin Rd</td><td>Warehouse condos; in the pack for "storage units big sky mt"</td><td>5.0 (1)</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="badge med">MAPS ONLY</span></td></tr>
+          <tr><td><strong>Alpine Storage MT</strong></td><td>76887 Gallatin Rd (Gooch Hill)</td><td>Drive-up 5x6 to 14x40, indoor vehicle bays</td><td>4.6 (24)</td><td class="num">8</td><td class="num">76</td><td><span class="badge high">FACEBOOK "TOP ANSWER"</span></td></tr>
+          <tr><td><strong>Big Sky Self Storage</strong></td><td>Belgrade</td><td>Standard self storage</td><td>3.0 (2)</td><td class="num">15</td><td class="num">50</td><td><span class="badge high">NAME COLLISION</span></td></tr>
+          <tr><td><strong>Your Space Bozeman</strong></td><td>Bozeman</td><td>Self storage, boat/RV</td><td>4.7 (155)</td><td class="num">20</td><td class="num">1,868</td><td><span class="badge med">RV PACK</span></td></tr>
+          <tr><td><strong>Summit Storage</strong></td><td>Bozeman</td><td>Self storage</td><td>n/a</td><td class="num">10</td><td class="num">1,232</td><td><span class="badge med">#1 STORAGE BOZEMAN</span></td></tr>
+          <tr><td><strong>Slate Storage</strong></td><td>Bozeman</td><td>Self storage, RV</td><td>4.9 (291)</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="badge med">RV PACK #1</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px;">AS = Semrush Authority Score (Lazy J: beesafe.com / lazyjstorage.com). Traffic = Semrush organic estimate, US database; Traffic Analytics is not on our plan. Review counts from Google via DataForSEO and ChatGPT map cards on Oct 5. A name-alike "Storage-Big Sky" at 47995 Gallatin Rd #201, (406) 995-4296, has no website but appears in directories.</p>
+
+    <div class="quote" style="margin-top: 56px;">
+      "The strongest storage options in or very near Big Sky, Montana are Big Sky Storage, Canyon Storage..."
+      <cite>Perplexity Sonar-Reasoning-Pro, Oct 5, 2026, prompt 1. The AI layer has already decided we belong in the set; Google's organic layer has not.</cite>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LLM =================== -->
+<section id="llm" class="dark">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow" style="color:#8FD3FF;">10 · AI / LLM Visibility</span></div>
+    <h2 style="color:#F4FAFF;">13 citations.<br>Out of <em style="color:#8FD3FF; font-style:italic;">twenty</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:820px; color:#C9D6E2;">The reverse of the Google story. We sent five high-intent prompts to four flagship models with live web search: <strong>Claude Sonnet 5</strong>, <strong>Gemini 3.1 Pro</strong>, <strong>GPT-5.5</strong> and <strong>Sonar-Reasoning-Pro</strong>. Big Sky Storage was named in <strong>12 of 20</strong> answers and cited as a source in a 13th, usually first, with the correct address and phone. The press coverage and a well-written site are already working in AI search. The gaps are Claude, the cost question and RV storage near Gallatin Gateway.</p>
+
+    <div class="ornament" style="color:#8FD3FF;">· · ·</div>
+
+    <div style="background: #142433; border: 1px solid #27445C; border-radius: var(--r-lg); padding: 32px 34px; margin-bottom: 56px;">
+      <div style="display:flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; flex-wrap: wrap; gap: 12px;">
+        <h3 style="color:#F4FAFF;">The 5 prompts we sent (verbatim)</h3>
+        <span class="small" style="color:#7D93A8; font-family: var(--mono);">user_prompt · web_search=true · same string to all 4 models</span>
+      </div>
+      <ol style="color:#BFE6FF; font-family: var(--serif); font-size: 19px; line-height: 1.7; padding-left: 1.4em; margin: 0;">
+        <li style="margin-bottom:6px;"><span style="color:#F4FAFF;">"What are the best storage units in Big Sky, Montana?"</span></li>
+        <li style="margin-bottom:6px;"><span style="color:#F4FAFF;">"How do I find heated storage for my truck and ski gear near Big Sky, MT?"</span></li>
+        <li style="margin-bottom:6px;"><span style="color:#F4FAFF;">"RV and boat storage near Gallatin Gateway, Montana"</span></li>
+        <li style="margin-bottom:6px;"><span style="color:#F4FAFF;">"How much does a storage unit cost in Big Sky, Montana?"</span></li>
+        <li style="margin-bottom:6px;"><span style="color:#F4FAFF;">"Heated drive-up garage storage for cars and toys in Big Sky, MT"</span></li>
+      </ol>
+      <p class="small" style="color:#7D93A8; margin-top: 22px; font-size: 13px;">Why these five: the head term, the heated differentiator with a real use case, the RV/boat vertical at our postal town, the pricing question every storage shopper asks, and the wedge (heated drive-up bays) no competitor in the canyon offers. Designed to be re-run every 30 days.</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3 style="color:#F4FAFF;">The 5 prompts × 4 models matrix</h3>
+        <div style="background:#142433; border-radius: var(--r-md); padding: 22px 22px; margin-top: 14px; font-size:13.5px; color:#C9D6E2;">
+          <table class="mx" style="background:transparent; border:0; color:#C9D6E2; min-width:0;">
+            <thead><tr>
+              <th style="background:transparent; color:#8FD3FF; padding: 8px 10px; font-size:11px;">Prompt</th>
+              <th style="background:transparent; color:#8FD3FF; padding: 8px 4px; font-size:11px; text-align:center;">Claude<br>Sonnet 5</th>
+              <th style="background:transparent; color:#8FD3FF; padding: 8px 4px; font-size:11px; text-align:center;">Gemini<br>3.1 Pro</th>
+              <th style="background:transparent; color:#8FD3FF; padding: 8px 4px; font-size:11px; text-align:center;">GPT-5.5</th>
+              <th style="background:transparent; color:#8FD3FF; padding: 8px 4px; font-size:11px; text-align:center;">Sonar<br>R-Pro</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding: 8px 10px;">1 · Best storage units in Big Sky</td><td style="text-align:center;">·</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td></tr>
+              <tr><td style="padding: 8px 10px;">2 · Heated storage, truck + ski gear</td><td style="text-align:center;">·</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td></tr>
+              <tr><td style="padding: 8px 10px;">3 · RV + boat near Gallatin Gateway</td><td style="text-align:center;">·</td><td style="text-align:center;">·</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center;">·</td></tr>
+              <tr><td style="padding: 8px 10px;">4 · Cost of a unit in Big Sky</td><td style="text-align:center;">·</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center;">·</td><td style="text-align:center; color:#7D93A8;">src</td></tr>
+              <tr><td style="padding: 8px 10px;"><strong style="color:#F4FAFF;">5 · Heated drive-up for cars + toys</strong></td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td><td style="text-align:center; color:#BFE6FF; font-weight:700;">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="color:#7D93A8; margin-top:12px;">✓ = named in the answer · src = bigskystorage.com cited as a source but not named · · = not cited. Run Oct 5, 2026. Claude, GPT and Sonar via DataForSEO AI Optimization API (<code style="color:#C9D6E2;">web_search=true</code>). DataForSEO returned rate_limit_exceeded for every Gemini call, so the five Gemini cells were run directly against <code style="color:#C9D6E2;">gemini-3.1-pro-preview</code> with Google Search grounding, same verbatim prompts.</p>
+      </div>
+
+      <div>
+        <h3 style="color:#F4FAFF;">Who AI names across all 20</h3>
+        <p style="color:#C9D6E2; font-size:14.5px; margin-bottom:14px;">Number of answers naming each business.</p>
+        <div style="background:#142433; border-radius: var(--r-md); padding: 18px 22px; font-size:14px;">
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Lazy J Storage</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val" style="color:#8FD3FF;">15</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span><strong style="color:#BFE6FF;">Big Sky Storage (us)</strong></span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill green" style="width:80%"></div></div><span class="bar-val" style="color:#BFE6FF;"><strong>12</strong></span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Canyon Storage</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill" style="width:53%"></div></div><span class="bar-val" style="color:#8FD3FF;">8</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>U-Haul affiliates</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill alt" style="width:47%"></div></div><span class="bar-val" style="color:#8FD3FF;">7</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Alpine Storage MT</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill alt" style="width:33%"></div></div><span class="bar-val" style="color:#8FD3FF;">5</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Big Sky Self Storage (Belgrade)</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill alt" style="width:33%"></div></div><span class="bar-val" style="color:#8FD3FF;">5</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Big Sky Resort lockers</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill alt" style="width:27%"></div></div><span class="bar-val" style="color:#8FD3FF;">4</span></div>
+          <div class="bar-row" style="grid-template-columns: 170px 1fr 40px; color:#C9D6E2;"><span>Huffine · Gallatin RV &amp; Boat</span><div class="bar-bg" style="background:#22384B;"><div class="bar-fill alt" style="width:27%"></div></div><span class="bar-val" style="color:#8FD3FF;">4</span></div>
+        </div>
+        <p class="small" style="color:#7D93A8; margin-top:12px;">Most cited domains: lazyjstorage.com and bigskystorage.com (tied), uhaul.com, bigskyselfstoragemt.com, rentcafe.com, beesafe.com, storagecafe.com, explorebigsky.com. DataForSEO's LLM-mentions index returned zero rows for all four brand keywords: the market is below its sampling threshold, not invisible.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 56px; background: linear-gradient(135deg, #17293A 0%, #142433 100%); border: 1px solid #27445C; border-radius: var(--r-lg); padding: 36px;">
+      <div style="display:flex; gap:24px; align-items:flex-start;">
+        <div style="font-family: var(--serif); font-size:78px; line-height:1; color:#BFE6FF; font-style:italic; font-variation-settings: 'SOFT' 100, 'WONK' 1;">✓</div>
+        <div>
+          <div style="margin-bottom: 8px;"><span class="badge opp">THE 65% THAT ALREADY WORKS</span></div>
+          <h3 style="color:#F4FAFF; margin-bottom: 12px;">On the wedge prompt, every model sends people to us.</h3>
+          <p style="color:#C9D6E2; font-size:15.5px;">All four models named Big Sky Storage for "Heated drive-up garage storage for cars and toys in Big Sky, MT". Gemini: <em style="color:#BFE6FF;">"I highly recommend securing your reservation at the new Big Sky Storage on Blacksmith Loop as soon as possible, as these large 12x45 heated bays usually go first."</em> GPT-5.5 on prompt 2: <em style="color:#BFE6FF;">"Big Sky Storage is the most directly relevant option I found near Big Sky. It's at 204 Blacksmith Loop, Gallatin Gateway..."</em></p>
+          <p style="color:#C9D6E2; font-size:15.5px; margin-top:12px;">That confirms the positioning: heated drive-up bays are the thing no one else in the canyon has, and the AI layer already knows it. Every address and phone the models gave for us was correct. The errors are about timing and identity, and both are fixable on our own site.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top: 56px;">
+      <div>
+        <h3 style="color:#F4FAFF;">Where we lose, and why</h3>
+        <ul style="color:#C9D6E2;">
+          <li><strong>Claude, 1 of 5.</strong> It never cites bigskystorage.com. It leans on the Explore Big Sky article, which describes "a new climate-controlled facility" without naming us, and an old snapshot of storagebigsky.com, so it splits us into two businesses.</li>
+          <li><strong>Cost, 1 named of 4.</strong> We publish no rates. GPT-5.5's reasoning noted Big Sky Storage "might not show rates" and dropped us; a portable-container company and the Belgrade name-alike took the answer. Gemini put Lazy J first because Bee Safe publishes prices.</li>
+          <li><strong>RV and boat near Gallatin Gateway, 1 of 4.</strong> Our RV/boat page is not indexed. Models answered from Bozeman sites (Gallatin RV &amp; Boat on Penny Ln, Huffine, Alpine).</li>
+          <li><strong>Timing errors.</strong> Perplexity called us an "existing facility" and also told users to reserve at "Storage Big Sky... once it opens"; Claude said a facility "has opened". These flip once the site and listing say "Now open".</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#F4FAFF;">What raises the rate</h3>
+        <ol style="color:#C9D6E2;">
+          <li><strong>Ask Explore Big Sky to name us and link bigskystorage.com</strong> in the existing article. It is the source Claude and Gemini both pull from.</li>
+          <li><strong>Publish standard monthly rates</strong> on a Big Sky storage prices page (content piece #1), with the figures owned by <code class="mono" style="background:#22384B; padding:2px 6px; border-radius:4px;">kobe-duda-rate-sync</code>.</li>
+          <li><strong>Get the RV/boat page indexed</strong> and mention Gallatin Gateway, Four Corners and Bozeman drive times on it.</li>
+          <li><strong>One entity:</strong> Organization renamed, <code class="mono" style="background:#22384B; padding:2px 6px; border-radius:4px;">sameAs</code> to the article, the Maps listing and storagebigsky.com, and the disambiguation FAQ.</li>
+          <li><strong>Directory citations</strong> on StorageCafe, RentCafe, U-Haul, Yellow Pages and Yelp, which the models cite constantly.</li>
+        </ol>
+        <h3 style="margin-top: 28px; color:#F4FAFF;">90-day LLM target</h3>
+        <p style="color:#C9D6E2;">Re-run the same grid after Oct 16 and monthly. Target <strong>16 of 20</strong>, with Claude at 3 of 5 or better and a named citation on the cost prompt from at least two models.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ROADMAP =================== -->
+<section id="roadmap" class="alt">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">11 · 90-Day Roadmap</span></div>
+    <h2>What happens<br>in the next <em class="display-italic">90 days</em>.</h2>
+    <p class="lede" style="margin-top:18px; max-width:760px;">The first sprint is compressed to the eleven days before opening, because every opening-week signal (press, reviews, first tenants) is worth more if the foundation is in place when it arrives.</p>
+
+    <div class="ornament">· · ·</div>
+
+    <div class="roadmap">
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Oct 5 to Oct 16</div>
+        <h3>Foundation</h3>
+        <p class="small">Make the site, the listing and the entity findable before the doors open.</p>
+        <ul>
+          <li><div class="check"></div><span>Link 7 landing pages from home, nav, footer; request indexing</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Claim Maps listing: category, website, phone, hours, photos</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Rename Organization schema; new schema email; drop SearchAction</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Fix bare-domain SSL certificate</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>GSC Change of Address from storagebigsky.com</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Noindex /checkout; trim sitemap</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>One coordinate in map widget + schema; delete runtime patch</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>WebP images, fix CLS block</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Confirm bay count (48 vs 36) and access hours with ops</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Prices page; schedule "Now open" copy swap for Oct 16</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>GA4 bot exclusion, generate_lead, Ads conversion import</span><span class="pri">P1</span></li>
+        </ul>
+      </div>
+
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Oct 17 to Nov 30</div>
+        <h3>Opening season</h3>
+        <p class="small">Turn the opening into reviews, links and the Bozeman vehicle terms.</p>
+        <ul>
+          <li><div class="check"></div><span>Review asks to all move-ins; target 10 Google reviews</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Explore Big Sky link + opening follow-up; Lone Peak Lookout, KBZK</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Tier 1 citations: Bing, Apple, Yelp, StorageCafe, SpareFoot, Yellow Pages</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Heated car storage for Bozeman owners page</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Winter car storage, second-home and ski gear posts</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Schema phase 3: hasMap, sameAs, foundingDate, amenities</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Disambiguation FAQ (Belgrade, Helena, Storage-Big Sky)</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Duplicate H1s, alt text, thin pages</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Re-run LLM grid post-opening</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Create Semrush project + position tracking for 15 terms</span><span class="pri">P2</span></li>
+        </ul>
+      </div>
+
+      <div class="road-col">
+        <div class="label"><span class="dot"></span> Dec 1 to Jan 5</div>
+        <h3>Authority</h3>
+        <p class="small">Referral partners, winter content, and measuring what moved.</p>
+        <ul>
+          <li><div class="check"></div><span>Tier 3 partner pages: property managers, builders, brokers</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Snowmobile and contractor storage posts</span><span class="pri">P1</span></li>
+          <li><div class="check"></div><span>Tier 4 community sponsorships with partner links</span><span class="pri">P2</span></li>
+          <li><div class="check"></div><span>Schema phase 4: aggregateRating once reviews are shown</span><span class="pri">P2</span></li>
+          <li><div class="check"></div><span>Lighthouse re-test: mobile 60+, CLS under 0.1</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>GSC review: all landing pages indexed, brand top 3</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>LLM grid: 16 of 20, Claude 3 of 5</span><span class="pri">P0</span></li>
+          <li><div class="check"></div><span>Optional domain-level disavow of the 4 spam templates</span><span class="pri">P2</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:64px;">Targets at 90 days</h3>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Pages indexed</div><div class="kpi-value">15<small>/15</small></div><div class="kpi-trend up">from 3 (sitemap trimmed)</div></div>
+      <div class="kpi"><div class="kpi-label">"big sky storage" organic</div><div class="kpi-value">Top 3</div><div class="kpi-trend up">mobile, from Big Sky</div></div>
+      <div class="kpi"><div class="kpi-label">GSC clicks / month</div><div class="kpi-value">150<small>+</small></div><div class="kpi-trend up">from ~22</div></div>
+      <div class="kpi cta"><div class="kpi-label">Google reviews</div><div class="kpi-value">10<small>+</small></div><div class="kpi-trend up">from 0</div></div>
+      <div class="kpi"><div class="kpi-label">LLM citations</div><div class="kpi-value">16<small>/20</small></div><div class="kpi-trend up">from 13</div></div>
+      <div class="kpi"><div class="kpi-label">Lighthouse mobile</div><div class="kpi-value">60<small>+</small></div><div class="kpi-trend up">from 20</div></div>
+      <div class="kpi"><div class="kpi-label">Real referring domains</div><div class="kpi-value">15<small>+</small></div><div class="kpi-trend up">from 1</div></div>
+      <div class="kpi"><div class="kpi-label">Local pack, storage units big sky mt</div><div class="kpi-value">Top 3</div><div class="kpi-trend up">from absent</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== APPENDIX =================== -->
+<section id="appendix">
+  <div class="wrap">
+    <div class="section-eyebrow"><span class="bar"></span><span class="eyebrow">Appendix</span></div>
+    <h2>Methodology &amp; <em class="display-italic">sources</em>.</h2>
+
+    <div class="ornament">· · ·</div>
+
+    <details class="acc" open>
+      <summary>Data sources used in this audit</summary>
+      <div class="body">
+        <ul>
+          <li><strong>Google Search Console</strong>, property <code class="mono">https://www.bigskystorage.com/</code>, pulled via API on Oct 5: queries, pages, devices, countries, daily totals (Sep 4 to Oct 3, the full history), sitemap status, and URL Inspection for all 18 sitemap URLs.</li>
+          <li><strong>GA4</strong>, property 552964343 (G-GGL43XW0HM), Sep 5 to Oct 4: channels, source/medium, landing pages, events, cities, devices, weekly sessions, Montana-only funnel.</li>
+          <li><strong>Cubby BigQuery</strong>: facility record (address, coordinate, phone), leases and creation dates.</li>
+          <li><strong>Semrush</strong> (US database): domain overview for bigskystorage.com and storagebigsky.com, organic keywords and competitors, backlinks, referring domains and anchors (top-100 samples), keyword gap against Lazy J and Bozeman operators, phrase and question research.</li>
+          <li><strong>DataForSEO</strong>: backlinks summary and referring domains, link gap, Labs competitors and ranked keywords, Google Ads search volume for ~30 seeds in Montana and the Bozeman DMA, Google Trends, mobile Lighthouse on two URLs, on-page instant pages, live mobile SERPs (organic + local pack) for five queries.</li>
+          <li><strong>Playwright crawl</strong> of 16 URLs at 1440 px, fully scrolled before extraction: titles, meta, canonicals, robots, H1 to H4, Open Graph, JSON-LD, map attributes, alt text, internal links, word counts, entity strings. Homepage also at 768 and 375 px; Duda serves a separate mobile document by user agent, checked with an iPhone UA fetch.</li>
+          <li><strong>Perplexity and Brave</strong>: market trends, competitor landscape, seasonal calendar, content gaps, 55 backlink and citation targets, 32 FAQ questions.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Flagship LLM test: verbatim prompts and setup</summary>
+      <div class="body">
+        <p>Five prompts, sent as the exact strings below to four models with live web search, Oct 5, 2026:</p>
+        <ol>
+          <li>"What are the best storage units in Big Sky, Montana?"</li>
+          <li>"How do I find heated storage for my truck and ski gear near Big Sky, MT?"</li>
+          <li>"RV and boat storage near Gallatin Gateway, Montana"</li>
+          <li>"How much does a storage unit cost in Big Sky, Montana?"</li>
+          <li>"Heated drive-up garage storage for cars and toys in Big Sky, MT"</li>
+        </ol>
+        <p>Models: <code class="mono">claude-sonnet-5</code>, <code class="mono">gpt-5.5-2026-04-23</code> and <code class="mono">sonar-reasoning-pro</code> via DataForSEO <code class="mono">ai_optimization_llm_response</code> with <code class="mono">web_search=true</code>; <code class="mono">gemini-3.1-pro-preview</code> via the Google Gen AI SDK with Google Search grounding, because DataForSEO returned <code class="mono">rate_limit_exceeded</code> for every Gemini attempt. A response counts as citing us if it names Big Sky Storage as the Blacksmith Loop / Gallatin Canyon business or links bigskystorage.com or storagebigsky.com. Big Sky Self Storage (Belgrade) and Big Sky Storage (Helena) are counted separately as name collisions. Perplexity's answers to prompts 1 to 3 were truncated mid-sentence by the API; their source lists were complete.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>Files produced</summary>
+      <div class="body">
+        <ul>
+          <li><code class="mono">data/</code>: GSC JSON (queries, pages, date, device, country, query×page, sitemaps, URL inspection), GA4 JSON (9 reports), <code class="mono">GSC-GA4-ANALYSIS.md</code></li>
+          <li><code class="mono">audit/playwright-audit.json</code>, <code class="mono">playwright-summary.md</code>, 18 screenshots</li>
+          <li><code class="mono">audit/dataforseo/</code>: raw JSON + SUMMARY.md</li>
+          <li><code class="mono">audit/semrush/</code>: 18 JSON files + SUMMARY.md</li>
+          <li><code class="mono">research/</code>: trends, competitors, seasonal, content gap, backlink targets, PAA, LLM scoping, AI mentions, SUMMARY.md</li>
+          <li><code class="mono">research/llm-flagship-run/</code>: 20 raw responses, <code class="mono">gemini-vertex.json</code>, <code class="mono">citation-tally.md</code></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>What we did not do, and limitations</summary>
+      <div class="body">
+        <ul>
+          <li>GSC and GA4 history is 30 days; there is no year-over-year or pre-launch baseline.</li>
+          <li>Semrush Traffic Analytics is not on the plan; competitor traffic is the Semrush organic estimate (US database). There is no Semrush project for this site, so no site audit or position tracking.</li>
+          <li>Backlink toxicity counts come from top-100 samples, not the full 410-domain list.</li>
+          <li>We did not log in to the Business Profile manager; the Maps listing's state comes from the live local pack and map cards. Check ownership before claiming.</li>
+          <li>Lighthouse runs are single lab measurements, not field data (CrUX has no data for a site this new).</li>
+          <li>Unit counts, access hours, bay power specification and pricing were not re-verified against Notion and Cubby here. /duda-sauce does that before any copy ships.</li>
+          <li>This audit makes no recommendation on the "No Payment Until Move-In" promotion; it only flags that the $0.00 checkout page should not be indexed.</li>
+        </ul>
+      </div>
+    </details>
+
+    <p class="small" style="margin-top:40px; color:var(--muted);">Prepared October 5, 2026 for Ludlow Property Group. Next step: <code class="mono">/duda-sauce big-sky-storage</code> re-verifies every claim here against live GSC, Semrush and DataForSEO before building.</p>
+  </div>
+</section>
+
+</body>
+</html>
