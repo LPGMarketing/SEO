@@ -374,7 +374,7 @@
 
   /* What is moving the market: 3 columns */
   .movers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 26px; }
-  .mover { background: white; border: 1px solid var(--line); border-top: 4px solid var(--coral); border-radius: var(--r-md); padding: 24px 24px 18px; }
+  .mover { background: white; border: 1px solid var(--line); border-top: 4px solid var(--coral); border-radius: 0; padding: 24px 24px 18px; }
   .mover.local { border-top-color: var(--navy); }
   .mover.ai { border-top-color: var(--green); }
   .mover .tag { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--coral-dk); }
@@ -417,7 +417,7 @@
 
   /* Keyword to page map cards */
   .kw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 26px; }
-  .kw-card { background: white; border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: var(--r-md); padding: 20px 22px 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .kw-card { background: white; border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: 0; padding: 20px 22px 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
   .kw-card.new { border-top-color: var(--green); }
   .kw-card.proposed { border-top-color: var(--amber); background: #FFFCF4; }
   .kw-card-head { display: grid; grid-template-columns: 44px 1fr auto; gap: 12px; align-items: start; margin-bottom: 14px; }
@@ -455,7 +455,7 @@
 
   /* New page proposals */
   .proposals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 22px; }
-  .prop { background: white; border: 1px solid var(--line); border-radius: var(--r-md); padding: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; }
+  .prop { background: white; border: 1px solid var(--line); border-radius: 0; padding: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; }
   .prop.money { border-top: 4px solid var(--green); }
   .prop.hub { border-top: 4px solid var(--navy); }
   .prop.ask { border-top: 4px solid var(--amber); background: #FFFCF4; }
