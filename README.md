@@ -4,10 +4,11 @@ Private client audit deliverables hosted on GitHub Pages.
 
 Each subfolder of this repo is one engagement. Pages are blocked from search engines via `<meta name="robots" content="noindex">` + a top-level `robots.txt`.
 
-## Audits — Ludlow Property Group self-storage portfolio (14 facilities + parent portal + corporate site)
+## Audits: Ludlow Property Group self-storage portfolio (14 facilities + parent portal + corporate site)
 
 | Client | Folder | URL |
 |---|---|---|
+| Glenwood Springs Storage (formerly Cavern Springs, CO) | [`/glenwood-springs-storage-audit/`](./glenwood-springs-storage-audit/) | https://lpgmarketing.github.io/SEO/glenwood-springs-storage-audit/ |
 | Big Sky Storage (Gallatin Canyon, MT) | [`/big-sky-storage-audit/`](./big-sky-storage-audit/) | https://lpgmarketing.github.io/SEO/big-sky-storage-audit/ |
 | Traverse City Storage (4 locations, MI) | [`/traverse-city-audit/`](./traverse-city-audit/) | https://lpgmarketing.github.io/SEO/traverse-city-audit/ |
 | LudlowPropertyGroup.com (corporate site) | [`/ludlowpropertygroup-audit/`](./ludlowpropertygroup-audit/) | https://lpgmarketing.github.io/SEO/ludlowpropertygroup-audit/ |
@@ -33,5 +34,5 @@ Each subfolder of this repo is one engagement. Pages are blocked from search eng
 2. Drop the `index.html` deliverable inside.
 3. Add a `.nojekyll` file in the subfolder (optional, repo root already has one).
 4. Add a `<meta name="robots" content="noindex">` tag to the HTML head.
-5. Commit + push to `main` — GitHub Pages rebuilds automatically.
+5. Commit + push to `main`, GitHub Pages rebuilds automatically.
 6. Update the table above with the new audit URL.
